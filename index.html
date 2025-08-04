@@ -1,107 +1,135 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .three-column {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 0px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel M. Romero</title>
 
-        .three-column li {
-            list-style: none;
-        }
+  <style>
 
-    </style>
+    html {
+      font-size: 18px;                 
+    }
+    @media (min-width: 1400px) {
+      html { font-size: 20px; }       
+    }
+    @media (max-width: 768px) {
+      html { font-size: 16px; }        
+    }
+
+    body {
+      margin: 0;                       
+      line-height: 1.6;
+      font-family:
+        system-ui, -apple-system,     
+        "Segoe UI",                    
+        Roboto,                       
+        Helvetica, Arial, sans-serif;
+    }
+
+    .content-wrapper {
+      max-width: 1000px;
+      margin-inline: auto;            
+      padding-inline: 20px;          
+      box-sizing: border-box;
+    }
+    @media (max-width: 768px) {
+      .content-wrapper { padding-inline: 15px; }
+    }
+
+
+    .three-column {
+      display: grid;
+      grid-template-columns: repeat(3, max-content);
+      column-gap: 60px;
+      margin: 0;              /* remove default left-margin */
+      padding: 0;             /* remove default left-padding */
+      list-style: none;       /* make absolutely sure no bullets/indent appear */
+    }
+      
+    .three-column > li {
+        list-style: none;
+        white-space: nowrap;      
+    }
+    
+    @media (max-width: 768px) {
+      .three-column { grid-template-columns: 1fr}
+    }
+    @media (min-width: 769px) {
+        .three-column { column-gap: 30px; }
+    }
+    .three-column > li { list-style: none; }
+      
+    .hero {
+        display: flex;
+        gap: 32px;               
+        justify-content: center; 
+        align-items: center;     
+        flex-wrap: wrap;         
+        margin-block: 32px 0;    
+      }
+    .profile-photo {
+        width: 300px;
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,.15);  
+      }
+    .intro { max-width: 600px; }
+
+      @media (max-width: 600px) {
+        .hero      { flex-direction: column; align-items: center; text-align: center; }
+        .intro a   { display: inline-block; }  
+    }
+  </style>
+
+
+  <script>
+    var _gaq=_gaq||[];
+    _gaq.push(['_setAccount','UA-32323667-1']);
+    _gaq.push(['_trackPageview']);
+    (function(){
+      var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;
+      ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+
+             '.google-analytics.com/ga.js';
+      var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);
+    })();
+  </script>
 </head>
     
-<head>
-   <style type="text/css">a {text-decoration: none}
 
-body, div, table, span {
-	font-size: 140%; margin-left: 200px; margin-right: 200px
-}
-
-</style>
-
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
-  <title>Daniel M. Romero</title>
-  <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-32323667-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-</head>
 <body style="color: rgb(0, 0, 0);" link="#0000ee" alink="#ee0000"
  vlink="#551a8b">
+<div class="content-wrapper">  
 <br>
 <hr style=" height: 20px; background-color: rgb(255,203,5); color: rgb(255,203,5); border: 0"><br>
 
  
 
-<table
- style="text-align: left; background-color: transparent; width: 100%; font-size: 100%"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
+<header class="hero">
+  <img class="profile-photo" src="/images/daniel.jpg" alt="Daniel M. Romero">
 
-     <!-- <td ><img style="width: 300px; height: 400px;"src="P1040250.JPG"> </td> -->
- 
-    <!-- <td style="background-color: rgb(255, 255, 255);"><img
- style="width: 250px" alt="" title="Daniel"
- src="romero_daniel_5x7v.jpg"> </td>-->
- 
- <td style="background-color: rgb(255, 255, 255);"><img
- style="width: 300px" alt="" title="Daniel"
- src="/images/daniel.jpg"> </td>
- 
+  <div class="intro">
+    <h1>Daniel M. Romero</h1>
+    Associate Professor<br>
+    <a href="https://www.si.umich.edu/" target="_blank">School of Information</a><br>
+    <a href="https://www.lsa.umich.edu/cscs/" target="_blank">Center for the Study of Complex Systems</a><br>
+    <a href="https://www.cse.umich.edu/" target="_blank">Computer Science and Engineering (by courtesy)</a><br>
+    <a href="https://www.umich.edu/" target="_blank">University of Michigan</a><br><br>
 
+    3340 North Quad<br>
+    105 S State St.<br>
+    Ann Arbor, MI 48109<br>
+    drom@umich.edu<br>
+    Twitter: <a href="http://bit.ly/KfGC8X" target="_blank">@DanielMRomero</a><br><br>
 
-    <!-- <td > PICTIRE </td> -->
-    
-      <td>
-      <h3><big>Daniel M. Romero</big> </h3>
-
-      Associate Professor<br>
-      <a href="https://www.si.umich.edu/" target="_blank">School of Information</a> <br>
-      <a href="https://www.lsa.umich.edu/cscs/" target="_blank">Center for the Study of Complex Systems</a> <br>
-      <a href="https://www.cse.umich.edu/" target="_blank">Computer Science and Engineering (by courtesy)</a> <br>
-      <a href="https://www.umich.edu/" target="_blank">University of Michigan</a> <br>
-      
-      
-
-
-	<br>
-	
-    Contact: </br>
-    3340 North Quad </br>
-    105 S State St. </br>
-    Ann Arbor, MI 48109 </br>
-    drom@umich.edu </br>
-    Twitter: <a href="http://bit.ly/KfGC8X" target="_blank" > @DanielMRomero</a></span>
-	<br>
-	<br>
-	
-	<a href="#publications">Publications</a>, <a href="#students">Advising</a>,   <a href="#professional_service">Professional Service</a>, <a href="#teaching">Teaching</a>, <a href="https://bit.ly/3E4xoyh"target="_blank">CV</a>
-
-	</br>
-      </td>
-
-
-    </tr>
-</table>
+    <a href="#publications">Publications</a>,
+    <a href="#students">Advising</a>,
+    <a href="#professional_service">Service</a>,
+    <a href="#teaching">Teaching</a>,
+    <a href="https://bit.ly/3Uaicsr" target="_blank">CV</a>
+  </div>
+</header>
 
 
 
@@ -128,9 +156,15 @@ body, div, table, span {
          <p class="p3"><A NAME = "publications"><b><big>Publications</big></b></a></p>
 	More information on my <a href="https://bitly.com/u8cN1F" target="_blank" >Google Scholar Citations profile</a>.<br> 
 	<ul>
+    
+    <li><p class="p5">  H. Peng, M. Teplitskiy, D.M. Romero, and E-&Aacute. Horv&aacutet. "<a href="https://bit.ly/4oi8mCm" target="_blank" >The Gender Gap in Scholarly Self-Promotion on Social Media.</a>" <i>Nature Communications</i>, 16, 5552, 2025. [<a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-60590-y/MediaObjects/41467_2025_60590_MOESM1_ESM.pdf" target="_blank" >Supplemental Material</a>] [<a href="https://github.com/haoopeng/gender_promotion" target="_blank" >Data and Code</a>]</li>
         
-    <li><p class="p5">  S. Xiang, D.M. Romero, and M. Teplitskiy. "<a href="https://bit.ly/4jxz9Ib" target="_blank" >Evaluating Interdisciplinary Research: Disparate Outcomes for Topic and Knowledge Base.</a>" <i>Proc. National Academy of Sciences (PNAS)</i>, 122 (16) e2409752122, 2025. [<a href="https://bit.ly/4iwiIe0" target="_blank" >Supplemental Material</a>] [<a href="https://bit.ly/3Eom6ts" target="_blank" >Data and Code</a>]</li>
+    <li><p class="p5">  S. Xiang, D.M. Romero, and M. Teplitskiy. "<a href="https://bit.ly/4jxz9Ib" target="_blank" >Evaluating Interdisciplinary Research: Disparate Outcomes for Topic and Knowledge Base.</a>" <i>Proc. National Academy of Sciences (PNAS)</i>, 122 (16) e2409752122, 2025. [<a href="https://bit.ly/4iwiIe0" target="_blank" >Supplemental Material</a>] [<a href="https://bit.ly/3Eom6ts" target="_blank" >Data and Code</a>]</li>    
+
+    <li><p class="p5">  J. C&oacuterdova, T. Hirose, H. Shi, E-&Aacute. Horv&aacutet, and D.M. Romero. "<a href="https://bit.ly/4moCs5k" target="_blank" >Multiplatform Early Predictors of Academic Articles' Visibility and Citations.</a>" Proc. of The ACM Collective Intelligence Conference (CI), 2025. </li>
         
+    <li><p class="p5">  M. Bhat,  D.M. Romero, and and E-&Aacute. Horv&aacutet. "<a href="https://bit.ly/4ldlEh0" target="_blank" >Scholarly Disengagement as an Epistemic Crisis: Clickbait, Credibility, and the Decline of Public-Facing Science.</a>" Proc. of The ACM Collective Intelligence Conference (CI), 2025. </li>
+
     <li><p class="p5">  A. Ananthasubramaniam, D. Jurgens, and D.M. Romero. "<a href="https://bit.ly/3GlLO2h" target="_blank" >Roles of Network and Identity in Hashtag Diffusion.</a>" Proc. of The ACM Web Conference (WWW), 2025. [<a href="https://bit.ly/42r5lHb" target="_blank" >Data and Code</a>]</li>
         
     <li><p class="p5">  S. Xiang, D.M. Romero, and M. Teplitskiy. "<a href="https://bit.ly/3FQns0p" target="_blank" >Research Topic Choice: Motivations, Strategies, and Consequences.</a>" <i>Quantitative Science Studies</i>, 1-66, 2025. </li>  
@@ -269,17 +303,16 @@ body, div, table, span {
 <p class="p3"><A NAME = "students"><b><big>Students and Postdocs</big></b></a></p>
 <ul>
 
-<li><p class="p5"><b>Current </b></p>
+<p class="p5"><b>Current</b></p>  
 
   
  
-<a href="https://www.avrahami-israeli.com/" target="_blank" >Abraham Israeli </a> (Postdoctoral Fellow)<br>
+
 <a href="https://aparna-ananth.github.io/" target="_blank" >Aparna Ananthasubramaniam </a> (PhD Candidate)<br>
 <a href="https://yulin-yu.github.io/" target="_blank" >Yulin Yu </a> (PhD Candidate)<br>
 <a href="https://davidgamba.org/" target="_blank" >David Gamba </a> (PhD Candidate)<br>
 <a href="https://sdxiang.wordpress.com/" target="_blank" >Sidney Xiang </a> (PhD Candidate)<br>
-<a href="https://www.andersgiovanni.com/" target="_blank" >Anders Giovanni M&oslashller </a> (Visiting PhD Student)<br>
-    
+</ul>
 
     <!--<li></li>
     
@@ -308,47 +341,47 @@ body, div, table, span {
     <a href="https://www.linkedin.com/in/daniellelivneh/" target="_blank" >Danielle Livneh</a> (Undergraduate Student, next to Amazon)<br>
    
 </li>-->
-    
-<li><p class="p5"><b>Alumni</b></p>     
+
+<ul>
+<p class="p5"><b>Alumni</b></p>     
  <ul class="three-column">
     <li>
         
-        
-      
-
-        <a href="https://elplatt.com/" target="_blank">Dr. Ed Platt</a> (PhD Student)<br>
-        <a href="http://haoopeng.github.io/" target="_blank">Dr. Hao Peng</a> (2022, PhD Student)<br>
-        <a href="http://www.dmaldeniya.com/" target="_blank" >Dr. Danaja Maldeniya </a> (PhD Student)<br>
-        <a href="https://minjechoi.github.io/" target="_blank" >Dr. Minje Choi </a> (PhD Student)<br>
-        <a href="https://chrisquarles.org/" target="_blank" >Dr. Chris Quarles </a> (PhD Student)<br>
-        <a href="http://miamioh.edu/cec/academics/departments/cse/about/faculty-and-staff/gomez-lopez/index.html" target="_blank">Dr. Iris Gomez-Lopez</a> (Postdoctoral Fellow)<br>
+        <a href="https://minjechoi.github.io/" target="_blank" >Dr. Minje Choi </a> (PhD, 2023)<br>
+        <a href="http://www.dmaldeniya.com/" target="_blank" >Dr. Danaja Maldeniya </a> (PhD, 2023)<br>
+        <a href="https://chrisquarles.org/" target="_blank" >Dr. Chris Quarles </a> (PhD, 2023)<br>
+        <a href="http://haoopeng.github.io/" target="_blank">Dr. Hao Peng</a> (PhD, 2022)<br>
+        <a href="https://elplatt.com/" target="_blank">Dr. Ed Platt</a> (PhD, 2022)<br>
+        <a href="https://www.andersgiovanni.com/" target="_blank" >Anders Giovanni M&oslashller </a> (Visiting PhD)<br>
+        <a href="https://www.avrahami-israeli.com/" target="_blank" >Dr. Abraham Israeli </a> (Postdoctoral Fellow)<br>
         <a href="https://sites.google.com/site/tiagocunha87/" target="_blank">Dr. Tiago Cunha</a> (Postdoctoral Fellow)<br>
         <a href="https://patpark.org/" target="_blank">Dr. Patrick Park</a> (MIDAS Fellow)<br>
+        <a href="http://miamioh.edu/cec/academics/departments/cse/about/faculty-and-staff/gomez-lopez/index.html" target="_blank">Dr. Iris Gomez-Lopez</a> (Postdoctoral Fellow)<br>
+       
     </li>
     <li>
         
-        <a href="https://www.linkedin.com/in/yufei-louise-zhu-umich/" target="_blank">Louise Zhu</a> (MS Student)<br>
-        Amanda Hardy (MS Student)<br>
-        <a href="https://www.linkedin.com/in/yulinyudata/" target="_blank">Yulin Yu</a> (MS Student)<br>
-        <a href="https://yinyinumsi.github.io/PersonalWebsite/" target="_blank">Yin Yin</a> (MS Student)<br>
-        <a href="https://www.linkedin.com/in/arushijain1711/" target="_blank">Arushi Jain</a> (MS Student)<br>
-        <a href="https://www.linkedin.com/in/stellachoi88/" target="_blank">Stella Seonghwa Choi</a> (MS Student)<br>
-        <a href="https://www.linkedin.com/in/dr-karthik-ramanathan/" target="_blank">Karthik Ramanathan</a> (MS Student)<br>
-        <a href="https://www.linkedin.com/in/arun-varghese-a810a721" target="_blank">Arun Varghese</a> (MS Student)<br>
-        <a href="https://www.linkedin.com/in/ruihan-wang-b880ba10b/" target="_blank">Ruihan Wang</a> (MS Student)<br>
-        <a href="https://www.linkedin.com/in/muhan-yuan-22005491/" target="_blank">Muhan Yuan</a> (MS Student)<br>
+        <a href="https://www.linkedin.com/in/yufei-louise-zhu-umich/" target="_blank">Louise Zhu</a> (MS)<br>
+        Amanda Hardy (MS)<br>
+        <a href="https://www.linkedin.com/in/yulinyudata/" target="_blank">Yulin Yu</a> (MS)<br>
+        <a href="https://yinyinumsi.github.io/PersonalWebsite/" target="_blank">Yin Yin</a> (MS)<br>
+        <a href="https://www.linkedin.com/in/arushijain1711/" target="_blank">Arushi Jain</a> (MS)<br>
+        <a href="https://www.linkedin.com/in/stellachoi88/" target="_blank">Stella Seonghwa Choi</a> (MS)<br>
+        <a href="https://www.linkedin.com/in/dr-karthik-ramanathan/" target="_blank">Karthik Ramanathan</a> (MS)<br>
+        <a href="https://www.linkedin.com/in/arun-varghese-a810a721" target="_blank">Arun Varghese</a> (MS)<br>
+        <a href="https://www.linkedin.com/in/ruihan-wang-b880ba10b/" target="_blank">Ruihan Wang</a> (MS)<br>
+        <a href="https://www.linkedin.com/in/muhan-yuan-22005491/" target="_blank">Muhan Yuan</a> (MS)<br>
     </li>
     <li>
 
-        <a href="https://xingyaoww.github.io/" target="_blank">Xingyao Wang</a> (Undergraduate Student)<br>
-        <a href="https://www.linkedin.com/in/xingyu-liu-5275471b9/" target="_blank">Xingyu Lu</a> (Undergraduate Student)<br>
-        <a href="https://www.linkedin.com/in/ziyangji/" target="_blank">Ziyang Ji</a> (Undergraduate Student)<br>
-        <a href="https://www.linkedin.com/in/jiaxin-ye-3b8a9218a/" target="_blank">Jiaxin Ye</a> (Undergraduate Student)<br>
-        <a href="https://www.linkedin.com/in/eric-blohm-973aa3b5/" target="_blank">Eric Blohm</a> (Undergraduate Student)<br>
-        <a href="https://www.linkedin.com/in/daniellelivneh/" target="_blank">Danielle Livneh</a> (Undergraduate Student)<br>
+        <a href="https://xingyaoww.github.io/" target="_blank">Xingyao Wang</a> (Undergraduate)<br>
+        <a href="https://www.linkedin.com/in/xingyu-liu-5275471b9/" target="_blank">Xingyu Lu</a> (Undergraduate)<br>
+        <a href="https://www.linkedin.com/in/ziyangji/" target="_blank">Ziyang Ji</a> (Undergraduate)<br>
+        <a href="https://www.linkedin.com/in/jiaxin-ye-3b8a9218a/" target="_blank">Jiaxin Ye</a> (Undergraduate)<br>
+        <a href="https://www.linkedin.com/in/eric-blohm-973aa3b5/" target="_blank">Eric Blohm</a> (Undergraduate)<br>
+        <a href="https://www.linkedin.com/in/daniellelivneh/" target="_blank">Danielle Livneh</a> (Undergraduate)<br>
     </li>
 </ul>
-
 </ul>
 
 
@@ -360,16 +393,17 @@ body, div, table, span {
 <p class="p3"><A NAME = "professional_service"><b><big>Professional Service</big></b></a></p>
 <ul>
     
-<li><p class="p5"><b>Journal Editorial Positions: </b></p>
+<p class="p5"><b>Journal and Conference Editorial Positions: </b></p>
     
     
-<a href="https://dl.acm.org/journal/tsc" target="_blank" >ACM Transactions on Social Computing</a> (Senior Associate Editor 2025 - present) <br>
-<a href="https://epjdatascience.springeropen.com/" target="_blank" >EPJ Data Science</a> (Associate Editor 2018 - present) <br>
-<a href="http://www.appliednetsci.com/" target="_blank" >Applied Network Science</a> (Associate Editor 2015 - present) <br>
+<a href="https://icwsm.org/" target="_blank" >The International AAAI Conference on Web and Social Media (ICWSM)</a> (Editor-in-Chief, 2025 - present) <br>
+<a href="https://dl.acm.org/journal/tsc" target="_blank" >ACM Transactions on Social Computing</a> (Senior Associate Editor, 2025 - present) <br>
+<a href="https://epjdatascience.springeropen.com/" target="_blank" >EPJ Data Science</a> (Associate Editor, 2018 - present) <br>
+<a href="http://www.appliednetsci.com/" target="_blank" >Applied Network Science</a> (Associate Editor, 2015 - present) <br>
 
 </li>
     
-<li><p class="p5"><b>Program Committee Member (most years)</b></p>
+<p class="p5"><b>Program Committee Member (most years)</b></p>
 
 The ACM Web Conference (WWW)  <br>
 
@@ -393,35 +427,38 @@ The ACM Conference on Computer-Supported Cooperative Work and Social Computing (
 
 <p class="p3"><A NAME = "teaching"><b><big>Teaching</big></b></a></p>
 <ul>
-<LI> <p class="p5"><b>University of Michigan <a href="https://www.si.umich.edu/" target="_blank" >School of Information</a>:</b></p>
+<p class="p5"><b>University of Michigan <a href="https://www.si.umich.edu/" target="_blank" >School of Information</a>:</b></p>
 
     
-    <p class="p5">  Fall 2015-2023: <a href="https://www.si.umich.edu/programs/courses/301" target="_blank" >SI 301 - Models of Social Information Processing</a>  </p>
+    <p class="p5">  Fall 2015-2025: <a href="https://www.si.umich.edu/programs/courses/301" target="_blank" >SI 301 - Models of Social Information Processing</a>  </p>
 
-    <p class="p5">  Winter/Spring/Fall 2021-2023: <a href="https://www.si.umich.edu/sites/default/files/SIADS_652.pdf" target="_blank" >SIADS 652: Network Analysis</a>  </p>
+    <p class="p5">  Winter/Spring/Fall 2021-2025: <a href="https://www.si.umich.edu/sites/default/files/SIADS_652.pdf" target="_blank" >SIADS 652: Network Analysis</a>  </p>
 
     <p class="p5">  Winter 2017, Winter 2019: SI 710 - Doctoral Seminar on Information Diffusion in Social Networks</p>
     
     <p class="p5">  Winter 2018: <a href="https://www.si.umich.edu/programs/courses/370" target="_blank" >SI 370 - Data Exploration</a>  </p>
 
-  <LI> <p class="p5"><b>University of Michigan <a href="https://lsa.umich.edu/cscs" target="_blank" >Center for the Study of Complex Systems</a>:</b></p>
+  <p class="p5"><b>University of Michigan <a href="https://lsa.umich.edu/cscs" target="_blank" >Center for the Study of Complex Systems</a>:</b></p>
 
     <p class="p5">  Winter 2022-2023: <a href="https://um-css.github.io/pages/about.html#about" target="_blank" >CMPLXSYS/SOC 251: Computational Social Science</a> </p>
 
     <p class="p5">  Winter 2021: <a href="https://um-css.github.io/pages/about.html#about" target="_blank" >QMSS 251: Computational Social Science</a> (Co-taught with Elizabeth Bruch and Jeff Lockhart)  </p>
     
-<LI> <p class="p5"><b> <a href="https://www.coursera.org/" target="_blank" >Coursera</a>:</b></p>
+<p class="p5"><b> <a href="https://www.coursera.org/" target="_blank" >Coursera</a>:</b></p>
 <p class="p5"><a href="http://bit.ly/2xRAZRc" target="_blank" >Applied Social Network Analysis in Python</a></p>
+    
+<p class="p5"><a href="https://www.coursera.org/learn/network-modeling-and-analysis-in-python?specialization=more-applied-data-science-with-python" target="_blank" >Network Modeling and Analysis in Python</a></p>
+    
+    
 
 
-
-<LI><p class="p5"><b> Ithaca College <a href="http://www.ithaca.edu/hs/depts/math/" target="_blank" >Mathematics Department</a>:</b></p>
+<p class="p5"><b> Ithaca College <a href="http://www.ithaca.edu/hs/depts/math/" target="_blank" >Mathematics Department</a>:</b></p>
 <p class="p5">Spring 2012: Business Statistics</p>
 <p class="p5">Fall 2011: Applied Calculus I</p>
 <p class="p5">Spring 2011: Calculus II</p>
 
 
-<LI><p class="p5"><b> <a href="http://en.wikipedia.org/wiki/Auburn_Correctional_Facility" target="_blank" >Auburn Correctional Facility</a> through the Cornell Prison Education Program (<a href="http://cpep.cornell.edu/_Home" target="_blank" >CPEP</a>):</b></p>
+<p class="p5"><b> <a href="http://en.wikipedia.org/wiki/Auburn_Correctional_Facility" target="_blank" >Auburn Correctional Facility</a> through the Cornell Prison Education Program (<a href="http://cpep.cornell.edu/_Home" target="_blank" >CPEP</a>):</b></p>
 
 <p class="p5">Fall 2010: High School Algebra I </p>
 <p class="p5">Spring 2010: High School Algebra II </p>
@@ -432,5 +469,6 @@ The ACM Conference on Computer-Supported Cooperative Work and Social Computing (
 
   </tbody>
 <br>
+</div>
 </body>
 </html>
