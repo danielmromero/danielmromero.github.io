@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" name="viewport"/>
 <title>Daniel M. Romero</title>
 <meta content="Daniel M. Romero — Associate Professor at the University of Michigan. Computational social science, network science, and the science of science." name="description"/>
 <meta content="light" name="color-scheme"/>
@@ -547,7 +547,7 @@
   border-color: color-mix(in oklab, var(--accent) 35%, var(--line));
 }
 
-/* Modern floating panel w/ subtle motion and a small caret */
+
 .dd-panel{
   position:absolute;
   top: calc(100% + 12px);
@@ -561,7 +561,7 @@
   padding: 14px;
   z-index: 30;
 
-  /* hide by default (details doesn't remove from layout) */
+
   opacity: 0;
   transform: translateY(-8px) scale(.985);
   visibility: hidden;
@@ -698,7 +698,7 @@
 }
 
 
-/* Strong visible topic heading (Year sort mode) */
+
 .topic-selected{
   display:none;
   margin: 18px 0 8px 0;
@@ -884,7 +884,7 @@
 }
 
 
-/* Editorial items: make both role and venue prominent */
+
 .service-editorial{
   margin: 12px 0;
 }
@@ -918,7 +918,7 @@
 }
 
 
-/* Narrower contact box for better text fit */
+
 .header-grid {
   grid-template-columns: auto 340px;
 }
@@ -937,12 +937,12 @@
 }
 
 
-/* Balance Affiliations vs Contact so key lines stay on one line (desktop) */
+
 @media (min-width: 861px){
   .intro .grid-2{
-    grid-template-columns: 1.22fr 0.78fr; /* more room for Contact without shrinking Affiliations too much */
+    grid-template-columns: 1.22fr 0.78fr; 
   }
-  /* Keep short metadata lines from wrapping on desktop; allow wrapping on mobile */
+ 
   .intro .kv ul li{
     white-space: nowrap;
   }
@@ -958,7 +958,7 @@
 
 
 
-/* === FINAL HERO LAYOUT: equal height + perfectly aligned top edges === */
+
 @media (min-width: 861px){
   .hero{
     display:grid !important;
@@ -996,7 +996,7 @@
   }
 }
 
-/* Improve publication title visibility */
+
 #publications li a{
   font-weight:600;
   color:var(--accent);
@@ -1025,7 +1025,7 @@
 }
 
 
-/* Subtle card hover polish */
+
 .card{
   transition: transform .18s ease, box-shadow .18s ease;
 }
@@ -1035,7 +1035,7 @@
 }
 
 
-/* Section anchor links */
+
 .section-title-wrap{
   display:flex;
   align-items:center;
@@ -1058,7 +1058,7 @@ section:hover .section-anchor,
 }
 
 
-/* Email emphasis */
+
 .email-link{
   color: var(--accent);
   font-weight: 600;
@@ -1093,28 +1093,28 @@ section:hover .section-anchor,
 }
 
 
-/* Section spacing consistency */
+
 section{
   margin-top:64px;
 }
 
-/* Consistent section titles */
+
 section h2{
   margin-bottom:18px;
 }
 
-/* Consistent list spacing */
+
 section ul li{
   margin-bottom:8px;
 }
 
-/* Consistent paragraph spacing */
+
 section p{
   margin-bottom:12px;
 }
 
 
-/* Fix anchor navigation so section titles are not hidden behind sticky header */
+
 section{
   scroll-margin-top: 110px;
 }
@@ -1122,7 +1122,7 @@ section{
 </style>
 
 <style>
-/* Remove bold styling inside these sections */
+
 #professional-service li,
 #professional-service p,
 #teaching li,
@@ -1130,7 +1130,7 @@ section{
     font-weight: 400 !important;
 }
 
-/* Keep only designated subheaders bold */
+
 .subheader {
     font-weight: 700 !important;
 }
@@ -1263,19 +1263,34 @@ body {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 860px) {
+  .dd{
+    position: static;
+  }
+
+  .dd[open]::before{
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(11,16,32,.32);
+    z-index: 998;
+  }
+
   .dd-panel {
     position: fixed;
     left: 12px !important;
     right: 12px !important;
-    top: max(76px, calc(env(safe-area-inset-top) + 12px));
-    width: auto;
+    top: auto !important;
+    bottom: calc(12px + env(safe-area-inset-bottom));
+    width: auto !important;
     min-width: 0;
     max-width: none;
-    max-height: min(78dvh, calc(100dvh - 96px));
+    max-height: min(72dvh, calc(100dvh - 96px));
     overflow: auto;
-    border-radius: 18px;
+    border-radius: 20px;
     z-index: 999;
+    padding: 16px;
+    box-shadow: 0 30px 80px rgba(10,20,40,.24);
   }
 
   .dd-panel::before {
@@ -1306,6 +1321,79 @@ body {
   .navlink.nav-cta {
     width: 100%;
     text-align: left;
+  }
+
+  .intro {
+    padding: 20px;
+    gap: 14px;
+  }
+
+  .intro .grid-2 {
+    gap: 14px;
+  }
+
+  .intro .kv {
+    padding: 18px;
+  }
+
+  .intro .kv .label {
+    font-size: 12px;
+  }
+
+  .intro .kv .value,
+  .intro .kv .value a {
+    font-size: 18px;
+    line-height: 1.55;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  .controls input,
+  .controls select,
+  .dd-panel select,
+  .dd-clear,
+  .dd-btn,
+  .menu-btn,
+  .navlink,
+  .chip,
+  input[type="search"] {
+    font-size: 16px !important;
+  }
+
+  .controls input,
+  .controls select,
+  .dd-panel select,
+  .dd-clear,
+  .dd-btn,
+  input[type="search"] {
+    min-height: 48px;
+  }
+
+  input[type="search"] {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  .profile,
+  .intro {
+    border-radius: 16px;
+  }
+
+  .wrap {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .section-head h2 {
+    font-size: 24px;
   }
 }
 </style>
@@ -1734,7 +1822,7 @@ Amanda Hardy (MS)<br/>
 <footer>
 <div class="footer-row">
 <div>
-<span class="muted">©</span> <span id="yearNow"></span> Daniel M. Romero 
+<span class="muted">©</span> <span id="yearNow"></span> Daniel M Romero  
 </div>
 </div>
 </footer>
@@ -1836,7 +1924,7 @@ Amanda Hardy (MS)<br/>
         groupMap.set(slug, { g, list, meta });
       });
 
-      // Fallback group for missing/unknown topics (should be empty, but safe)
+
       const other = document.createElement('div');
       other.className = 'topic-group';
       other.dataset.topic = 'other';
@@ -1853,7 +1941,7 @@ Amanda Hardy (MS)<br/>
       other.appendChild(otherHead);
       other.appendChild(otherList);
 
-      // Move items into topic lists
+
       lis.forEach(li => {
         const slug = li.dataset.topic || 'other';
         const target = groupMap.get(slug);
@@ -1866,11 +1954,11 @@ Amanda Hardy (MS)<br/>
         groupMap.set('other', { g: other, list: otherList, meta: otherMeta });
       }
 
-      // Insert groups and remove original ul
+
       ul.parentNode.insertBefore(groups, ul);
       ul.remove();
 
-      // Store groupMap for later use in filtering counts / hiding empty groups
+
       pubRoot._topicGroupMap = groupMap;
     }
 
@@ -1967,19 +2055,19 @@ Amanda Hardy (MS)<br/>
     }
 
     function buildYearList(){
-      // Gather items from either layout
+
       const all = collectAllPubItems();
 
-      // Remove topic groups if present
+
       const groups = document.getElementById('pubGroups');
       if (groups) groups.remove();
 
-      // Clear group map (topic-only)
+
       if (pubRoot) pubRoot._topicGroupMap = null;
 
-      // Rebuild <ul> if needed
+
       const ul = ensureYearUL();
-      // Empty existing content
+
       ul.innerHTML = '';
 
       // Sort by year descending; unknown years go last (stable among themselves)
@@ -1991,7 +2079,7 @@ Amanda Hardy (MS)<br/>
     }
 
     function buildTopicList(){
-      // If we're currently in year mode, buildTopicGroups will move <li>s into groups and remove the <ul>.
+
       buildTopicGroups();
       items = collectAllPubItems();
     }
@@ -2083,7 +2171,7 @@ Amanda Hardy (MS)<br/>
 
 document.getElementById('yearNow').textContent = String(new Date().getFullYear());
   </script>
-<!-- Legacy Google Analytics snippet preserved from the original site -->
+
 <script>
     var _gaq=_gaq||[];
     _gaq.push(['_setAccount','UA-32323667-1']);
@@ -2127,35 +2215,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <script>
 (function () {
-  const viewportMeta = document.querySelector('meta[name="viewport"]');
-  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
-    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-
-  if (viewportMeta && isIOS) {
-    const defaultViewport = 'width=device-width, initial-scale=1, viewport-fit=cover';
-    const lockedViewport = 'width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover';
-
-    const lockViewport = () => { viewportMeta.setAttribute('content', lockedViewport); };
-    const unlockViewport = () => { viewportMeta.setAttribute('content', defaultViewport); };
-
-    document.addEventListener('focusin', (event) => {
-      if (event.target && event.target.matches('input, select, textarea')) {
-        lockViewport();
-      }
-    });
-
-    document.addEventListener('focusout', (event) => {
-      if (event.target && event.target.matches('input, select, textarea')) {
-        setTimeout(unlockViewport, 120);
-      }
-    });
-  }
-
   const dropdowns = Array.from(document.querySelectorAll('details.dd'));
-  const mobileMQ = window.matchMedia('(max-width: 640px)');
+  const mobileMQ = window.matchMedia('(max-width: 860px)');
 
   function lockPageScroll(shouldLock) {
-    if (!mobileMQ.matches) return;
+    if (!mobileMQ.matches) {
+      document.body.style.overflow = '';
+      return;
+    }
     document.body.style.overflow = shouldLock ? 'hidden' : '';
   }
 
@@ -2167,10 +2234,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   window.addEventListener('resize', () => {
-    if (!mobileMQ.matches) {
-      document.body.style.overflow = '';
-      return;
-    }
     const anyOpen = dropdowns.some((item) => item.open);
     lockPageScroll(anyOpen);
   });
