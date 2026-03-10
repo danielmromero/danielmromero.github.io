@@ -1317,6 +1317,27 @@ button {
     bottom: calc(14px + env(safe-area-inset-bottom));
   }
 }
+
+.mobile-device .controls{
+  overflow:visible !important;
+}
+.mobile-device .dd,
+.mobile-device .dd-panel,
+.mobile-device .controls,
+.mobile-device #publications,
+.mobile-device #publications .content{
+  contain:none !important;
+}
+.mobile-device .dd-panel,
+.mobile-device .dd-btn{
+  transform:none !important;
+  transition:none !important;
+}
+.mobile-device .dd[open] .dd-panel{
+  opacity:1 !important;
+  visibility:visible !important;
+  pointer-events:auto !important;
+}
 </style>
 
 
@@ -1433,35 +1454,32 @@ button {
   transform:translateZ(0) !important;
 }
 .mobile-device .dd{
-  position:static !important;
-}
-.mobile-device .dd[open]::before{
-  content:"" !important;
-  position:fixed !important;
-  inset:0 !important;
-  background:rgba(11,16,32,.4) !important;
-  z-index:998 !important;
+  position:relative !important;
 }
 .mobile-device .dd-panel{
-  position:fixed !important;
-  left:12px !important;
-  right:12px !important;
+  position:static !important;
+  left:auto !important;
+  right:auto !important;
   top:auto !important;
-  bottom:calc(12px + env(safe-area-inset-bottom)) !important;
-  width:auto !important;
+  bottom:auto !important;
+  width:100% !important;
   min-width:0 !important;
-  max-width:none !important;
-  max-height:calc(100dvh - 88px) !important;
-  overflow:auto !important;
-  overscroll-behavior:contain !important;
-  -webkit-overflow-scrolling:touch !important;
-  border-radius:20px !important;
-  z-index:999 !important;
-  padding:16px !important;
-  box-shadow:0 30px 80px rgba(10,20,40,.24) !important;
+  max-width:100% !important;
+  max-height:none !important;
+  overflow:visible !important;
+  overscroll-behavior:auto !important;
+  -webkit-overflow-scrolling:auto !important;
+  border-radius:16px !important;
+  z-index:auto !important;
+  padding:14px !important;
+  margin-top:10px !important;
+  box-shadow:0 18px 40px rgba(10,20,40,.12) !important;
 }
 .mobile-device .dd-panel::before{
   display:none !important;
+}
+.mobile-device .dd[open] .dd-btn{
+  margin-bottom:0 !important;
 }
 .mobile-device .dd-row{
   display:flex !important;
@@ -1927,7 +1945,7 @@ Amanda Hardy (MS)<br/>
 <footer>
 <div class="footer-row">
 <div>
-<span class="muted">©</span> <span id="yearNow"></span> Daniel M. Romero 
+<span class="muted">©</span> <span id="yearNow"></span> Daniel M Romero 
 </div>
 </div>
 </footer>
@@ -2269,6 +2287,21 @@ Amanda Hardy (MS)<br/>
       openDD.open = false;
       openDD.querySelector('summary')?.focus();
     });
+
+    const isRealMobile = () => document.documentElement.classList.contains('mobile-device') || window.matchMedia('(max-width: 860px)').matches;
+    const closeDetailsOnMobile = (detailsEl) => {
+      if (!detailsEl || !isRealMobile()) return;
+      window.requestAnimationFrame(() => {
+        detailsEl.open = false;
+        detailsEl.querySelector('summary')?.blur();
+      });
+    };
+
+    [pubYearFrom, pubYearTo, pubType, pubTopic].forEach(el => {
+      el && el.addEventListener('change', () => closeDetailsOnMobile(document.getElementById('filterDD')));
+    });
+    pubSort && pubSort.addEventListener('change', () => closeDetailsOnMobile(document.getElementById('sortDD')));
+    pubClear && pubClear.addEventListener('click', () => closeDetailsOnMobile(document.getElementById('filterDD')));
 
     // Default layout
     buildYearList();
