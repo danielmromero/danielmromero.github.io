@@ -2512,19 +2512,147 @@ html.mobile-device #backToTop{
 </style>
 
 
-<style id="iphone-guaranteed-fix-v18">
-/* Clean, last-in-cascade mobile override.
-   Uses explicit px values so iPhone Safari cannot shrink the type via inherited rem scales.
-   Desktop remains unchanged because everything is scoped to small screens / mobile-device. */
+<style id="iphone-mobile-typography-v19">
+/* Stronger, final mobile-only typography pass.
+   Desktop remains unchanged because everything is scoped to small screens. */
 @media screen and (max-width: 860px) {
-  html, body {
-    font-size: 22px !important;
-    line-height: 1.8 !important;
+  html {
     -webkit-text-size-adjust: 100% !important;
     text-size-adjust: 100% !important;
   }
 
-  body,
+  body {
+    font-size: 24px !important;
+    line-height: 1.72 !important;
+  }
+
+  .wrap {
+    padding: 18px 18px calc(96px + env(safe-area-inset-bottom)) !important;
+  }
+
+  .topbar-inner {
+    padding: 15px 18px !important;
+    min-height: 76px !important;
+  }
+
+  .brand-title {
+    font-size: 24px !important;
+    line-height: 1.18 !important;
+  }
+
+  .menu-btn {
+    min-height: 52px !important;
+    padding: 12px 16px !important;
+    font-size: 20px !important;
+    border-radius: 15px !important;
+  }
+
+  nav {
+    padding-top: 14px !important;
+    gap: 10px !important;
+  }
+
+  .navlink,
+  .navlink.nav-cta {
+    min-height: 54px !important;
+    padding: 13px 15px !important;
+    font-size: 20px !important;
+    line-height: 1.35 !important;
+    border-radius: 15px !important;
+  }
+
+  .hero {
+    gap: 18px !important;
+    margin-top: 18px !important;
+  }
+
+  .profile {
+    width: min(100%, 390px) !important;
+    padding: 16px !important;
+  }
+
+  .photo {
+    max-height: 400px !important;
+    border-radius: 18px !important;
+  }
+
+  .intro,
+  .content,
+  .topic-group,
+  .alumni-card,
+  .teach-card,
+  .service-card {
+    padding: 22px !important;
+  }
+
+  .intro {
+    gap: 18px !important;
+  }
+
+  .intro h1 {
+    font-size: 52px !important;
+    line-height: 1.02 !important;
+    letter-spacing: -0.035em !important;
+  }
+
+  .subtitle {
+    font-size: 26px !important;
+    line-height: 1.42 !important;
+  }
+
+  .intro .grid-2,
+  .grid-2,
+  .header-grid,
+  .service-grid,
+  .teaching-grid,
+  .alumni-groups,
+  .three-column {
+    gap: 16px !important;
+  }
+
+  .intro .kv {
+    padding: 20px !important;
+    border-radius: 16px !important;
+  }
+
+  .intro .kv .label,
+  .label,
+  .hint,
+  .pub-count,
+  .topic-head .topic-meta,
+  .dd-note,
+  .teach-meta,
+  .service-meta,
+  .service-years,
+  .brand-sub {
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+    letter-spacing: 0.12em !important;
+  }
+
+  .intro .kv .value,
+  .intro .kv .value a {
+    font-size: 24px !important;
+    line-height: 1.62 !important;
+  }
+
+  section {
+    margin-top: 30px !important;
+    scroll-margin-top: 90px !important;
+  }
+
+  .section-head {
+    gap: 10px !important;
+    margin: 4px 0 18px !important;
+  }
+
+  .section-head h2,
+  .topic-head h3 {
+    font-size: 38px !important;
+    line-height: 1.08 !important;
+    letter-spacing: -0.03em !important;
+  }
+
   p,
   li,
   .content p,
@@ -2538,8 +2666,6 @@ html.mobile-device #backToTop{
   #students li,
   #professional_service p,
   #professional_service li,
-  #professional-service p,
-  #professional-service li,
   #teaching p,
   #teaching li,
   .alumni-list,
@@ -2547,117 +2673,117 @@ html.mobile-device #backToTop{
   .service-list,
   .service-venue,
   .service-role,
-  .subtitle,
-  .intro .kv .value,
-  .intro .kv .value a,
-  .chip,
-  .pill,
-  .navlink,
-  .navlink.nav-cta {
-    font-size: 22px !important;
-    line-height: 1.8 !important;
+  .student-card,
+  .student-note,
+  .alumni-item {
+    font-size: 24px !important;
+    line-height: 1.74 !important;
   }
 
-  .brand-title { font-size: 24px !important; }
-  .menu-btn,
-  .dd-btn,
+  .controls {
+    gap: 14px !important;
+    padding: 18px !important;
+  }
+
   #pubSearch,
   .controls input,
   .controls select,
+  .dd-btn,
   .dd-panel select,
   .dd-actions button,
   input[type="search"] {
-    font-size: 18px !important;
+    min-height: 56px !important;
+    padding: 0 16px !important;
+    font-size: 19px !important;
+    line-height: 1.35 !important;
+    border-radius: 16px !important;
   }
 
-  .intro h1 { font-size: 46px !important; line-height: 1.03 !important; }
+  #pubSearch::placeholder,
+  input[type="search"]::placeholder {
+    font-size: 19px !important;
+  }
+
+  .dd-panel {
+    margin-top: 12px !important;
+    padding: 18px !important;
+    border-radius: 18px !important;
+  }
+
+  .dd-row {
+    gap: 10px !important;
+    margin: 14px 0 !important;
+  }
+
+  .dd-actions {
+    gap: 12px !important;
+    margin-top: 16px !important;
+  }
+
+  .chip,
+  .pill {
+    font-size: 18px !important;
+    line-height: 1.35 !important;
+  }
+
+  #backToTop {
+    font-size: 18px !important;
+    padding: 12px 16px !important;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  body {
+    font-size: 23px !important;
+  }
+
+  .brand-title {
+    font-size: 22px !important;
+  }
+
+  .menu-btn,
+  .navlink,
+  .navlink.nav-cta {
+    font-size: 19px !important;
+  }
+
+  .intro h1 {
+    font-size: 46px !important;
+  }
+
+  .subtitle {
+    font-size: 24px !important;
+  }
+
   .section-head h2,
-  .topic-head h3 { font-size: 34px !important; line-height: 1.12 !important; }
-  .hint,
-  .pub-count,
-  .topic-head .topic-meta,
-  .dd-note,
-  .teach-meta,
-  .service-meta,
-  .service-years,
-  .brand-sub,
-  .label,
-  .intro .kv .label { font-size: 14px !important; line-height: 1.45 !important; }
+  .topic-head h3 {
+    font-size: 34px !important;
+  }
 
-  .wrap { max-width: none !important; width: 100% !important; padding: 16px 16px calc(96px + env(safe-area-inset-bottom)) !important; }
-  .topbar-inner { padding: 14px 16px !important; min-height: 74px !important; }
-  .hero,
-  .header-grid,
-  .grid-2,
-  .intro .grid-2,
-  .service-grid,
-  .teaching-grid,
-  .alumni-groups,
-  .three-column { grid-template-columns: 1fr !important; gap: 16px !important; }
-  .profile { width: min(100%, 380px) !important; margin: 0 auto !important; }
-  .photo { max-height: 380px !important; aspect-ratio: 4 / 4.4 !important; }
-  .intro,
-  .content,
-  .topic-group,
-  .alumni-card,
-  .teach-card,
-  .service-card { padding: 20px !important; }
-  .controls { display: grid !important; grid-template-columns: 1fr !important; gap: 12px !important; padding: 16px !important; }
-  .dd, .dd > summary, .dd-btn, .year-range, .year-range select, .dd-panel select { width: 100% !important; }
-  .dd-panel { position: static !important; inset: auto !important; width: 100% !important; min-width: 0 !important; max-width: 100% !important; margin-top: 10px !important; }
-  .dd-panel::before, .year-sep { display: none !important; }
-  .dd-row { display: flex !important; flex-direction: column !important; align-items: stretch !important; gap: 8px !important; }
-  #backToTop { right: 14px !important; bottom: calc(14px + env(safe-area-inset-bottom)) !important; }
-}
+  p,
+  li,
+  .content p,
+  .content li,
+  #about p,
+  #publications p,
+  #publications li,
+  #students p,
+  #students li,
+  #professional_service p,
+  #professional_service li,
+  #teaching p,
+  #teaching li,
+  .student-card,
+  .student-note,
+  .alumni-item {
+    font-size: 22px !important;
+  }
 
-html.mobile-device, html.mobile-device body {
-  font-size: 22px !important;
-  line-height: 1.8 !important;
-  -webkit-text-size-adjust: 100% !important;
-  text-size-adjust: 100% !important;
+  .intro .kv .value,
+  .intro .kv .value a {
+    font-size: 22px !important;
+  }
 }
-html.mobile-device body,
-html.mobile-device p,
-html.mobile-device li,
-html.mobile-device .content p,
-html.mobile-device .content li,
-html.mobile-device .section-content p,
-html.mobile-device .section-content li,
-html.mobile-device #about p,
-html.mobile-device #publications p,
-html.mobile-device #publications li,
-html.mobile-device #students p,
-html.mobile-device #students li,
-html.mobile-device #professional_service p,
-html.mobile-device #professional_service li,
-html.mobile-device #professional-service p,
-html.mobile-device #professional-service li,
-html.mobile-device #teaching p,
-html.mobile-device #teaching li,
-html.mobile-device .alumni-list,
-html.mobile-device .teach-list,
-html.mobile-device .service-list,
-html.mobile-device .service-venue,
-html.mobile-device .service-role,
-html.mobile-device .subtitle,
-html.mobile-device .intro .kv .value,
-html.mobile-device .intro .kv .value a,
-html.mobile-device .chip,
-html.mobile-device .pill,
-html.mobile-device .navlink,
-html.mobile-device .navlink.nav-cta { font-size: 22px !important; line-height: 1.8 !important; }
-html.mobile-device .brand-title { font-size: 24px !important; }
-html.mobile-device .intro h1 { font-size: 46px !important; line-height: 1.03 !important; }
-html.mobile-device .section-head h2,
-html.mobile-device .topic-head h3 { font-size: 34px !important; line-height: 1.12 !important; }
-html.mobile-device .menu-btn,
-html.mobile-device .dd-btn,
-html.mobile-device #pubSearch,
-html.mobile-device .controls input,
-html.mobile-device .controls select,
-html.mobile-device .dd-panel select,
-html.mobile-device .dd-actions button,
-html.mobile-device input[type="search"] { font-size: 18px !important; }
 </style>
 
 </head>
@@ -3082,7 +3208,7 @@ Amanda Hardy (MS)<br/>
 <footer>
 <div class="footer-row">
 <div>
-<span class="muted">©</span> <span id="yearNow"></span> Daniel M. Romero 3:04
+<span class="muted">©</span> <span id="yearNow"></span> Daniel M. Romero 3:13
 </div>
 </div>
 </footer>
