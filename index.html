@@ -3208,7 +3208,7 @@ Amanda Hardy (MS)<br/>
 <footer>
 <div class="footer-row">
 <div>
-<span class="muted">©</span> <span id="yearNow"></span> Daniel M. Romero 3:13
+<span class="muted">©</span> <span id="yearNow"></span> Daniel M. Romero 5:16
 </div>
 </div>
 </footer>
@@ -3679,6 +3679,158 @@ backToTop.addEventListener('click', () => {
   }, {passive:true});
 })();
 </script>
+
+
+<style id="iphone-real-device-tuning-v20">
+/* Real-device tuning for iPhone-sized screens.
+   This sits after the earlier mobile passes so it wins the cascade.
+   Desktop stays untouched. */
+@media screen and (max-width: 430px) {
+  html.mobile-device,
+  html.mobile-device body {
+    font-size: 28px !important;
+    line-height: 1.76 !important;
+    -webkit-text-size-adjust: 100% !important;
+    text-size-adjust: 100% !important;
+  }
+
+  html.mobile-device .wrap {
+    padding: 18px 18px calc(112px + env(safe-area-inset-bottom)) !important;
+  }
+
+  html.mobile-device .topbar-inner {
+    padding: 16px 18px !important;
+    min-height: 80px !important;
+  }
+
+  html.mobile-device .brand-title {
+    font-size: 26px !important;
+    line-height: 1.18 !important;
+  }
+
+  html.mobile-device .menu-btn,
+  html.mobile-device .navlink,
+  html.mobile-device .navlink.nav-cta {
+    font-size: 21px !important;
+    min-height: 56px !important;
+  }
+
+  html.mobile-device .profile {
+    width: min(100%, 360px) !important;
+    padding: 14px !important;
+  }
+
+  html.mobile-device .photo {
+    max-height: 340px !important;
+  }
+
+  html.mobile-device .intro,
+  html.mobile-device .content,
+  html.mobile-device .topic-group,
+  html.mobile-device .alumni-card,
+  html.mobile-device .teach-card,
+  html.mobile-device .service-card {
+    padding: 24px !important;
+  }
+
+  html.mobile-device .intro h1 {
+    font-size: 56px !important;
+    line-height: 1.01 !important;
+  }
+
+  html.mobile-device .subtitle {
+    font-size: 28px !important;
+    line-height: 1.46 !important;
+  }
+
+  html.mobile-device .intro .kv .value,
+  html.mobile-device .intro .kv .value a {
+    font-size: 25px !important;
+    line-height: 1.66 !important;
+  }
+
+  html.mobile-device .section-head h2,
+  html.mobile-device .topic-head h3 {
+    font-size: 42px !important;
+    line-height: 1.08 !important;
+  }
+
+  html.mobile-device .hint,
+  html.mobile-device #pubCount,
+  html.mobile-device .topic-head .topic-meta,
+  html.mobile-device .label,
+  html.mobile-device .dd-note,
+  html.mobile-device .brand-sub {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+  }
+
+  html.mobile-device p,
+  html.mobile-device li,
+  html.mobile-device .content p,
+  html.mobile-device .content li,
+  html.mobile-device .section-content p,
+  html.mobile-device .section-content li,
+  html.mobile-device #about p,
+  html.mobile-device #publications p,
+  html.mobile-device #publications li,
+  html.mobile-device #students p,
+  html.mobile-device #students li,
+  html.mobile-device #professional_service p,
+  html.mobile-device #professional_service li,
+  html.mobile-device #teaching p,
+  html.mobile-device #teaching li,
+  html.mobile-device .alumni-list,
+  html.mobile-device .teach-list,
+  html.mobile-device .service-list,
+  html.mobile-device .service-venue,
+  html.mobile-device .service-role,
+  html.mobile-device .student-card,
+  html.mobile-device .student-note,
+  html.mobile-device .alumni-item {
+    font-size: 27px !important;
+    line-height: 1.78 !important;
+  }
+
+  html.mobile-device .topic-group ul,
+  html.mobile-device #publications ul {
+    padding-left: 1.22em !important;
+  }
+
+  html.mobile-device .controls {
+    gap: 14px !important;
+    padding: 18px !important;
+  }
+
+  html.mobile-device #pubSearch,
+  html.mobile-device .controls input,
+  html.mobile-device .controls select,
+  html.mobile-device .dd-btn,
+  html.mobile-device .dd-panel select,
+  html.mobile-device .dd-actions button,
+  html.mobile-device input[type="search"] {
+    min-height: 58px !important;
+    font-size: 21px !important;
+    line-height: 1.32 !important;
+    border-radius: 16px !important;
+  }
+
+  html.mobile-device #pubSearch::placeholder,
+  html.mobile-device input[type="search"]::placeholder {
+    font-size: 21px !important;
+  }
+
+  html.mobile-device .dd-panel {
+    padding: 18px !important;
+    margin-top: 12px !important;
+  }
+
+  html.mobile-device #backToTop {
+    font-size: 18px !important;
+    padding: 12px 15px !important;
+  }
+}
+</style>
 
 </body>
 
