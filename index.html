@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" name="viewport"/>
 <title>Daniel M. Romero</title>
 <meta content="Daniel M. Romero — Associate Professor at the University of Michigan. Computational social science, network science, and the science of science." name="description"/>
 <meta content="light" name="color-scheme"/>
@@ -1328,6 +1328,191 @@ button {
 </style>
 
 
+<style id="ios-real-device-fixes">
+.mobile-device,
+.mobile-device body{
+  overflow-x:hidden !important;
+}
+.mobile-device .topbar-inner{
+  padding:12px 14px !important;
+}
+.mobile-device nav{
+  display:none !important;
+  width:100% !important;
+  justify-content:flex-start !important;
+  padding:10px 2px 2px !important;
+  gap:6px !important;
+}
+.mobile-device .menu-btn{
+  display:inline-flex !important;
+  align-items:center !important;
+  gap:8px !important;
+}
+.mobile-device .topbar[data-open="true"] nav{
+  display:flex !important;
+  flex-direction:column !important;
+}
+.mobile-device .navlink,
+.mobile-device .navlink.nav-cta{
+  width:100% !important;
+  text-align:left !important;
+  font-size:16px !important;
+}
+.mobile-device .wrap{
+  padding:14px 14px 56px !important;
+}
+.mobile-device .hero{
+  grid-template-columns:1fr !important;
+  gap:16px !important;
+  margin-top:16px !important;
+}
+.mobile-device .profile,
+.mobile-device .intro,
+.mobile-device .content{
+  padding:16px !important;
+}
+.mobile-device .intro .grid-2{
+  grid-template-columns:1fr !important;
+  gap:14px !important;
+}
+.mobile-device .intro .kv{
+  padding:18px !important;
+}
+.mobile-device .intro .kv .label{
+  font-size:12px !important;
+}
+.mobile-device .intro .kv .value,
+.mobile-device .intro .kv .value a{
+  font-size:18px !important;
+  line-height:1.65 !important;
+  word-break:break-word !important;
+  overflow-wrap:anywhere !important;
+}
+.mobile-device .section-head{
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  gap:6px !important;
+}
+.mobile-device .section-head h2{
+  font-size:24px !important;
+}
+.mobile-device .hint{
+  font-size:15px !important;
+}
+.mobile-device .controls{
+  display:grid !important;
+  grid-template-columns:1fr !important;
+  padding:12px !important;
+  gap:10px !important;
+  align-items:stretch !important;
+}
+.mobile-device .dd,
+.mobile-device .dd > summary,
+.mobile-device .dd-btn{
+  width:100% !important;
+}
+.mobile-device input,
+.mobile-device select,
+.mobile-device textarea,
+.mobile-device button,
+.mobile-device .dd-btn,
+.mobile-device .controls input,
+.mobile-device .controls select,
+.mobile-device .dd-panel select,
+.mobile-device .dd-clear,
+.mobile-device input[type="search"]{
+  font-size:16px !important;
+}
+.mobile-device .controls input,
+.mobile-device .controls select,
+.mobile-device .dd-panel select,
+.mobile-device .dd-clear,
+.mobile-device .dd-btn,
+.mobile-device input[type="search"]{
+  min-height:48px !important;
+}
+.mobile-device #pubSearch{
+  width:100% !important;
+  font-size:16px !important;
+  line-height:1.3 !important;
+  -webkit-appearance:none !important;
+  appearance:none !important;
+  border-radius:14px !important;
+  transform:translateZ(0) !important;
+}
+.mobile-device .dd{
+  position:static !important;
+}
+.mobile-device .dd[open]::before{
+  content:"" !important;
+  position:fixed !important;
+  inset:0 !important;
+  background:rgba(11,16,32,.4) !important;
+  z-index:998 !important;
+}
+.mobile-device .dd-panel{
+  position:fixed !important;
+  left:12px !important;
+  right:12px !important;
+  top:auto !important;
+  bottom:calc(12px + env(safe-area-inset-bottom)) !important;
+  width:auto !important;
+  min-width:0 !important;
+  max-width:none !important;
+  max-height:calc(100dvh - 88px) !important;
+  overflow:auto !important;
+  overscroll-behavior:contain !important;
+  -webkit-overflow-scrolling:touch !important;
+  border-radius:20px !important;
+  z-index:999 !important;
+  padding:16px !important;
+  box-shadow:0 30px 80px rgba(10,20,40,.24) !important;
+}
+.mobile-device .dd-panel::before{
+  display:none !important;
+}
+.mobile-device .dd-row{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:stretch !important;
+}
+.mobile-device .dd-panel select,
+.mobile-device .year-range,
+.mobile-device .year-range select{
+  width:100% !important;
+}
+.mobile-device .year-sep{
+  display:none !important;
+}
+.mobile-device section{
+  scroll-margin-top:86px !important;
+}
+</style>
+<script>
+(function(){
+  function isSmallRealDevice(){
+    const ua = navigator.userAgent || '';
+    const touch = navigator.maxTouchPoints || 0;
+    const screenMin = Math.min(window.screen.width || 9999, window.screen.height || 9999);
+    const viewportMin = Math.min(window.innerWidth || 9999, window.innerHeight || 9999);
+    const vv = window.visualViewport ? Math.min(window.visualViewport.width || 9999, window.visualViewport.height || 9999) : 9999;
+    const applePhone = /iPhone|iPod/i.test(ua);
+    const smallTouchDevice = touch > 0 && Math.min(screenMin, viewportMin, vv) <= 900;
+    return applePhone || smallTouchDevice;
+  }
+  function applyRealDeviceClass(){
+    const mobile = isSmallRealDevice();
+    document.documentElement.classList.toggle('mobile-device', mobile);
+    if (document.body) document.body.classList.toggle('mobile-device', mobile);
+  }
+  applyRealDeviceClass();
+  window.addEventListener('resize', applyRealDeviceClass, {passive:true});
+  window.addEventListener('orientationchange', applyRealDeviceClass, {passive:true});
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener('resize', applyRealDeviceClass, {passive:true});
+  }
+})();
+</script>
 </head>
 <body>
 <header class="topbar" data-open="false" id="topbar">
@@ -1357,7 +1542,7 @@ button {
 </aside>
 <section aria-label="Introduction" class="card intro">
 <div>
-<h1>Daniel M. Romero</h1>
+<h1>Daniel M Romero</h1>
 <div class="subtitle">Associate Professor · University of Michigan</div>
 </div>
 <div class="grid-2" role="list">
@@ -2154,7 +2339,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function lockPageScroll(shouldLock) {
     document.documentElement.style.overflow = shouldLock ? 'hidden' : '';
     document.body.style.overflow = shouldLock ? 'hidden' : '';
-    document.body.style.touchAction = shouldLock ? 'none' : '';
+    document.body.style.touchAction = shouldLock ? 'pan-x pan-y' : '';
   }
 
   function syncScrollLock() {
