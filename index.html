@@ -1688,6 +1688,173 @@ button {
 }
 </style>
 
+<style id="mobile-professional-typography-v12">
+@media (max-width: 900px) {
+  html.mobile-device {
+    font-size: 20px !important;
+    -webkit-text-size-adjust: 100% !important;
+    text-size-adjust: 100% !important;
+  }
+  html.mobile-device body {
+    font-size: 19px !important;
+    line-height: 1.75 !important;
+    letter-spacing: -0.005em !important;
+  }
+  html.mobile-device .wrap {
+    padding: 16px 16px 72px !important;
+  }
+  html.mobile-device .card {
+    border-radius: 20px !important;
+  }
+  html.mobile-device .profile,
+  html.mobile-device .intro,
+  html.mobile-device .content,
+  html.mobile-device .topic-group {
+    padding: 20px !important;
+  }
+  html.mobile-device .topbar-inner {
+    padding: 14px 16px !important;
+    min-height: 74px !important;
+  }
+  html.mobile-device .brand-title {
+    font-size: 21px !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.02em !important;
+  }
+  html.mobile-device .menu-btn {
+    font-size: 16px !important;
+    min-height: 44px !important;
+    padding: 11px 14px !important;
+    border-radius: 12px !important;
+  }
+  html.mobile-device .photo {
+    border-radius: 16px !important;
+  }
+  html.mobile-device h1,
+  html.mobile-device .intro h1 {
+    font-size: clamp(28px, 8vw, 40px) !important;
+    line-height: 1.05 !important;
+    letter-spacing: -0.03em !important;
+    margin: 0 0 6px !important;
+  }
+  html.mobile-device .subtitle {
+    font-size: 20px !important;
+    line-height: 1.5 !important;
+    color: var(--muted) !important;
+  }
+  html.mobile-device .label,
+  html.mobile-device .intro .kv .label,
+  html.mobile-device .hint,
+  html.mobile-device .dd-note,
+  html.mobile-device #pubCount,
+  html.mobile-device .topic-head .topic-meta {
+    font-size: 13px !important;
+    line-height: 1.45 !important;
+    letter-spacing: 0.05em !important;
+  }
+  html.mobile-device .intro .grid-2 {
+    gap: 16px !important;
+  }
+  html.mobile-device .intro .kv {
+    padding: 18px 16px !important;
+    border-radius: 14px !important;
+  }
+  html.mobile-device .intro .kv .value,
+  html.mobile-device .intro .kv .value a {
+    font-size: 19px !important;
+    line-height: 1.7 !important;
+  }
+  html.mobile-device .section-head {
+    gap: 8px !important;
+    margin-bottom: 16px !important;
+  }
+  html.mobile-device .section-head h2,
+  html.mobile-device .topic-head h3 {
+    font-size: 22px !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.02em !important;
+  }
+  html.mobile-device p,
+  html.mobile-device li,
+  html.mobile-device .content p,
+  html.mobile-device .content li,
+  html.mobile-device .section-content p,
+  html.mobile-device .section-content li,
+  html.mobile-device #publications li,
+  html.mobile-device #publications p,
+  html.mobile-device #about p,
+  html.mobile-device #advising p,
+  html.mobile-device #service p,
+  html.mobile-device #teaching p,
+  html.mobile-device .student-card,
+  html.mobile-device .student-note,
+  html.mobile-device .alumni-item {
+    font-size: 18.5px !important;
+    line-height: 1.8 !important;
+  }
+  html.mobile-device .section-anchor {
+    font-size: 18px !important;
+  }
+  html.mobile-device .controls {
+    padding: 14px !important;
+    gap: 12px !important;
+  }
+  html.mobile-device #pubSearch,
+  html.mobile-device .dd-btn,
+  html.mobile-device .dd-panel select,
+  html.mobile-device .dd-actions button,
+  html.mobile-device .controls input,
+  html.mobile-device .controls select {
+    font-size: 17px !important;
+    min-height: 52px !important;
+    border-radius: 14px !important;
+  }
+  html.mobile-device #pubSearch::placeholder {
+    font-size: 16px !important;
+  }
+  html.mobile-device .dd-panel {
+    padding: 16px !important;
+  }
+  html.mobile-device .topic-group ul {
+    padding-left: 22px !important;
+  }
+  html.mobile-device #backToTop {
+    font-size: 15px !important;
+    padding: 10px 14px !important;
+  }
+}
+@media (max-width: 480px) {
+  html.mobile-device body {
+    font-size: 19px !important;
+  }
+  html.mobile-device .brand-title {
+    font-size: 20px !important;
+  }
+  html.mobile-device h1,
+  html.mobile-device .intro h1 {
+    font-size: 27px !important;
+  }
+  html.mobile-device .subtitle {
+    font-size: 19px !important;
+  }
+  html.mobile-device p,
+  html.mobile-device li,
+  html.mobile-device .content p,
+  html.mobile-device .content li,
+  html.mobile-device #publications li,
+  html.mobile-device #about p {
+    font-size: 18px !important;
+  }
+  html.mobile-device .intro .kv .value,
+  html.mobile-device .intro .kv .value a,
+  html.mobile-device #pubSearch,
+  html.mobile-device .dd-btn,
+  html.mobile-device .dd-panel select,
+  html.mobile-device .dd-actions button {
+    font-size: 17px !important;
+  }
+}
+</style>
 </head>
 <body>
 <header class="topbar" data-open="false" id="topbar">
@@ -2110,7 +2277,7 @@ Amanda Hardy (MS)<br/>
 <footer>
 <div class="footer-row">
 <div>
-<span class="muted">©</span> <span id="yearNow"></span> Daniel Romero 
+<span class="muted">©</span> <span id="yearNow"></span> Daniel M. Romero 
 </div>
 </div>
 </footer>
