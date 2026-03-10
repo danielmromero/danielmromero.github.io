@@ -2197,6 +2197,320 @@ html.mobile-device #backToTop{
 }
 </style>
 
+
+<style id="iphone-final-mobile-fix-v17">
+/* Final mobile-only typography and spacing pass for iPhone/small phones.
+   Desktop styles remain untouched. */
+@media screen and (max-width: 860px) {
+  html {
+    -webkit-text-size-adjust: 100% !important;
+    text-size-adjust: 100% !important;
+  }
+
+  body {
+    font-size: 20px !important;
+    line-height: 1.78 !important;
+  }
+
+  .wrap {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 16px 16px calc(88px + env(safe-area-inset-bottom)) !important;
+  }
+
+  .topbar-inner {
+    padding: 14px 16px !important;
+    min-height: 72px !important;
+    gap: 12px !important;
+  }
+
+  .brand-title {
+    font-size: 1.2rem !important;
+    line-height: 1.2 !important;
+    font-weight: 750 !important;
+  }
+
+  .menu-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    min-height: 48px !important;
+    padding: 12px 15px !important;
+    font-size: 1rem !important;
+    font-weight: 650 !important;
+    border-radius: 14px !important;
+  }
+
+  .topbar[data-open="true"] nav {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  nav {
+    padding-top: 12px !important;
+  }
+
+  .navlink,
+  .navlink.nav-cta {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    min-height: 50px !important;
+    padding: 12px 14px !important;
+    font-size: 1rem !important;
+    line-height: 1.35 !important;
+    border-radius: 14px !important;
+  }
+
+  .hero {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    margin-top: 16px !important;
+  }
+
+  .profile {
+    width: min(100%, 380px) !important;
+    margin: 0 auto !important;
+    padding: 14px !important;
+  }
+
+  .photo {
+    width: 100% !important;
+    max-height: 380px !important;
+    aspect-ratio: 4 / 4.4 !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    border-radius: 16px !important;
+  }
+
+  .intro,
+  .content,
+  .topic-group,
+  .alumni-card,
+  .teach-card,
+  .service-card {
+    padding: 20px !important;
+  }
+
+  .intro {
+    gap: 16px !important;
+  }
+
+  .intro h1 {
+    font-size: clamp(2.35rem, 9vw, 2.8rem) !important;
+    line-height: 1.02 !important;
+    letter-spacing: -0.03em !important;
+    margin-bottom: 2px !important;
+  }
+
+  .subtitle {
+    font-size: 1.18rem !important;
+    line-height: 1.5 !important;
+    margin-top: 0 !important;
+  }
+
+  .intro .grid-2,
+  .grid-2,
+  .header-grid,
+  .service-grid,
+  .teaching-grid,
+  .alumni-groups,
+  .three-column {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .intro .kv {
+    padding: 18px !important;
+    border-radius: 15px !important;
+  }
+
+  .intro .kv .label,
+  .label,
+  .hint,
+  .pub-count,
+  .topic-head .topic-meta,
+  .dd-note,
+  .teach-meta,
+  .service-meta,
+  .service-years,
+  .brand-sub {
+    font-size: 0.9rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .intro .kv .label {
+    letter-spacing: 0.16em !important;
+  }
+
+  .intro .kv .value,
+  .intro .kv .value a {
+    font-size: 1.14rem !important;
+    line-height: 1.68 !important;
+  }
+
+  section {
+    margin-top: 28px !important;
+    scroll-margin-top: 86px !important;
+  }
+
+  .section-head {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    margin: 4px 0 16px !important;
+  }
+
+  .section-head h2,
+  .topic-head h3 {
+    font-size: 1.8rem !important;
+    line-height: 1.1 !important;
+    letter-spacing: -0.025em !important;
+  }
+
+  p,
+  li,
+  .content p,
+  .content li,
+  .section-content p,
+  .section-content li,
+  #about p,
+  #publications p,
+  #publications li,
+  #students p,
+  #students li,
+  #professional_service p,
+  #professional_service li,
+  #teaching p,
+  #teaching li,
+  .alumni-list,
+  .teach-list,
+  .service-list,
+  .service-venue,
+  .service-role {
+    font-size: 1.08rem !important;
+    line-height: 1.82 !important;
+  }
+
+  .controls {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+    padding: 16px !important;
+  }
+
+  .dd,
+  .dd > summary,
+  .dd-btn {
+    width: 100% !important;
+  }
+
+  #pubSearch,
+  .controls input,
+  .controls select,
+  .dd-btn,
+  .dd-panel select,
+  .dd-actions button,
+  input[type="search"] {
+    width: 100% !important;
+    min-height: 54px !important;
+    padding: 0 15px !important;
+    font-size: 1rem !important;
+    line-height: 1.35 !important;
+    border-radius: 15px !important;
+  }
+
+  .dd-panel {
+    position: static !important;
+    inset: auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin-top: 10px !important;
+    padding: 16px !important;
+    border-radius: 18px !important;
+  }
+
+  .dd-panel::before {
+    display: none !important;
+  }
+
+  .dd-row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+    margin: 12px 0 !important;
+  }
+
+  .year-range,
+  .year-range select,
+  .dd-panel select {
+    width: 100% !important;
+  }
+
+  .year-sep {
+    display: none !important;
+  }
+
+  .dd-actions {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+    margin-top: 14px !important;
+  }
+
+  .chip,
+  .pill {
+    font-size: 0.98rem !important;
+    line-height: 1.35 !important;
+  }
+
+  #backToTop {
+    right: 14px !important;
+    bottom: calc(14px + env(safe-area-inset-bottom)) !important;
+    font-size: 0.92rem !important;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  body {
+    font-size: 19px !important;
+  }
+
+  .brand-title {
+    font-size: 1.08rem !important;
+  }
+
+  .intro h1 {
+    font-size: clamp(2.05rem, 10vw, 2.45rem) !important;
+  }
+
+  .section-head h2,
+  .topic-head h3 {
+    font-size: 1.62rem !important;
+  }
+
+  p,
+  li,
+  .content p,
+  .content li,
+  #about p,
+  #publications p,
+  #publications li,
+  #students p,
+  #students li,
+  #professional_service p,
+  #professional_service li,
+  #teaching p,
+  #teaching li {
+    font-size: 1.04rem !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <header class="topbar" data-open="false" id="topbar">
@@ -2619,7 +2933,7 @@ Amanda Hardy (MS)<br/>
 <footer>
 <div class="footer-row">
 <div>
-<span class="muted">©</span> <span id="yearNow"></span> Daniel M. Romero 2:33
+<span class="muted">©</span> <span id="yearNow"></span> Daniel M. Romero 2:50
 </div>
 </div>
 </footer>
