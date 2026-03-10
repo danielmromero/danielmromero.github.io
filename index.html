@@ -17,9 +17,9 @@
       --muted: rgba(11,16,32,.72);
       --faint: rgba(11,16,32,.55);
       --line: rgba(11,16,32,.12);
-      --accent: #1f6feb;      /* vivid blue */
-      --accent-2: #ffb703;    /* warm gold */
-      --accent-3: #8b5cf6;    /* modern purple */
+      --accent: #1f6feb;      
+      --accent-2: #ffb703;    
+      --accent-3: #8b5cf6;    
       --shadow: 0 10px 24px rgba(10, 20, 40, .08);
       --radius: 18px;
       --radius-sm: 12px;
@@ -125,7 +125,7 @@
       background: color-mix(in oklab, var(--accent) 8%, transparent);
     }
     
-/* Stronger, still-professional CTA for CV */
+
 .navlink.nav-cta{
   border: none;
   background: linear-gradient(135deg, var(--accent), color-mix(in oklab, var(--accent) 55%, var(--accent-3)));
@@ -424,7 +424,7 @@
       border: 0;
     }
   
-/* Larger publication/body text */
+
 #publications,
 #publications p,
 #publications li {
@@ -441,7 +441,7 @@
 
 
 
-/* Topic grouping for publications */
+
 .pub-groups{
   display: grid;
   gap: 14px;
@@ -486,7 +486,7 @@
 }
 
 
-/* Controls: visible labels for compact dropdowns */
+
 .controls .control-label{
   font-size: 0.95rem;
   color: var(--faint);
@@ -496,7 +496,7 @@
 }
 
 
-/* Filter/Sort dropdown buttons */
+
 .controls{
   display:flex;
   gap:12px;
@@ -504,7 +504,7 @@
   flex-wrap:wrap;
 }
 
-/* details-based dropdown */
+
 .dd{ position:relative; }
 .dd > summary{ list-style:none; }
 .dd > summary::-webkit-details-marker{ display:none; }
@@ -561,7 +561,7 @@
   padding: 14px;
   z-index: 30;
 
-
+  
   opacity: 0;
   transform: translateY(-8px) scale(.985);
   visibility: hidden;
@@ -683,7 +683,7 @@
   line-height: 1.35;
 }
 
-/* Mobile: left-align the panel and keep it within the viewport */
+
 @media (max-width: 860px){
   .dd-panel{
     right: auto;
@@ -711,7 +711,7 @@
 }
 
 
-/* Alumni grouping */
+
 .alumni-groups{
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -748,7 +748,7 @@
 }
 
 
-/* Teaching section */
+
 .teaching-grid{
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -807,7 +807,7 @@
 }
 
 
-/* Teaching section head alignment */
+
 #teaching .section-head{
   align-items: baseline;
 }
@@ -818,14 +818,14 @@
 }
 
 
-/* Teaching layout: no left indent */
+
 #teaching .teaching-grid{
   margin-left: 0;
   padding-left: 0;
 }
 
 
-/* Professional service */
+
 .service-grid{
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -877,7 +877,7 @@
 }
 
 
-/* Service layout: no left indent */
+
 #professional_service .service-grid{
   margin-left: 0;
   padding-left: 0;
@@ -942,7 +942,7 @@
   .intro .grid-2{
     grid-template-columns: 1.22fr 0.78fr; 
   }
- 
+  
   .intro .kv ul li{
     white-space: nowrap;
   }
@@ -1006,7 +1006,7 @@
   text-decoration: underline;
 }
 
-/* Publication readability */
+
 #publications li{
   margin-bottom: 14px;
 }
@@ -1014,7 +1014,7 @@
   margin-bottom: 0;
 }
 
-/* Publication metadata hierarchy */
+
 .pub-venue,
 .publication-venue,
 .pub-meta,
@@ -1065,7 +1065,7 @@ section:hover .section-anchor,
 }
 
 
-/* Back to top button */
+
 #backToTop{
   position: fixed;
   bottom: 28px;
@@ -1137,229 +1137,118 @@ section{
 </style>
 
 
+
 <style id="mobile-friendly-fixes">
 html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  overflow-x: clip;
 }
 body {
-  overflow-x: hidden;
+  overflow-x: clip;
 }
-
+img,
+iframe,
+video,
+svg,
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+input,
+select,
+textarea,
+button {
+  font-size: 16px;
+}
 @media (max-width: 860px) {
   .wrap {
     padding: 14px 14px 56px;
   }
-
   .topbar-inner {
     padding: 12px 14px;
   }
-
   .brand-title {
     font-size: 18px;
   }
-
   .hero {
+    grid-template-columns: 1fr !important;
     gap: 16px;
+    margin-top: 16px;
   }
-
   .profile,
   .intro,
   .content {
     padding: 16px;
   }
-
-  .intro h1 {
-    font-size: clamp(30px, 7vw, 40px);
+  .intro {
+    gap: 14px;
   }
-
+  .intro h1 {
+    font-size: clamp(30px, 8vw, 40px);
+    line-height: 1.08;
+  }
   .subtitle {
     font-size: 19px;
     line-height: 1.45;
   }
-
   .intro .grid-2 {
-    gap: 12px;
+    grid-template-columns: 1fr !important;
+    gap: 14px;
   }
-
   .intro .kv {
-    padding: 18px 16px;
+    padding: 18px !important;
   }
-
   .intro .kv .label {
     font-size: 12px;
   }
-
   .intro .kv .value,
   .intro .kv .value a {
-    font-size: 17px;
-    line-height: 1.65;
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+    word-break: break-word;
+    overflow-wrap: anywhere;
   }
-
+  .intro .grid-2 .kv:last-child .value,
+  .intro .grid-2 .kv:last-child .value a {
+    font-size: 19px !important;
+    line-height: 1.7 !important;
+  }
   .section-head {
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
   }
-
   .section-head h2 {
-    font-size: 28px;
+    font-size: 24px;
   }
-
   .hint {
     font-size: 15px;
   }
-
   .controls {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
     padding: 12px;
     gap: 10px;
     align-items: stretch;
   }
-
-  .controls input,
-  .controls select,
-  .dd-panel select,
-  .dd-clear,
+  .dd,
+  .dd > summary,
+  .dd-btn {
+    width: 100%;
+  }
   .dd-btn,
   .menu-btn,
   .navlink,
-  .chip {
-    font-size: 16px !important;
-  }
-
-  .controls input,
-  .controls select,
-  .dd-panel select,
-  .dd-clear,
-  .dd-btn {
-    min-height: 46px;
-  }
-
-  .controls input {
-    appearance: none;
-    -webkit-appearance: none;
-  }
-
-  .dd {
-    width: 100%;
-  }
-
-  .dd > summary {
-    width: 100%;
-  }
-
-  .dd-btn {
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .pub-count {
-    line-height: 1.5;
-  }
-
-  #backToTop {
-    right: 14px;
-    bottom: calc(14px + env(safe-area-inset-bottom));
-  }
-}
-
-@media (max-width: 860px) {
-  .dd{
-    position: static;
-  }
-
-  .dd[open]::before{
-    content: '';
-    position: fixed;
-    inset: 0;
-    background: rgba(11,16,32,.32);
-    z-index: 998;
-  }
-
-  .dd-panel {
-    position: fixed;
-    left: 12px !important;
-    right: 12px !important;
-    top: auto !important;
-    bottom: calc(12px + env(safe-area-inset-bottom));
-    width: auto !important;
-    min-width: 0;
-    max-width: none;
-    max-height: min(72dvh, calc(100dvh - 96px));
-    overflow: auto;
-    border-radius: 20px;
-    z-index: 999;
-    padding: 16px;
-    box-shadow: 0 30px 80px rgba(10,20,40,.24);
-  }
-
-  .dd-panel::before {
-    display: none;
-  }
-
-  .dd-row {
-    align-items: stretch;
-  }
-
-  .year-range {
-    width: 100%;
-  }
-
-  .controls {
-    grid-template-columns: 1fr;
-  }
-
-  .topbar[data-open="true"] nav {
-    padding-bottom: 8px;
-  }
-
-  nav {
-    gap: 6px;
-  }
-
-  .navlink,
-  .navlink.nav-cta {
-    width: 100%;
-    text-align: left;
-  }
-
-  .intro {
-    padding: 20px;
-    gap: 14px;
-  }
-
-  .intro .grid-2 {
-    gap: 14px;
-  }
-
-  .intro .kv {
-    padding: 18px;
-  }
-
-  .intro .kv .label {
-    font-size: 12px;
-  }
-
-  .intro .kv .value,
-  .intro .kv .value a {
-    font-size: 18px;
-    line-height: 1.55;
-    word-break: break-word;
-    overflow-wrap: anywhere;
-  }
-
-  .controls input,
-  .controls select,
-  .dd-panel select,
-  .dd-clear,
-  .dd-btn,
-  .menu-btn,
-  .navlink,
+  .navlink.nav-cta,
   .chip,
+  .controls input,
+  .controls select,
+  .dd-panel select,
+  .dd-clear,
   input[type="search"] {
     font-size: 16px !important;
   }
-
   .controls input,
   .controls select,
   .dd-panel select,
@@ -1368,35 +1257,76 @@ body {
   input[type="search"] {
     min-height: 48px;
   }
-
+  .controls input,
   input[type="search"] {
     -webkit-appearance: none;
     appearance: none;
     border-radius: 14px;
+    transform: translateZ(0);
   }
-}
-
-@media (max-width: 640px) {
-  .hero {
-    gap: 16px;
-    margin-top: 16px;
+  #pubSearch {
+    font-size: 16px !important;
+    line-height: 1.3;
   }
-
-  .profile,
-  .intro {
-    border-radius: 16px;
+  .dd {
+    position: static;
   }
-
-  .wrap {
-    padding-left: 14px;
-    padding-right: 14px;
+  .dd[open]::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(11,16,32,.4);
+    z-index: 998;
   }
-
-  .section-head h2 {
-    font-size: 24px;
+  .dd-panel {
+    position: fixed !important;
+    left: 12px !important;
+    right: 12px !important;
+    top: auto !important;
+    bottom: calc(12px + env(safe-area-inset-bottom)) !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    max-height: calc(100svh - 88px) !important;
+    overflow: auto !important;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 20px;
+    z-index: 999;
+    padding: 16px;
+    box-shadow: 0 30px 80px rgba(10,20,40,.24);
+  }
+  .dd-panel::before {
+    display: none !important;
+  }
+  .dd-row {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .dd-panel select,
+  .year-range,
+  .year-range select {
+    width: 100% !important;
+  }
+  .year-sep {
+    display: none !important;
+  }
+  nav {
+    gap: 6px;
+  }
+  .navlink,
+  .navlink.nav-cta {
+    width: 100%;
+    text-align: left;
+  }
+  #backToTop {
+    right: 14px;
+    bottom: calc(14px + env(safe-area-inset-bottom));
   }
 }
 </style>
+
 
 </head>
 <body>
@@ -1458,10 +1388,8 @@ body {
 <div class="hint">Research, background, and interests</div>
 </div>
 <p class="p5">
-<!-- <font color="red">I'm looking for Ph.D students. If you're interested, please email me and <a href="http://bit.ly/1hBFUbX" target="_blank">apply</a> to our Ph.D program.</font></br>
-		</br> -->
-<!-- <font color="red">I'm looking for a Postdoctoral Research Fellow. If you're interested, please email me and <a href="http://bit.ly/2MNAiwC" target="_blank">apply</a>.</font></br></p>
-        </br>-->
+
+
 		
 		I am an Associate Professor of <a href="https://www.si.umich.edu/" target="_blank">Information</a>, <a href="https://www.lsa.umich.edu/cscs/" target="_blank">Complex Systems</a>, and <a href="https://www.cse.umich.edu/" target="_blank">Computer Science</a> at the University of Michigan. I received my Ph.D at <a href="http://www.cam.cornell.edu/" target="_blank">Cornell University Center for Applied Mathematics (CAM)</a>, where I was advised by <a href="http://www.cs.cornell.edu/home/kleinber/" target="_blank">Jon Kleinberg</a>. Before coming to UM, I was a postdoc at <a href="http://www.northwestern.edu/nico/" target="_blank">Northwestern University Institute on Complex Systems (NICO)</a> working with <a href="http://www.kellogg.northwestern.edu/faculty/uzzi/htm/" target="_blank">Brian Uzzi</a>. My research interests are in computational social science, network science, and the science of science. I study how network structure, identity, and relational context impact the production and dissemination of information, knowledge, culture, and behavior in online, scientific, and organizational settings.</p>
 </div>
@@ -1822,7 +1750,7 @@ Amanda Hardy (MS)<br/>
 <footer>
 <div class="footer-row">
 <div>
-<span class="muted">©</span> <span id="yearNow"></span> Daniel M Romero  
+<span class="muted">©</span> <span id="yearNow"></span> Daniel M. Romero 
 </div>
 </div>
 </footer>
@@ -1924,7 +1852,7 @@ Amanda Hardy (MS)<br/>
         groupMap.set(slug, { g, list, meta });
       });
 
-
+      // Fallback group for missing/unknown topics (should be empty, but safe)
       const other = document.createElement('div');
       other.className = 'topic-group';
       other.dataset.topic = 'other';
@@ -1941,7 +1869,7 @@ Amanda Hardy (MS)<br/>
       other.appendChild(otherHead);
       other.appendChild(otherList);
 
-
+      // Move items into topic lists
       lis.forEach(li => {
         const slug = li.dataset.topic || 'other';
         const target = groupMap.get(slug);
@@ -1954,11 +1882,11 @@ Amanda Hardy (MS)<br/>
         groupMap.set('other', { g: other, list: otherList, meta: otherMeta });
       }
 
-
+      // Insert groups and remove original ul
       ul.parentNode.insertBefore(groups, ul);
       ul.remove();
 
-
+      // Store groupMap for later use in filtering counts / hiding empty groups
       pubRoot._topicGroupMap = groupMap;
     }
 
@@ -2055,19 +1983,19 @@ Amanda Hardy (MS)<br/>
     }
 
     function buildYearList(){
-
+      // Gather items from either layout
       const all = collectAllPubItems();
 
-
+      // Remove topic groups if present
       const groups = document.getElementById('pubGroups');
       if (groups) groups.remove();
 
-
+      // Clear group map (topic-only)
       if (pubRoot) pubRoot._topicGroupMap = null;
 
-
+      // Rebuild <ul> if needed
       const ul = ensureYearUL();
-
+      // Empty existing content
       ul.innerHTML = '';
 
       // Sort by year descending; unknown years go last (stable among themselves)
@@ -2079,7 +2007,7 @@ Amanda Hardy (MS)<br/>
     }
 
     function buildTopicList(){
-
+      // If we're currently in year mode, buildTopicGroups will move <li>s into groups and remove the <ul>.
       buildTopicGroups();
       items = collectAllPubItems();
     }
@@ -2213,32 +2141,74 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
 <script>
 (function () {
   const dropdowns = Array.from(document.querySelectorAll('details.dd'));
   const mobileMQ = window.matchMedia('(max-width: 860px)');
 
+  function anyOpen() {
+    return dropdowns.some((item) => item.open);
+  }
+
   function lockPageScroll(shouldLock) {
-    if (!mobileMQ.matches) {
-      document.body.style.overflow = '';
-      return;
-    }
+    document.documentElement.style.overflow = shouldLock ? 'hidden' : '';
     document.body.style.overflow = shouldLock ? 'hidden' : '';
+    document.body.style.touchAction = shouldLock ? 'none' : '';
+  }
+
+  function syncScrollLock() {
+    lockPageScroll(mobileMQ.matches && anyOpen());
   }
 
   dropdowns.forEach((dd) => {
-    dd.addEventListener('toggle', () => {
-      const anyOpen = dropdowns.some((item) => item.open);
-      lockPageScroll(anyOpen);
-    });
+    dd.addEventListener('toggle', syncScrollLock);
+    const summary = dd.querySelector('summary');
+    if (summary) {
+      summary.addEventListener('click', () => {
+        setTimeout(syncScrollLock, 0);
+      });
+    }
   });
 
-  window.addEventListener('resize', () => {
-    const anyOpen = dropdowns.some((item) => item.open);
-    lockPageScroll(anyOpen);
+  document.addEventListener('click', (event) => {
+    if (!mobileMQ.matches) return;
+    const openDropdown = dropdowns.find((item) => item.open);
+    if (!openDropdown) return;
+    if (!openDropdown.contains(event.target)) {
+      openDropdown.open = false;
+      syncScrollLock();
+    }
   });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape') return;
+    dropdowns.forEach((dd) => {
+      dd.open = false;
+    });
+    syncScrollLock();
+  });
+
+  const search = document.getElementById('pubSearch');
+  if (search) {
+    const keepSearchReadable = () => {
+      search.style.fontSize = '16px';
+      search.style.transform = 'translateZ(0)';
+    };
+    keepSearchReadable();
+    search.addEventListener('focus', keepSearchReadable);
+    search.addEventListener('blur', keepSearchReadable);
+    search.setAttribute('autocapitalize', 'off');
+    search.setAttribute('autocorrect', 'off');
+    search.setAttribute('spellcheck', 'false');
+  }
+
+  window.addEventListener('resize', syncScrollLock);
+  window.addEventListener('orientationchange', syncScrollLock);
+  syncScrollLock();
 })();
 </script>
+
 
 
 <button id="backToTop" aria-label="Back to top">↑ Top</button>
