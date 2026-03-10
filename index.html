@@ -1795,6 +1795,237 @@ html.mobile-device #backToTop{
 }
 </style>
 
+
+<style id="mobile-redesign-v14">
+html.mobile-device{
+  -webkit-text-size-adjust:100% !important;
+  text-size-adjust:100% !important;
+}
+html.mobile-device body{
+  font-size:20px !important;
+  line-height:1.78 !important;
+}
+html.mobile-device .wrap{
+  max-width:none !important;
+  width:100% !important;
+  padding:12px 12px 84px !important;
+}
+html.mobile-device .topbar{
+  backdrop-filter:blur(18px) !important;
+}
+html.mobile-device .topbar-inner{
+  position:relative !important;
+  padding:12px !important;
+  min-height:64px !important;
+  gap:10px !important;
+}
+html.mobile-device .brand-title{
+  font-size:18px !important;
+  font-weight:750 !important;
+}
+html.mobile-device .menu-btn{
+  min-height:42px !important;
+  padding:10px 14px !important;
+  border-radius:14px !important;
+  font-size:15px !important;
+  font-weight:600 !important;
+  background:#ffffff !important;
+  box-shadow:0 10px 24px rgba(10,20,40,.08) !important;
+}
+html.mobile-device .topbar nav{
+  position:absolute !important;
+  top:calc(100% + 8px) !important;
+  left:0 !important;
+  right:0 !important;
+  display:none !important;
+  flex-direction:column !important;
+  gap:6px !important;
+  padding:10px !important;
+  background:#ffffff !important;
+  border:1px solid rgba(11,16,32,.10) !important;
+  border-radius:18px !important;
+  box-shadow:0 18px 40px rgba(10,20,40,.12) !important;
+}
+html.mobile-device .topbar[data-open="true"] nav{
+  display:flex !important;
+}
+html.mobile-device .navlink,
+html.mobile-device .navlink.nav-cta{
+  width:100% !important;
+  min-height:46px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  text-align:left !important;
+  border-radius:14px !important;
+  font-size:16px !important;
+  font-weight:600 !important;
+  padding:12px 14px !important;
+}
+html.mobile-device .hero{
+  grid-template-columns:1fr !important;
+  gap:14px !important;
+  margin-top:14px !important;
+}
+html.mobile-device .intro{
+  order:1 !important;
+  padding:20px !important;
+  gap:14px !important;
+}
+html.mobile-device .profile{
+  order:2 !important;
+  width:min(100%, 420px) !important;
+  margin:0 auto !important;
+  padding:14px !important;
+}
+html.mobile-device .photo{
+  aspect-ratio:4 / 4.6 !important;
+  max-height:430px !important;
+  object-fit:cover !important;
+  object-position:center top !important;
+}
+html.mobile-device .intro h1{
+  font-size:2.05rem !important;
+  line-height:1.04 !important;
+  letter-spacing:-.03em !important;
+  margin-bottom:2px !important;
+}
+html.mobile-device .subtitle{
+  font-size:1.08rem !important;
+  line-height:1.5 !important;
+  margin-top:0 !important;
+}
+html.mobile-device .intro .grid-2{
+  grid-template-columns:1fr !important;
+  gap:12px !important;
+}
+html.mobile-device .intro .kv{
+  padding:16px !important;
+  border-radius:14px !important;
+}
+html.mobile-device .intro .kv .label{
+  font-size:.62rem !important;
+  letter-spacing:.18em !important;
+}
+html.mobile-device .intro .kv .value,
+html.mobile-device .intro .kv .value a{
+  font-size:1.02rem !important;
+  line-height:1.68 !important;
+}
+html.mobile-device section{
+  scroll-margin-top:78px !important;
+}
+html.mobile-device .content,
+html.mobile-device .topic-group{
+  padding:18px !important;
+}
+html.mobile-device .section-head{
+  gap:7px !important;
+  margin-bottom:14px !important;
+}
+html.mobile-device .section-head h2,
+html.mobile-device .topic-head h3{
+  font-size:1.75rem !important;
+  line-height:1.12 !important;
+  letter-spacing:-.025em !important;
+}
+html.mobile-device .hint,
+html.mobile-device #pubCount,
+html.mobile-device .topic-head .topic-meta,
+html.mobile-device .label,
+html.mobile-device .dd-note{
+  font-size:.84rem !important;
+  line-height:1.45 !important;
+}
+html.mobile-device .content p,
+html.mobile-device .content li,
+html.mobile-device #about p,
+html.mobile-device #advising p,
+html.mobile-device #service p,
+html.mobile-device #teaching p,
+html.mobile-device #publications li,
+html.mobile-device #publications p,
+html.mobile-device #professional-service li,
+html.mobile-device #teaching li{
+  font-size:1.03rem !important;
+  line-height:1.82 !important;
+}
+html.mobile-device .controls{
+  padding:14px !important;
+  gap:12px !important;
+}
+html.mobile-device .dd-btn,
+html.mobile-device .controls input,
+html.mobile-device .controls select,
+html.mobile-device .dd-panel select,
+html.mobile-device .dd-actions button,
+html.mobile-device input[type="search"]{
+  font-size:1rem !important;
+  min-height:50px !important;
+  border-radius:14px !important;
+}
+html.mobile-device #pubSearch{
+  padding:0 14px !important;
+}
+html.mobile-device #pubSearch::placeholder{
+  font-size:.95rem !important;
+}
+html.mobile-device .dd-panel{
+  padding:14px !important;
+  border-radius:16px !important;
+}
+html.mobile-device .dd-actions{
+  display:grid !important;
+  grid-template-columns:1fr 1fr !important;
+  gap:10px !important;
+}
+html.mobile-device .pub-groups{
+  gap:14px !important;
+  margin-top:14px !important;
+}
+html.mobile-device .topic-group{
+  border-radius:16px !important;
+}
+html.mobile-device .topic-group ul{
+  padding-left:20px !important;
+}
+html.mobile-device #backToTop{
+  right:12px !important;
+  bottom:calc(12px + env(safe-area-inset-bottom)) !important;
+}
+@media (max-width: 430px){
+  html.mobile-device body{
+    font-size:19px !important;
+  }
+  html.mobile-device .brand-title{
+    font-size:17px !important;
+  }
+  html.mobile-device .menu-btn{
+    padding:9px 12px !important;
+    font-size:14px !important;
+  }
+  html.mobile-device .intro h1{
+    font-size:1.88rem !important;
+  }
+  html.mobile-device .section-head h2,
+  html.mobile-device .topic-head h3{
+    font-size:1.58rem !important;
+  }
+  html.mobile-device .content p,
+  html.mobile-device .content li,
+  html.mobile-device #about p,
+  html.mobile-device #advising p,
+  html.mobile-device #service p,
+  html.mobile-device #teaching p,
+  html.mobile-device #publications li,
+  html.mobile-device #publications p,
+  html.mobile-device #professional-service li,
+  html.mobile-device #teaching li{
+    font-size:1.01rem !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <header class="topbar" data-open="false" id="topbar">
@@ -2217,7 +2448,7 @@ Amanda Hardy (MS)<br/>
 <footer>
 <div class="footer-row">
 <div>
-<span class="muted">©</span> <span id="yearNow"></span> Daniel Romero 
+<span class="muted">©</span> <span id="yearNow"></span> Daniel M. Romero 2:06
 </div>
 </div>
 </footer>
@@ -2664,6 +2895,29 @@ window.addEventListener('scroll', toggleBackToTop);
 backToTop.addEventListener('click', () => {
   window.scrollTo({top:0, behavior:'smooth'});
 });
+</script>
+
+
+<script>
+(function(){
+  const topbar = document.getElementById('topbar');
+  const menuBtn = document.getElementById('menuBtn');
+  const nav = document.getElementById('primaryNav');
+  if(!topbar || !menuBtn || !nav) return;
+  function closeMenu(){
+    topbar.setAttribute('data-open','false');
+    menuBtn.setAttribute('aria-expanded','false');
+  }
+  document.addEventListener('click', (event) => {
+    if (!document.documentElement.classList.contains('mobile-device')) return;
+    if (topbar.getAttribute('data-open') !== 'true') return;
+    if (!topbar.contains(event.target)) closeMenu();
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+  window.addEventListener('resize', () => {
+    if (!document.documentElement.classList.contains('mobile-device')) closeMenu();
+  }, {passive:true});
+})();
 </script>
 
 </body>
