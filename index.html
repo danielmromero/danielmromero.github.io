@@ -1125,7 +1125,6 @@ section{
 }
 
 </style>
-
 <style>
 
 #professional-service li,
@@ -1143,7 +1142,11 @@ section{
 
 
 
-<style id="mobile-friendly-fixes">
+
+
+
+
+<style>
 html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -1166,1837 +1169,273 @@ textarea,
 button {
   font-size: 16px;
 }
+
 @media (max-width: 860px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    font-size: 22px;
+    line-height: 1.76;
+  }
+
   .wrap {
-    padding: 14px 14px 56px;
-  }
-  .topbar-inner {
-    padding: 12px 14px;
-  }
-  .brand-title {
-    font-size: 18px;
-  }
-  .hero {
-    grid-template-columns: 1fr !important;
-    gap: 16px;
-    margin-top: 16px;
-  }
-  .profile,
-  .intro,
-  .content {
-    padding: 16px;
-  }
-  .intro {
-    gap: 14px;
-  }
-  .intro h1 {
-    font-size: clamp(30px, 8vw, 40px);
-    line-height: 1.08;
-  }
-  .subtitle {
-    font-size: 19px;
-    line-height: 1.45;
-  }
-  .intro .grid-2 {
-    grid-template-columns: 1fr !important;
-    gap: 14px;
-  }
-  .intro .kv {
-    padding: 18px !important;
-  }
-  .intro .kv .label {
-    font-size: 12px;
-  }
-  .intro .kv .value,
-  .intro .kv .value a {
-    font-size: 17px !important;
-    line-height: 1.6 !important;
-    word-break: break-word;
-    overflow-wrap: anywhere;
-  }
-  .intro .grid-2 .kv:last-child .value,
-  .intro .grid-2 .kv:last-child .value a {
-    font-size: 19px !important;
-    line-height: 1.7 !important;
-  }
-  .section-head {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
-  }
-  .section-head h2 {
-    font-size: 24px;
-  }
-  .hint {
-    font-size: 15px;
-  }
-  .controls {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    padding: 12px;
-    gap: 10px;
-    align-items: stretch;
-  }
-  .dd,
-  .dd > summary,
-  .dd-btn {
     width: 100%;
+    max-width: none;
+    padding: 14px 14px 96px;
   }
-  .dd-btn,
-  .menu-btn,
-  .navlink,
-  .navlink.nav-cta,
-  .chip,
-  .controls input,
-  .controls select,
-  .dd-panel select,
-  .dd-apply,
-  .dd-clear,
-  input[type="search"] {
-    font-size: 16px !important;
-  }
-  .controls input,
-  .controls select,
-  .dd-panel select,
-  .dd-apply,
-  .dd-clear,
-  .dd-btn,
-  input[type="search"] {
-    min-height: 48px;
-  }
-  .controls input,
-  input[type="search"] {
-    -webkit-appearance: none;
-    appearance: none;
-    border-radius: 14px;
-    transform: translateZ(0);
-  }
-  #pubSearch {
-    font-size: 16px !important;
-    line-height: 1.3;
-  }
-  .dd {
+
+  .topbar-inner {
     position: relative;
+    padding: 12px 14px;
+    min-height: 68px;
+    gap: 10px;
   }
-  .dd-panel {
-    position: static !important;
-    left: auto !important;
-    right: auto !important;
-    top: auto !important;
-    bottom: auto !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    max-height: none !important;
-    overflow: visible !important;
-    border-radius: 16px;
-    z-index: auto;
-    padding: 14px;
-    margin-top: 10px;
-    box-shadow: 0 18px 40px rgba(10,20,40,.12);
+
+  .brand-title {
+    font-size: 19px;
+    line-height: 1.2;
   }
-  .dd-panel::before {
-    display: none !important;
+
+  .brand-sub {
+    display: none;
   }
-  .dd-row {
-    display: flex;
+
+  #primaryNav {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
     flex-direction: column;
-    align-items: stretch;
+    gap: 8px;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
   }
-  .dd-panel select,
-  .year-range,
-  .year-range select {
-    width: 100% !important;
+
+  #topbar[data-open="true"] #primaryNav {
+    display: flex;
   }
-  .year-sep {
-    display: none !important;
+
+  .menu-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 46px;
+    padding: 11px 14px;
+    font-size: 17px;
+    border-radius: 14px;
   }
-  nav {
-    gap: 6px;
-  }
+
   .navlink,
   .navlink.nav-cta {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     text-align: left;
-  }
-  #backToTop {
-    right: 14px;
-    bottom: calc(14px + env(safe-area-inset-bottom));
-  }
-}
-
-.mobile-device .controls{
-  overflow:visible !important;
-}
-.mobile-device .dd,
-.mobile-device .dd-panel,
-.mobile-device .controls,
-.mobile-device #publications,
-.mobile-device #publications .content{
-  contain:none !important;
-}
-.mobile-device .dd-panel,
-.mobile-device .dd-btn{
-  transform:none !important;
-  transition:none !important;
-}
-.mobile-device .dd[open] .dd-panel{
-  opacity:1 !important;
-  visibility:visible !important;
-  pointer-events:auto !important;
-}
-</style>
-
-
-<style id="ios-real-device-fixes">
-.mobile-device,
-.mobile-device body{
-  overflow-x:hidden !important;
-}
-.mobile-device .topbar-inner{
-  padding:12px 14px !important;
-}
-.mobile-device nav{
-  display:none !important;
-  width:100% !important;
-  justify-content:flex-start !important;
-  padding:10px 2px 2px !important;
-  gap:6px !important;
-}
-.mobile-device .menu-btn{
-  display:inline-flex !important;
-  align-items:center !important;
-  gap:8px !important;
-}
-.mobile-device .topbar[data-open="true"] nav{
-  display:flex !important;
-  flex-direction:column !important;
-}
-.mobile-device .navlink,
-.mobile-device .navlink.nav-cta{
-  width:100% !important;
-  text-align:left !important;
-  font-size:16px !important;
-}
-.mobile-device .wrap{
-  padding:14px 14px 56px !important;
-}
-.mobile-device .hero{
-  grid-template-columns:1fr !important;
-  gap:16px !important;
-  margin-top:16px !important;
-}
-.mobile-device .profile,
-.mobile-device .intro,
-.mobile-device .content{
-  padding:16px !important;
-}
-.mobile-device .intro .grid-2{
-  grid-template-columns:1fr !important;
-  gap:14px !important;
-}
-.mobile-device .intro .kv{
-  padding:18px !important;
-}
-.mobile-device .intro .kv .label{
-  font-size:12px !important;
-}
-.mobile-device .intro .kv .value,
-.mobile-device .intro .kv .value a{
-  font-size:18px !important;
-  line-height:1.65 !important;
-  word-break:break-word !important;
-  overflow-wrap:anywhere !important;
-}
-.mobile-device .section-head{
-  flex-direction:column !important;
-  align-items:flex-start !important;
-  gap:6px !important;
-}
-.mobile-device .section-head h2{
-  font-size:24px !important;
-}
-.mobile-device .hint{
-  font-size:15px !important;
-}
-.mobile-device .controls{
-  display:grid !important;
-  grid-template-columns:1fr !important;
-  padding:12px !important;
-  gap:10px !important;
-  align-items:stretch !important;
-}
-.mobile-device .dd,
-.mobile-device .dd > summary,
-.mobile-device .dd-btn{
-  width:100% !important;
-}
-.mobile-device input,
-.mobile-device select,
-.mobile-device textarea,
-.mobile-device button,
-.mobile-device .dd-btn,
-.mobile-device .controls input,
-.mobile-device .controls select,
-.mobile-device .dd-panel select,
-.mobile-device .dd-apply,
-.mobile-device .dd-clear,
-.mobile-device input[type="search"]{
-  font-size:16px !important;
-}
-.mobile-device .controls input,
-.mobile-device .controls select,
-.mobile-device .dd-panel select,
-.mobile-device .dd-apply,
-.mobile-device .dd-clear,
-.mobile-device .dd-btn,
-.mobile-device input[type="search"]{
-  min-height:48px !important;
-}
-.mobile-device #pubSearch{
-  width:100% !important;
-  font-size:16px !important;
-  line-height:1.3 !important;
-  -webkit-appearance:none !important;
-  appearance:none !important;
-  border-radius:14px !important;
-  transform:translateZ(0) !important;
-}
-.mobile-device .dd{
-  position:relative !important;
-}
-.mobile-device .dd-panel{
-  position:static !important;
-  left:auto !important;
-  right:auto !important;
-  top:auto !important;
-  bottom:auto !important;
-  width:100% !important;
-  min-width:0 !important;
-  max-width:100% !important;
-  max-height:none !important;
-  overflow:visible !important;
-  overscroll-behavior:auto !important;
-  -webkit-overflow-scrolling:auto !important;
-  border-radius:16px !important;
-  z-index:auto !important;
-  padding:14px !important;
-  margin-top:10px !important;
-  box-shadow:0 18px 40px rgba(10,20,40,.12) !important;
-}
-.mobile-device .dd-panel::before{
-  display:none !important;
-}
-.mobile-device .dd[open] .dd-btn{
-  margin-bottom:0 !important;
-}
-.mobile-device .dd-row{
-  display:flex !important;
-  flex-direction:column !important;
-  align-items:stretch !important;
-}
-.mobile-device .dd-panel select,
-.mobile-device .year-range,
-.mobile-device .year-range select{
-  width:100% !important;
-}
-.mobile-device .year-sep{
-  display:none !important;
-}
-.mobile-device section{
-  scroll-margin-top:86px !important;
-}
-</style>
-<script>
-(function(){
-  function isSmallRealDevice(){
-    const ua = navigator.userAgent || '';
-    const touch = navigator.maxTouchPoints || 0;
-    const screenMin = Math.min(window.screen.width || 9999, window.screen.height || 9999);
-    const viewportMin = Math.min(window.innerWidth || 9999, window.innerHeight || 9999);
-    const vv = window.visualViewport ? Math.min(window.visualViewport.width || 9999, window.visualViewport.height || 9999) : 9999;
-    const applePhone = /iPhone|iPod/i.test(ua);
-    const smallTouchDevice = touch > 0 && Math.min(screenMin, viewportMin, vv) <= 900;
-    return applePhone || smallTouchDevice;
-  }
-  function applyRealDeviceClass(){
-    const mobile = isSmallRealDevice();
-    document.documentElement.classList.toggle('mobile-device', mobile);
-    if (document.body) document.body.classList.toggle('mobile-device', mobile);
-  }
-  applyRealDeviceClass();
-  window.addEventListener('resize', applyRealDeviceClass, {passive:true});
-  window.addEventListener('orientationchange', applyRealDeviceClass, {passive:true});
-  if (window.visualViewport) {
-    window.visualViewport.addEventListener('resize', applyRealDeviceClass, {passive:true});
-  }
-})();
-</script>
-
-<style id="mobile-typography-upgrade">
-@media (max-width: 860px) {
-  html {
+    min-height: 48px;
+    padding: 12px 14px;
     font-size: 18px;
+    border-radius: 14px;
   }
-  body {
-    font-size: 18px;
-    line-height: 1.72;
-    letter-spacing: -0.003em;
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 16px;
   }
-  .wrap {
-    padding: 16px 16px 64px;
+
+  .profile {
+    width: min(100%, 320px);
+    margin: 0 auto;
+    padding: 12px;
   }
-  .topbar-inner {
-    padding: 14px 16px;
-    min-height: 72px;
+
+  .photo {
+    aspect-ratio: 4 / 4.35;
+    border-radius: 16px;
   }
-  .brand-title {
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: -0.015em;
-  }
-  .menu-btn {
-    font-size: 15px !important;
-    padding: 11px 14px;
-    border-radius: 12px;
-  }
-  .profile,
+
   .intro,
   .content,
   .topic-group {
-    padding: 18px;
+    padding: 20px;
   }
+
+  .intro {
+    gap: 14px;
+  }
+
   .intro h1 {
-    font-size: clamp(34px, 9vw, 44px);
-    line-height: 1.04;
-    letter-spacing: -0.03em;
+    font-size: 48px;
+    line-height: 1.03;
     margin-bottom: 4px;
   }
+
   .subtitle {
-    font-size: 20px;
-    line-height: 1.5;
+    font-size: 24px;
+    line-height: 1.4;
   }
-  .intro .kv {
-    padding: 18px !important;
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
-  .intro .kv .label,
+
+  .kv {
+    padding: 18px;
+  }
+
+  .kv .label,
   .label,
   .hint,
+  #pubCount,
   .topic-head .topic-meta,
   .dd-note,
-  #pubCount,
   .controls .control-label {
-    font-size: 14px !important;
+    font-size: 14px;
     line-height: 1.45;
-    letter-spacing: 0.03em;
   }
-  .intro .kv .value,
-  .intro .kv .value a {
-    font-size: 18px !important;
-    line-height: 1.68 !important;
+
+  .kv .value,
+  .kv .value a {
+    font-size: 21px;
+    line-height: 1.68;
+    word-break: break-word;
+    overflow-wrap: anywhere;
   }
-  .intro .grid-2 .kv:last-child .value,
-  .intro .grid-2 .kv:last-child .value a {
-    font-size: 18px !important;
-    line-height: 1.72 !important;
-  }
+
   .section-head {
+    flex-direction: column;
+    align-items: flex-start;
     gap: 8px;
     margin-bottom: 14px;
   }
+
   .section-head h2,
   .topic-head h3 {
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
+    font-size: 34px;
+    line-height: 1.15;
   }
+
   .content p,
   .content li,
-  .section-content p,
-  .section-content li,
-  #publications li,
-  #publications p,
   #about p,
-  #advising p,
-  #service p,
+  #publications p,
+  #publications li,
+  #students p,
+  #students li,
+  #professional_service p,
+  #professional_service li,
   #teaching p,
-  #professional-service li,
   #teaching li,
   .alumni-item,
   .student-card,
   .student-note {
-    font-size: 17.5px !important;
-    line-height: 1.78 !important;
-  }
-  .pub-groups {
-    gap: 16px;
-    margin-top: 16px;
-  }
-  .topic-group ul {
-    padding-left: 20px;
-  }
-  .controls {
-    padding: 14px;
-    gap: 12px;
-  }
-  .dd-btn,
-  .dd-panel select,
-  .controls input,
-  input[type="search"],
-  .dd-actions button {
-    font-size: 17px !important;
-  }
-  .dd-btn,
-  .controls input,
-  input[type="search"],
-  .dd-panel select,
-  .dd-actions button {
-    min-height: 52px;
-    border-radius: 14px;
-  }
-  #pubSearch::placeholder {
-    font-size: 16px;
-  }
-  .dd-panel {
-    padding: 16px;
-  }
-  .dd-row {
-    gap: 8px;
-    margin: 12px 0;
-  }
-  .dd-actions {
-    gap: 12px;
-    margin-top: 14px;
-  }
-  #backToTop {
-    font-size: 15px;
-    padding: 10px 14px;
-  }
-}
-@media (max-width: 480px) {
-  .brand-title {
-    font-size: 19px;
-  }
-  .content p,
-  .content li,
-  .section-content p,
-  .section-content li,
-  #publications li,
-  #publications p {
-    font-size: 17px !important;
-  }
-}
-</style>
-
-
-<style id="mobile-type-scale-v13">
-html.mobile-device{
-  -webkit-text-size-adjust:115% !important;
-  text-size-adjust:115% !important;
-}
-html.mobile-device body{
-  font-size:20px !important;
-  line-height:1.72 !important;
-}
-html.mobile-device .wrap{
-  padding:16px 16px 72px !important;
-}
-html.mobile-device .topbar-inner{
-  padding:14px 16px !important;
-  min-height:72px !important;
-}
-html.mobile-device .brand-title{
-  font-size:20px !important;
-  line-height:1.2 !important;
-}
-html.mobile-device .menu-btn{
-  font-size:16px !important;
-  padding:12px 14px !important;
-}
-html.mobile-device .profile,
-html.mobile-device .intro,
-html.mobile-device .content,
-html.mobile-device .topic-group{
-  padding:18px !important;
-}
-html.mobile-device .intro h1{
-  font-size:clamp(40px, 11vw, 52px) !important;
-  line-height:1.02 !important;
-}
-html.mobile-device .subtitle{
-  font-size:21px !important;
-  line-height:1.45 !important;
-}
-html.mobile-device .label,
-html.mobile-device .hint,
-html.mobile-device #pubCount,
-html.mobile-device .topic-head .topic-meta,
-html.mobile-device .dd-note{
-  font-size:14px !important;
-  line-height:1.45 !important;
-}
-html.mobile-device .intro .kv .label{
-  font-size:12px !important;
-}
-html.mobile-device .intro .kv .value,
-html.mobile-device .intro .kv .value a{
-  font-size:19px !important;
-  line-height:1.65 !important;
-}
-html.mobile-device .section-head{
-  gap:8px !important;
-  margin-bottom:14px !important;
-}
-html.mobile-device .section-head h2,
-html.mobile-device .topic-head h3{
-  font-size:21px !important;
-  line-height:1.18 !important;
-}
-html.mobile-device .content p,
-html.mobile-device .content li,
-html.mobile-device #about p,
-html.mobile-device #publications li,
-html.mobile-device #publications p,
-html.mobile-device #advising p,
-html.mobile-device #service p,
-html.mobile-device #teaching p,
-html.mobile-device #professional-service li,
-html.mobile-device #teaching li{
-  font-size:18px !important;
-  line-height:1.74 !important;
-}
-html.mobile-device .controls{
-  padding:14px !important;
-  gap:12px !important;
-}
-html.mobile-device .dd-btn,
-html.mobile-device .controls input,
-html.mobile-device .controls select,
-html.mobile-device .dd-panel select,
-html.mobile-device .dd-actions button,
-html.mobile-device input[type="search"]{
-  font-size:17px !important;
-  min-height:52px !important;
-}
-html.mobile-device #pubSearch::placeholder{
-  font-size:16px !important;
-}
-html.mobile-device .dd-panel{
-  padding:16px !important;
-}
-html.mobile-device .topic-group ul{
-  padding-left:22px !important;
-}
-html.mobile-device .pub-groups{
-  gap:16px !important;
-}
-html.mobile-device #backToTop{
-  font-size:15px !important;
-}
-</style>
-
-
-<style id="mobile-redesign-v14">
-html.mobile-device{
-  -webkit-text-size-adjust:100% !important;
-  text-size-adjust:100% !important;
-}
-html.mobile-device body{
-  font-size:20px !important;
-  line-height:1.78 !important;
-}
-html.mobile-device .wrap{
-  max-width:none !important;
-  width:100% !important;
-  padding:12px 12px 84px !important;
-}
-html.mobile-device .topbar{
-  backdrop-filter:blur(18px) !important;
-}
-html.mobile-device .topbar-inner{
-  position:relative !important;
-  padding:12px !important;
-  min-height:64px !important;
-  gap:10px !important;
-}
-html.mobile-device .brand-title{
-  font-size:18px !important;
-  font-weight:750 !important;
-}
-html.mobile-device .menu-btn{
-  min-height:42px !important;
-  padding:10px 14px !important;
-  border-radius:14px !important;
-  font-size:15px !important;
-  font-weight:600 !important;
-  background:#ffffff !important;
-  box-shadow:0 10px 24px rgba(10,20,40,.08) !important;
-}
-html.mobile-device .topbar nav{
-  position:absolute !important;
-  top:calc(100% + 8px) !important;
-  left:0 !important;
-  right:0 !important;
-  display:none !important;
-  flex-direction:column !important;
-  gap:6px !important;
-  padding:10px !important;
-  background:#ffffff !important;
-  border:1px solid rgba(11,16,32,.10) !important;
-  border-radius:18px !important;
-  box-shadow:0 18px 40px rgba(10,20,40,.12) !important;
-}
-html.mobile-device .topbar[data-open="true"] nav{
-  display:flex !important;
-}
-html.mobile-device .navlink,
-html.mobile-device .navlink.nav-cta{
-  width:100% !important;
-  min-height:46px !important;
-  display:flex !important;
-  align-items:center !important;
-  justify-content:flex-start !important;
-  text-align:left !important;
-  border-radius:14px !important;
-  font-size:16px !important;
-  font-weight:600 !important;
-  padding:12px 14px !important;
-}
-html.mobile-device .hero{
-  grid-template-columns:1fr !important;
-  gap:14px !important;
-  margin-top:14px !important;
-}
-html.mobile-device .intro{
-  order:1 !important;
-  padding:20px !important;
-  gap:14px !important;
-}
-html.mobile-device .profile{
-  order:2 !important;
-  width:min(100%, 420px) !important;
-  margin:0 auto !important;
-  padding:14px !important;
-}
-html.mobile-device .photo{
-  aspect-ratio:4 / 4.6 !important;
-  max-height:430px !important;
-  object-fit:cover !important;
-  object-position:center top !important;
-}
-html.mobile-device .intro h1{
-  font-size:2.05rem !important;
-  line-height:1.04 !important;
-  letter-spacing:-.03em !important;
-  margin-bottom:2px !important;
-}
-html.mobile-device .subtitle{
-  font-size:1.08rem !important;
-  line-height:1.5 !important;
-  margin-top:0 !important;
-}
-html.mobile-device .intro .grid-2{
-  grid-template-columns:1fr !important;
-  gap:12px !important;
-}
-html.mobile-device .intro .kv{
-  padding:16px !important;
-  border-radius:14px !important;
-}
-html.mobile-device .intro .kv .label{
-  font-size:.62rem !important;
-  letter-spacing:.18em !important;
-}
-html.mobile-device .intro .kv .value,
-html.mobile-device .intro .kv .value a{
-  font-size:1.02rem !important;
-  line-height:1.68 !important;
-}
-html.mobile-device section{
-  scroll-margin-top:78px !important;
-}
-html.mobile-device .content,
-html.mobile-device .topic-group{
-  padding:18px !important;
-}
-html.mobile-device .section-head{
-  gap:7px !important;
-  margin-bottom:14px !important;
-}
-html.mobile-device .section-head h2,
-html.mobile-device .topic-head h3{
-  font-size:1.75rem !important;
-  line-height:1.12 !important;
-  letter-spacing:-.025em !important;
-}
-html.mobile-device .hint,
-html.mobile-device #pubCount,
-html.mobile-device .topic-head .topic-meta,
-html.mobile-device .label,
-html.mobile-device .dd-note{
-  font-size:.84rem !important;
-  line-height:1.45 !important;
-}
-html.mobile-device .content p,
-html.mobile-device .content li,
-html.mobile-device #about p,
-html.mobile-device #advising p,
-html.mobile-device #service p,
-html.mobile-device #teaching p,
-html.mobile-device #publications li,
-html.mobile-device #publications p,
-html.mobile-device #professional-service li,
-html.mobile-device #teaching li{
-  font-size:1.03rem !important;
-  line-height:1.82 !important;
-}
-html.mobile-device .controls{
-  padding:14px !important;
-  gap:12px !important;
-}
-html.mobile-device .dd-btn,
-html.mobile-device .controls input,
-html.mobile-device .controls select,
-html.mobile-device .dd-panel select,
-html.mobile-device .dd-actions button,
-html.mobile-device input[type="search"]{
-  font-size:1rem !important;
-  min-height:50px !important;
-  border-radius:14px !important;
-}
-html.mobile-device #pubSearch{
-  padding:0 14px !important;
-}
-html.mobile-device #pubSearch::placeholder{
-  font-size:.95rem !important;
-}
-html.mobile-device .dd-panel{
-  padding:14px !important;
-  border-radius:16px !important;
-}
-html.mobile-device .dd-actions{
-  display:grid !important;
-  grid-template-columns:1fr 1fr !important;
-  gap:10px !important;
-}
-html.mobile-device .pub-groups{
-  gap:14px !important;
-  margin-top:14px !important;
-}
-html.mobile-device .topic-group{
-  border-radius:16px !important;
-}
-html.mobile-device .topic-group ul{
-  padding-left:20px !important;
-}
-html.mobile-device #backToTop{
-  right:12px !important;
-  bottom:calc(12px + env(safe-area-inset-bottom)) !important;
-}
-@media (max-width: 430px){
-  html.mobile-device body{
-    font-size:19px !important;
-  }
-  html.mobile-device .brand-title{
-    font-size:17px !important;
-  }
-  html.mobile-device .menu-btn{
-    padding:9px 12px !important;
-    font-size:14px !important;
-  }
-  html.mobile-device .intro h1{
-    font-size:1.88rem !important;
-  }
-  html.mobile-device .section-head h2,
-  html.mobile-device .topic-head h3{
-    font-size:1.58rem !important;
-  }
-  html.mobile-device .content p,
-  html.mobile-device .content li,
-  html.mobile-device #about p,
-  html.mobile-device #advising p,
-  html.mobile-device #service p,
-  html.mobile-device #teaching p,
-  html.mobile-device #publications li,
-  html.mobile-device #publications p,
-  html.mobile-device #professional-service li,
-  html.mobile-device #teaching li{
-    font-size:1.01rem !important;
-  }
-}
-</style>
-
-
-<style id="mobile-overhaul-v16">
-html.mobile-device{
-  -webkit-text-size-adjust:100% !important;
-  text-size-adjust:100% !important;
-}
-html.mobile-device body{
-  font-size:21px !important;
-  line-height:1.72 !important;
-}
-html.mobile-device .wrap{
-  width:100% !important;
-  max-width:none !important;
-  padding:14px 14px 96px !important;
-}
-html.mobile-device .topbar-inner{
-  padding:14px !important;
-  min-height:72px !important;
-  align-items:center !important;
-}
-html.mobile-device .brand-title{
-  font-size:1.18rem !important;
-  line-height:1.2 !important;
-  font-weight:750 !important;
-}
-html.mobile-device .menu-btn{
-  min-height:46px !important;
-  padding:11px 14px !important;
-  font-size:1rem !important;
-  border-radius:14px !important;
-}
-html.mobile-device .topbar nav{
-  top:calc(100% + 10px) !important;
-  padding:12px !important;
-  border-radius:18px !important;
-}
-html.mobile-device .navlink,
-html.mobile-device .navlink.nav-cta{
-  min-height:50px !important;
-  font-size:1rem !important;
-  padding:12px 14px !important;
-}
-html.mobile-device .hero{
-  gap:16px !important;
-  margin-top:16px !important;
-}
-html.mobile-device .profile{
-  width:min(100%, 360px) !important;
-  padding:12px !important;
-}
-html.mobile-device .photo{
-  aspect-ratio:4 / 4.35 !important;
-  max-height:360px !important;
-  border-radius:16px !important;
-}
-html.mobile-device .intro,
-html.mobile-device .content,
-html.mobile-device .topic-group{
-  padding:22px !important;
-}
-html.mobile-device .intro h1{
-  font-size:2.4rem !important;
-  line-height:1.02 !important;
-  margin-bottom:4px !important;
-}
-html.mobile-device .subtitle{
-  font-size:1.2rem !important;
-  line-height:1.45 !important;
-}
-html.mobile-device .intro .grid-2{
-  gap:14px !important;
-}
-html.mobile-device .intro .kv{
-  padding:18px !important;
-}
-html.mobile-device .intro .kv .label,
-html.mobile-device .label,
-html.mobile-device .hint,
-html.mobile-device #pubCount,
-html.mobile-device .topic-head .topic-meta,
-html.mobile-device .dd-note{
-  font-size:.9rem !important;
-  line-height:1.45 !important;
-}
-html.mobile-device .intro .kv .label{
-  letter-spacing:.18em !important;
-}
-html.mobile-device .intro .kv .value,
-html.mobile-device .intro .kv .value a{
-  font-size:1.18rem !important;
-  line-height:1.62 !important;
-}
-html.mobile-device .section-head{
-  gap:8px !important;
-  margin-bottom:16px !important;
-}
-html.mobile-device .section-head h2,
-html.mobile-device .topic-head h3{
-  font-size:2rem !important;
-  line-height:1.08 !important;
-}
-html.mobile-device .content p,
-html.mobile-device .content li,
-html.mobile-device #about p,
-html.mobile-device #advising p,
-html.mobile-device #service p,
-html.mobile-device #teaching p,
-html.mobile-device #publications li,
-html.mobile-device #publications p,
-html.mobile-device #professional-service li,
-html.mobile-device #teaching li,
-html.mobile-device .student-card,
-html.mobile-device .student-note,
-html.mobile-device .alumni-item{
-  font-size:1.12rem !important;
-  line-height:1.78 !important;
-}
-html.mobile-device .topic-group ul,
-html.mobile-device #publications ul{
-  padding-left:1.2em !important;
-}
-html.mobile-device .controls{
-  padding:16px !important;
-  gap:12px !important;
-}
-html.mobile-device #pubSearch,
-html.mobile-device .dd-btn,
-html.mobile-device .controls select,
-html.mobile-device .dd-panel select,
-html.mobile-device .dd-actions button,
-html.mobile-device input[type="search"]{
-  min-height:54px !important;
-  font-size:1.02rem !important;
-  border-radius:15px !important;
-}
-html.mobile-device #pubSearch{
-  padding:0 15px !important;
-}
-html.mobile-device #pubSearch::placeholder{
-  font-size:.98rem !important;
-}
-html.mobile-device .dd-panel{
-  padding:16px !important;
-  border-radius:18px !important;
-}
-html.mobile-device .dd-actions{
-  display:grid !important;
-  grid-template-columns:1fr 1fr !important;
-  gap:10px !important;
-}
-html.mobile-device #backToTop{
-  font-size:.92rem !important;
-  padding:10px 14px !important;
-}
-@media (max-width: 430px){
-  html.mobile-device body{font-size:20px !important;}
-  html.mobile-device .brand-title{font-size:1.08rem !important;}
-  html.mobile-device .intro h1{font-size:2.15rem !important;}
-  html.mobile-device .section-head h2,
-  html.mobile-device .topic-head h3{font-size:1.72rem !important;}
-  html.mobile-device .content p,
-  html.mobile-device .content li,
-  html.mobile-device #about p,
-  html.mobile-device #advising p,
-  html.mobile-device #service p,
-  html.mobile-device #teaching p,
-  html.mobile-device #publications li,
-  html.mobile-device #publications p{font-size:1.08rem !important;}
-}
-</style>
-
-
-<style id="iphone-final-mobile-fix-v17">
-/* Final mobile-only typography and spacing pass for iPhone/small phones.
-   Desktop styles remain untouched. */
-@media screen and (max-width: 860px) {
-  html {
-    -webkit-text-size-adjust: 100% !important;
-    text-size-adjust: 100% !important;
-  }
-
-  body {
-    font-size: 20px !important;
-    line-height: 1.78 !important;
-  }
-
-  .wrap {
-    width: 100% !important;
-    max-width: none !important;
-    padding: 16px 16px calc(88px + env(safe-area-inset-bottom)) !important;
-  }
-
-  .topbar-inner {
-    padding: 14px 16px !important;
-    min-height: 72px !important;
-    gap: 12px !important;
-  }
-
-  .brand-title {
-    font-size: 1.2rem !important;
-    line-height: 1.2 !important;
-    font-weight: 750 !important;
-  }
-
-  .menu-btn {
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 8px !important;
-    min-height: 48px !important;
-    padding: 12px 15px !important;
-    font-size: 1rem !important;
-    font-weight: 650 !important;
-    border-radius: 14px !important;
-  }
-
-  .topbar[data-open="true"] nav {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 8px !important;
-  }
-
-  nav {
-    padding-top: 12px !important;
-  }
-
-  .navlink,
-  .navlink.nav-cta {
-    width: 100% !important;
-    display: flex !important;
-    align-items: center !important;
-    min-height: 50px !important;
-    padding: 12px 14px !important;
-    font-size: 1rem !important;
-    line-height: 1.35 !important;
-    border-radius: 14px !important;
-  }
-
-  .hero {
-    grid-template-columns: 1fr !important;
-    gap: 16px !important;
-    margin-top: 16px !important;
-  }
-
-  .profile {
-    width: min(100%, 380px) !important;
-    margin: 0 auto !important;
-    padding: 14px !important;
-  }
-
-  .photo {
-    width: 100% !important;
-    max-height: 380px !important;
-    aspect-ratio: 4 / 4.4 !important;
-    object-fit: cover !important;
-    object-position: center top !important;
-    border-radius: 16px !important;
-  }
-
-  .intro,
-  .content,
-  .topic-group,
-  .alumni-card,
-  .teach-card,
-  .service-card {
-    padding: 20px !important;
-  }
-
-  .intro {
-    gap: 16px !important;
-  }
-
-  .intro h1 {
-    font-size: clamp(2.35rem, 9vw, 2.8rem) !important;
-    line-height: 1.02 !important;
-    letter-spacing: -0.03em !important;
-    margin-bottom: 2px !important;
-  }
-
-  .subtitle {
-    font-size: 1.18rem !important;
-    line-height: 1.5 !important;
-    margin-top: 0 !important;
-  }
-
-  .intro .grid-2,
-  .grid-2,
-  .header-grid,
-  .service-grid,
-  .teaching-grid,
-  .alumni-groups,
-  .three-column {
-    grid-template-columns: 1fr !important;
-    gap: 14px !important;
-  }
-
-  .intro .kv {
-    padding: 18px !important;
-    border-radius: 15px !important;
-  }
-
-  .intro .kv .label,
-  .label,
-  .hint,
-  .pub-count,
-  .topic-head .topic-meta,
-  .dd-note,
-  .teach-meta,
-  .service-meta,
-  .service-years,
-  .brand-sub {
-    font-size: 0.9rem !important;
-    line-height: 1.45 !important;
-  }
-
-  .intro .kv .label {
-    letter-spacing: 0.16em !important;
-  }
-
-  .intro .kv .value,
-  .intro .kv .value a {
-    font-size: 1.14rem !important;
-    line-height: 1.68 !important;
-  }
-
-  section {
-    margin-top: 28px !important;
-    scroll-margin-top: 86px !important;
-  }
-
-  .section-head {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 8px !important;
-    margin: 4px 0 16px !important;
-  }
-
-  .section-head h2,
-  .topic-head h3 {
-    font-size: 1.8rem !important;
-    line-height: 1.1 !important;
-    letter-spacing: -0.025em !important;
-  }
-
-  p,
-  li,
-  .content p,
-  .content li,
-  .section-content p,
-  .section-content li,
-  #about p,
-  #publications p,
-  #publications li,
-  #students p,
-  #students li,
-  #professional_service p,
-  #professional_service li,
-  #teaching p,
-  #teaching li,
-  .alumni-list,
-  .teach-list,
-  .service-list,
-  .service-venue,
-  .service-role {
-    font-size: 1.08rem !important;
-    line-height: 1.82 !important;
+    font-size: 24px;
+    line-height: 1.72;
   }
 
   .controls {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    align-items: stretch !important;
-    gap: 12px !important;
-    padding: 16px !important;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    align-items: stretch;
+    padding: 12px;
   }
 
-  .dd,
-  .dd > summary,
-  .dd-btn {
-    width: 100% !important;
-  }
-
-  #pubSearch,
   .controls input,
+  .dd-btn,
   .controls select,
-  .dd-btn,
   .dd-panel select,
   .dd-actions button,
   input[type="search"] {
-    width: 100% !important;
-    min-height: 54px !important;
-    padding: 0 15px !important;
-    font-size: 1rem !important;
-    line-height: 1.35 !important;
-    border-radius: 15px !important;
+    width: 100%;
+    min-height: 54px;
+    font-size: 18px;
+    border-radius: 14px;
+  }
+
+  #pubSearch::placeholder {
+    font-size: 18px;
+  }
+
+  .dd {
+    width: 100%;
+  }
+
+  .dd > summary,
+  .dd-btn {
+    width: 100%;
   }
 
   .dd-panel {
-    position: static !important;
-    inset: auto !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    margin-top: 10px !important;
-    padding: 16px !important;
-    border-radius: 18px !important;
+    position: static;
+    top: auto;
+    right: auto;
+    min-width: 0;
+    max-width: none;
+    width: 100%;
+    margin-top: 10px;
+    padding: 14px;
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    pointer-events: auto;
+    display: none;
   }
 
-  .dd-panel::before {
-    display: none !important;
+  .dd[open] .dd-panel {
+    display: block;
+  }
+
+  .dd-panel::before,
+  .dd-panel::after {
+    display: none;
   }
 
   .dd-row {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 8px !important;
-    margin: 12px 0 !important;
+    gap: 8px;
+    margin: 10px 0;
   }
 
-  .year-range,
-  .year-range select,
-  .dd-panel select {
-    width: 100% !important;
+  .year-range {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   .year-sep {
-    display: none !important;
+    display: none;
   }
 
   .dd-actions {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    gap: 10px !important;
-    margin-top: 14px !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 14px;
   }
 
-  .chip,
-  .pill {
-    font-size: 0.98rem !important;
-    line-height: 1.35 !important;
+  .topic-head {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  #backToTop {
-    right: 14px !important;
-    bottom: calc(14px + env(safe-area-inset-bottom)) !important;
-    font-size: 0.92rem !important;
-  }
-}
-
-@media screen and (max-width: 430px) {
-  body {
-    font-size: 19px !important;
-  }
-
-  .brand-title {
-    font-size: 1.08rem !important;
-  }
-
-  .intro h1 {
-    font-size: clamp(2.05rem, 10vw, 2.45rem) !important;
-  }
-
-  .section-head h2,
-  .topic-head h3 {
-    font-size: 1.62rem !important;
-  }
-
-  p,
-  li,
-  .content p,
-  .content li,
-  #about p,
-  #publications p,
-  #publications li,
-  #students p,
-  #students li,
-  #professional_service p,
-  #professional_service li,
-  #teaching p,
-  #teaching li {
-    font-size: 1.04rem !important;
-  }
-}
-</style>
-
-
-<style id="iphone-mobile-typography-v19">
-/* Stronger, final mobile-only typography pass.
-   Desktop remains unchanged because everything is scoped to small screens. */
-@media screen and (max-width: 860px) {
-  html {
-    -webkit-text-size-adjust: 100% !important;
-    text-size-adjust: 100% !important;
-  }
-
-  body {
-    font-size: 24px !important;
-    line-height: 1.72 !important;
-  }
-
-  .wrap {
-    padding: 18px 18px calc(96px + env(safe-area-inset-bottom)) !important;
-  }
-
-  .topbar-inner {
-    padding: 15px 18px !important;
-    min-height: 76px !important;
-  }
-
-  .brand-title {
-    font-size: 24px !important;
-    line-height: 1.18 !important;
-  }
-
-  .menu-btn {
-    min-height: 52px !important;
-    padding: 12px 16px !important;
-    font-size: 20px !important;
-    border-radius: 15px !important;
-  }
-
-  nav {
-    padding-top: 14px !important;
-    gap: 10px !important;
-  }
-
-  .navlink,
-  .navlink.nav-cta {
-    min-height: 54px !important;
-    padding: 13px 15px !important;
-    font-size: 20px !important;
-    line-height: 1.35 !important;
-    border-radius: 15px !important;
-  }
-
-  .hero {
-    gap: 18px !important;
-    margin-top: 18px !important;
-  }
-
-  .profile {
-    width: min(100%, 390px) !important;
-    padding: 16px !important;
-  }
-
-  .photo {
-    max-height: 400px !important;
-    border-radius: 18px !important;
-  }
-
-  .intro,
-  .content,
-  .topic-group,
-  .alumni-card,
-  .teach-card,
-  .service-card {
-    padding: 22px !important;
-  }
-
-  .intro {
-    gap: 18px !important;
-  }
-
-  .intro h1 {
-    font-size: 52px !important;
-    line-height: 1.02 !important;
-    letter-spacing: -0.035em !important;
-  }
-
-  .subtitle {
-    font-size: 26px !important;
-    line-height: 1.42 !important;
-  }
-
-  .intro .grid-2,
-  .grid-2,
-  .header-grid,
-  .service-grid,
-  .teaching-grid,
-  .alumni-groups,
-  .three-column {
-    gap: 16px !important;
-  }
-
-  .intro .kv {
-    padding: 20px !important;
-    border-radius: 16px !important;
-  }
-
-  .intro .kv .label,
-  .label,
-  .hint,
-  .pub-count,
-  .topic-head .topic-meta,
-  .dd-note,
-  .teach-meta,
-  .service-meta,
-  .service-years,
-  .brand-sub {
-    font-size: 14px !important;
-    line-height: 1.45 !important;
-    letter-spacing: 0.12em !important;
-  }
-
-  .intro .kv .value,
-  .intro .kv .value a {
-    font-size: 24px !important;
-    line-height: 1.62 !important;
-  }
-
-  section {
-    margin-top: 30px !important;
-    scroll-margin-top: 90px !important;
-  }
-
-  .section-head {
-    gap: 10px !important;
-    margin: 4px 0 18px !important;
-  }
-
-  .section-head h2,
-  .topic-head h3 {
-    font-size: 38px !important;
-    line-height: 1.08 !important;
-    letter-spacing: -0.03em !important;
-  }
-
-  p,
-  li,
-  .content p,
-  .content li,
-  .section-content p,
-  .section-content li,
-  #about p,
-  #publications p,
-  #publications li,
-  #students p,
-  #students li,
-  #professional_service p,
-  #professional_service li,
-  #teaching p,
-  #teaching li,
-  .alumni-list,
-  .teach-list,
-  .service-list,
-  .service-venue,
-  .service-role,
-  .student-card,
-  .student-note,
-  .alumni-item {
-    font-size: 24px !important;
-    line-height: 1.74 !important;
-  }
-
-  .controls {
-    gap: 14px !important;
-    padding: 18px !important;
-  }
-
-  #pubSearch,
-  .controls input,
-  .controls select,
-  .dd-btn,
-  .dd-panel select,
-  .dd-actions button,
-  input[type="search"] {
-    min-height: 56px !important;
-    padding: 0 16px !important;
-    font-size: 19px !important;
-    line-height: 1.35 !important;
-    border-radius: 16px !important;
-  }
-
-  #pubSearch::placeholder,
-  input[type="search"]::placeholder {
-    font-size: 19px !important;
-  }
-
-  .dd-panel {
-    margin-top: 12px !important;
-    padding: 18px !important;
-    border-radius: 18px !important;
-  }
-
-  .dd-row {
-    gap: 10px !important;
-    margin: 14px 0 !important;
-  }
-
-  .dd-actions {
-    gap: 12px !important;
-    margin-top: 16px !important;
-  }
-
-  .chip,
-  .pill {
-    font-size: 18px !important;
-    line-height: 1.35 !important;
+  .topic-head .topic-meta {
+    white-space: normal;
   }
 
   #backToTop {
-    font-size: 18px !important;
-    padding: 12px 16px !important;
+    font-size: 16px;
+    padding: 10px 14px;
   }
 }
-
-@media screen and (max-width: 430px) {
-  body {
-    font-size: 23px !important;
-  }
-
-  .brand-title {
-    font-size: 22px !important;
-  }
-
-  .menu-btn,
-  .navlink,
-  .navlink.nav-cta {
-    font-size: 19px !important;
-  }
-
-  .intro h1 {
-    font-size: 46px !important;
-  }
-
-  .subtitle {
-    font-size: 24px !important;
-  }
-
-  .section-head h2,
-  .topic-head h3 {
-    font-size: 34px !important;
-  }
-
-  p,
-  li,
-  .content p,
-  .content li,
-  #about p,
-  #publications p,
-  #publications li,
-  #students p,
-  #students li,
-  #professional_service p,
-  #professional_service li,
-  #teaching p,
-  #teaching li,
-  .student-card,
-  .student-note,
-  .alumni-item {
-    font-size: 22px !important;
-  }
-
-  .intro .kv .value,
-  .intro .kv .value a {
-    font-size: 22px !important;
-  }
-}
-</style>
-
-
-
-<style id="iphone-real-device-tuning-v20">
-/* Real-device tuning based on the user's actual iPhone screenshots.
-   Desktop remains untouched; this only affects small phone screens. */
-@media screen and (max-width: 430px) {
-  html,
-  html.mobile-device {
-    -webkit-text-size-adjust: 100% !important;
-    text-size-adjust: 100% !important;
-  }
-
-  body,
-  html.mobile-device body {
-    font-size: 24px !important;
-    line-height: 1.78 !important;
-    letter-spacing: -0.004em !important;
-  }
-
-  .wrap,
-  html.mobile-device .wrap {
-    width: 100% !important;
-    max-width: none !important;
-    padding: 16px 16px calc(104px + env(safe-area-inset-bottom)) !important;
-  }
-
-  .topbar-inner,
-  html.mobile-device .topbar-inner {
-    padding: 14px 16px !important;
-    min-height: 74px !important;
-    gap: 12px !important;
-  }
-
-  .brand-title,
-  html.mobile-device .brand-title {
-    font-size: 24px !important;
-    line-height: 1.18 !important;
-    font-weight: 760 !important;
-  }
-
-  .menu-btn,
-  html.mobile-device .menu-btn,
-  .navlink,
-  .navlink.nav-cta,
-  html.mobile-device .navlink,
-  html.mobile-device .navlink.nav-cta {
-    font-size: 20px !important;
-    min-height: 50px !important;
-  }
-
-  .hero,
-  html.mobile-device .hero {
-    gap: 18px !important;
-    margin-top: 18px !important;
-  }
-
-  .profile,
-  .intro,
-  .content,
-  .topic-group,
-  html.mobile-device .profile,
-  html.mobile-device .intro,
-  html.mobile-device .content,
-  html.mobile-device .topic-group {
-    padding: 18px !important;
-    border-radius: 18px !important;
-  }
-
-  .profile {
-    width: min(100%, 330px) !important;
-    margin-inline: auto !important;
-  }
-
-  .intro h1,
-  html.mobile-device .intro h1 {
-    font-size: 52px !important;
-    line-height: 1.02 !important;
-    letter-spacing: -0.032em !important;
-  }
-
-  .subtitle,
-  html.mobile-device .subtitle {
-    font-size: 27px !important;
-    line-height: 1.45 !important;
-  }
-
-  .section-head h2,
-  .topic-head h3,
-  html.mobile-device .section-head h2,
-  html.mobile-device .topic-head h3 {
-    font-size: 38px !important;
-    line-height: 1.14 !important;
-    letter-spacing: -0.022em !important;
-  }
-
-  .hint,
-  .label,
-  .dd-note,
-  #pubCount,
-  .controls .control-label,
-  .topic-head .topic-meta,
-  html.mobile-device .hint,
-  html.mobile-device .label,
-  html.mobile-device .dd-note,
-  html.mobile-device #pubCount,
-  html.mobile-device .controls .control-label,
-  html.mobile-device .topic-head .topic-meta {
-    font-size: 18px !important;
-    line-height: 1.5 !important;
-  }
-
-  .intro .kv .label,
-  html.mobile-device .intro .kv .label {
-    font-size: 15px !important;
-  }
-
-  .intro .kv .value,
-  .intro .kv .value a,
-  html.mobile-device .intro .kv .value,
-  html.mobile-device .intro .kv .value a {
-    font-size: 23px !important;
-    line-height: 1.7 !important;
-  }
-
-  .controls,
-  html.mobile-device .controls {
-    gap: 12px !important;
-    padding: 14px !important;
-  }
-
-  .controls input,
-  .controls select,
-  html.mobile-device .controls input,
-  html.mobile-device .controls select,
-  .dd-btn,
-  html.mobile-device .dd-btn {
-    font-size: 21px !important;
-    line-height: 1.35 !important;
-    min-height: 56px !important;
-    padding: 14px 16px !important;
-    border-radius: 14px !important;
-  }
-
-  .dd-panel,
-  html.mobile-device .dd-panel {
-    font-size: 20px !important;
-  }
-
-  .content p,
-  .content li,
-  .section-content p,
-  .section-content li,
-  #publications li,
-  #publications p,
-  #about p,
-  #advising p,
-  #service p,
-  #teaching p,
-  #professional-service li,
-  #teaching li,
-  .alumni-item,
-  .student-card,
-  .student-note,
-  html.mobile-device .content p,
-  html.mobile-device .content li,
-  html.mobile-device .section-content p,
-  html.mobile-device .section-content li,
-  html.mobile-device #publications li,
-  html.mobile-device #publications p,
-  html.mobile-device #about p,
-  html.mobile-device #advising p,
-  html.mobile-device #service p,
-  html.mobile-device #teaching p,
-  html.mobile-device #professional-service li,
-  html.mobile-device #teaching li,
-  html.mobile-device .alumni-item,
-  html.mobile-device .student-card,
-  html.mobile-device .student-note {
-    font-size: 24px !important;
-    line-height: 1.78 !important;
-  }
-
-  #publications li,
-  html.mobile-device #publications li {
-    margin-bottom: 18px !important;
-    padding-left: 0.08em !important;
-  }
-
-  .pub-groups,
-  html.mobile-device .pub-groups {
-    gap: 18px !important;
-  }
-
-  .topic-group ul,
-  html.mobile-device .topic-group ul,
-  #publications ul,
-  html.mobile-device #publications ul {
-    padding-left: 1.15em !important;
-  }
-
-  #backToTop,
-  html.mobile-device #backToTop {
-    font-size: 18px !important;
-    padding: 12px 16px !important;
-    bottom: calc(18px + env(safe-area-inset-bottom)) !important;
-    right: 14px !important;
-  }
-}
-</style>
-
-</head>
+</style></head>
 <body>
 <header class="topbar" data-open="false" id="topbar">
 <div class="topbar-inner">
@@ -3052,7 +1491,7 @@ html.mobile-device #backToTop{
 <section aria-label="About" class="card" id="about">
 <div class="content">
 <div class="section-head">
-<div class="section-title-wrap"><h2>About</h2><a class="section-anchor" href="#about" aria-label="Link to About section">🔗</a></div>
+<div class="section-title-wrap"><h2>About</h2><a aria-label="Link to About section" class="section-anchor" href="#about">🔗</a></div>
 <div class="hint">Research, background, and interests</div>
 </div>
 <p class="p5">
@@ -3065,7 +1504,7 @@ html.mobile-device #backToTop{
 <section aria-label="Publications" class="card" id="publications">
 <div class="content">
 <div class="section-head">
-<div class="section-title-wrap"><h2>Publications</h2><a class="section-anchor" href="#publications" aria-label="Link to Publications section">🔗</a></div>
+<div class="section-title-wrap"><h2>Publications</h2><a aria-label="Link to Publications section" class="section-anchor" href="#publications">🔗</a></div>
 <div class="hint">Search and filter — links open in a new tab</div>
 </div>
 <div aria-label="Publications controls" class="controls">
@@ -3203,7 +1642,7 @@ html.mobile-device #backToTop{
 <section aria-label="Students and Postdocs" class="card" id="students">
 <div class="content">
 <div class="section-head">
-<div class="section-title-wrap"><h2>Students and Postdocs</h2><a class="section-anchor" href="#students" aria-label="Link to Students and Postdocs section">🔗</a></div>
+<div class="section-title-wrap"><h2>Students and Postdocs</h2><a aria-label="Link to Students and Postdocs section" class="section-anchor" href="#students">🔗</a></div>
 <div class="hint">Current and alumni</div>
 </div>
 <ul>
@@ -3270,7 +1709,7 @@ Amanda Hardy (MS)<br/>
 <section aria-label="Professional Service" class="card" id="professional_service">
 <div class="content">
 <div class="section-head">
-<div class="section-title-wrap"><h2>Professional Service</h2><a class="section-anchor" href="#professional_service" aria-label="Link to Professional Service section">🔗</a></div>
+<div class="section-title-wrap"><h2>Professional Service</h2><a aria-label="Link to Professional Service section" class="section-anchor" href="#professional_service">🔗</a></div>
 <div class="hint">Editorial positions and program committees</div>
 </div>
 <div class="service-grid" role="list">
@@ -3336,7 +1775,7 @@ Amanda Hardy (MS)<br/>
 <section aria-label="Teaching" class="card" id="teaching">
 <div class="content">
 <div class="section-head">
-<div class="section-title-wrap"><h2>Teaching</h2><a class="section-anchor" href="#teaching" aria-label="Link to Teaching section">🔗</a></div>
+<div class="section-title-wrap"><h2>Teaching</h2><a aria-label="Link to Teaching section" class="section-anchor" href="#teaching">🔗</a></div>
 <div class="hint">Selected courses and offerings</div>
 </div>
 <div class="teaching-grid" role="list">
@@ -3418,7 +1857,7 @@ Amanda Hardy (MS)<br/>
 <footer>
 <div class="footer-row">
 <div>
-<span class="muted">©</span> <span id="yearNow"></span> Daniel M. Romero 5:21
+<span class="muted">©</span> <span id="yearNow"></span> Daniel M. Romero 5:41
 </div>
 </div>
 </footer>
@@ -3783,7 +2222,6 @@ Amanda Hardy (MS)<br/>
 
 document.getElementById('yearNow').textContent = String(new Date().getFullYear());
   </script>
-
 <script>
     var _gaq=_gaq||[];
     _gaq.push(['_setAccount','UA-32323667-1']);
@@ -3795,8 +2233,6 @@ document.getElementById('yearNow').textContent = String(new Date().getFullYear()
       var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);
     })();
   </script>
-
-
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   const navLinks = document.querySelectorAll('.navlink[href^="#"]');
@@ -3822,10 +2258,6 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('resize', updateActiveNav);
 });
 </script>
-
-
-
-
 <script>
 (function () {
   const search = document.getElementById('pubSearch');
@@ -3843,12 +2275,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 })();
 </script>
-
-
-
-<button id="backToTop" aria-label="Back to top">↑ Top</button>
-
-
+<button aria-label="Back to top" id="backToTop">↑ Top</button>
 <script>
 const backToTop = document.getElementById('backToTop');
 
@@ -3867,29 +2294,30 @@ backToTop.addEventListener('click', () => {
 });
 </script>
 
-
 <script>
 (function(){
   const topbar = document.getElementById('topbar');
   const menuBtn = document.getElementById('menuBtn');
   const nav = document.getElementById('primaryNav');
-  if(!topbar || !menuBtn || !nav) return;
+  if (!topbar || !menuBtn || !nav) return;
+  const mobileMQ = window.matchMedia('(max-width: 860px)');
   function closeMenu(){
     topbar.setAttribute('data-open','false');
     menuBtn.setAttribute('aria-expanded','false');
   }
   document.addEventListener('click', (event) => {
-    if (!document.documentElement.classList.contains('mobile-device')) return;
+    if (!mobileMQ.matches) return;
     if (topbar.getAttribute('data-open') !== 'true') return;
     if (!topbar.contains(event.target)) closeMenu();
   });
   nav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
-  window.addEventListener('resize', () => {
-    if (!document.documentElement.classList.contains('mobile-device')) closeMenu();
-  }, {passive:true});
+  const handleMQChange = () => { if (!mobileMQ.matches) closeMenu(); };
+  if (mobileMQ.addEventListener) {
+    mobileMQ.addEventListener('change', handleMQChange);
+  } else if (mobileMQ.addListener) {
+    mobileMQ.addListener(handleMQChange);
+  }
+  window.addEventListener('resize', handleMQChange, {passive:true});
 })();
-</script>
-
-</body>
-
+</script></body>
 </html>
