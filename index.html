@@ -654,8 +654,13 @@
   outline-offset: 2px;
 }
 
-.dd-clear{
+.dd-actions{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
   margin-top: 12px;
+}
+.dd-actions button{
   width: 100%;
   border: 1px solid var(--line);
   background: #ffffff;
@@ -666,12 +671,12 @@
   cursor: pointer;
   transition: transform .12s ease, background-color .12s ease, box-shadow .12s ease;
 }
-.dd-clear:hover{
+.dd-actions button:hover{
   background: color-mix(in oklab, var(--accent) 6%, #ffffff);
   transform: translateY(-1px);
   box-shadow: 0 10px 24px rgba(10,20,40,.10);
 }
-.dd-clear:focus-visible{
+.dd-actions button:focus-visible{
   outline: 3px solid color-mix(in oklab, var(--accent) 30%, transparent);
   outline-offset: 2px;
 }
@@ -1245,6 +1250,7 @@ button {
   .controls input,
   .controls select,
   .dd-panel select,
+  .dd-apply,
   .dd-clear,
   input[type="search"] {
     font-size: 16px !important;
@@ -1252,6 +1258,7 @@ button {
   .controls input,
   .controls select,
   .dd-panel select,
+  .dd-apply,
   .dd-clear,
   .dd-btn,
   input[type="search"] {
@@ -1432,6 +1439,7 @@ button {
 .mobile-device .controls input,
 .mobile-device .controls select,
 .mobile-device .dd-panel select,
+.mobile-device .dd-apply,
 .mobile-device .dd-clear,
 .mobile-device input[type="search"]{
   font-size:16px !important;
@@ -1439,6 +1447,7 @@ button {
 .mobile-device .controls input,
 .mobile-device .controls select,
 .mobile-device .dd-panel select,
+.mobile-device .dd-apply,
 .mobile-device .dd-clear,
 .mobile-device .dd-btn,
 .mobile-device input[type="search"]{
@@ -1636,7 +1645,7 @@ button {
 <option value="methods">Methods, Measurement, &amp; Research Frameworks</option>
 </select>
 </div>
-<button class="dd-clear" id="pubClear" type="button">Clear filters</button>
+<div class="dd-actions"><button class="dd-apply" id="pubApply" type="button">Apply filters</button><button class="dd-clear" id="pubClear" type="button">Clear filters</button></div>
 </div>
 </details>
 <details class="dd" id="sortDD">
@@ -1945,7 +1954,7 @@ Amanda Hardy (MS)<br/>
 <footer>
 <div class="footer-row">
 <div>
-<span class="muted">©</span> <span id="yearNow"></span> Daniel M Romero 
+<span class="muted">©</span> <span id="yearNow"></span> Daniel M. Romero 
 </div>
 </div>
 </footer>
@@ -2217,10 +2226,14 @@ Amanda Hardy (MS)<br/>
     }
 
     
-    function onTopicChange(){
-      // Selecting a topic orders papers by year automatically.
-      if (pubSort) pubSort.value = 'year';
-      buildYearList();
+    function applySelectedFilters(){
+      normalizeYearRange();
+      if (pubTopic && pubTopic.value !== 'all' && pubSort) pubSort.value = 'year';
+      if (pubSort && pubSort.value === 'topic') {
+        buildTopicList();
+      } else {
+        buildYearList();
+      }
       applyFilters();
     }
 
@@ -2255,12 +2268,12 @@ Amanda Hardy (MS)<br/>
       }
     };
 
-    pubYearFrom && pubYearFrom.addEventListener('change', () => { normalizeYearRange(); applyFilters(); });
-    pubYearTo && pubYearTo.addEventListener('change', () => { normalizeYearRange(); applyFilters(); });
-    pubType && pubType.addEventListener('change', applyFilters);
-    pubTopic && pubTopic.addEventListener('change', onTopicChange);
+    pubYearFrom && pubYearFrom.addEventListener('change', normalizeYearRange);
+    pubYearTo && pubYearTo.addEventListener('change', normalizeYearRange);
     pubSort && pubSort.addEventListener('change', applySort);
+    const pubApply = document.getElementById('pubApply');
     const pubClear = document.getElementById('pubClear');
+    pubApply && pubApply.addEventListener('click', applySelectedFilters);
     pubClear && pubClear.addEventListener('click', onClearFilters);
 
     // Dropdown UX: keep panels tidy (one open at a time), close on outside click, close on ESC
@@ -2288,20 +2301,17 @@ Amanda Hardy (MS)<br/>
       openDD.querySelector('summary')?.focus();
     });
 
-    const isRealMobile = () => document.documentElement.classList.contains('mobile-device') || window.matchMedia('(max-width: 860px)').matches;
-    const closeDetailsOnMobile = (detailsEl) => {
-      if (!detailsEl || !isRealMobile()) return;
+    const closeDetails = (detailsEl) => {
+      if (!detailsEl) return;
       window.requestAnimationFrame(() => {
         detailsEl.open = false;
         detailsEl.querySelector('summary')?.blur();
       });
     };
 
-    [pubYearFrom, pubYearTo, pubType, pubTopic].forEach(el => {
-      el && el.addEventListener('change', () => closeDetailsOnMobile(document.getElementById('filterDD')));
-    });
-    pubSort && pubSort.addEventListener('change', () => closeDetailsOnMobile(document.getElementById('sortDD')));
-    pubClear && pubClear.addEventListener('click', () => closeDetailsOnMobile(document.getElementById('filterDD')));
+    pubApply && pubApply.addEventListener('click', () => closeDetails(document.getElementById('filterDD')));
+    pubClear && pubClear.addEventListener('click', () => closeDetails(document.getElementById('filterDD')));
+    pubSort && pubSort.addEventListener('change', () => closeDetails(document.getElementById('sortDD')));
 
     // Default layout
     buildYearList();
