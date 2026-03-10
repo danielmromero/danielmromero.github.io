@@ -2027,160 +2027,176 @@ html.mobile-device #backToTop{
 </style>
 
 
-<style id="mobile-readability-v15">
+<style id="mobile-overhaul-v16">
 html.mobile-device{
   -webkit-text-size-adjust:100% !important;
   text-size-adjust:100% !important;
 }
-html.mobile-device body,
-body.mobile-device{
-  font-size:23px !important;
-  line-height:1.8 !important;
+html.mobile-device body{
+  font-size:21px !important;
+  line-height:1.72 !important;
 }
-html.mobile-device .wrap,
-body.mobile-device .wrap{
-  padding:14px 14px 88px !important;
+html.mobile-device .wrap{
+  width:100% !important;
+  max-width:none !important;
+  padding:14px 14px 96px !important;
 }
-html.mobile-device .brand-title,
-body.mobile-device .brand-title{
-  font-size:20px !important;
+html.mobile-device .topbar-inner{
+  padding:14px !important;
+  min-height:72px !important;
+  align-items:center !important;
+}
+html.mobile-device .brand-title{
+  font-size:1.18rem !important;
   line-height:1.2 !important;
+  font-weight:750 !important;
 }
-html.mobile-device .menu-btn,
-body.mobile-device .menu-btn{
-  font-size:17px !important;
-  min-height:48px !important;
-  padding:12px 16px !important;
+html.mobile-device .menu-btn{
+  min-height:46px !important;
+  padding:11px 14px !important;
+  font-size:1rem !important;
   border-radius:14px !important;
 }
+html.mobile-device .topbar nav{
+  top:calc(100% + 10px) !important;
+  padding:12px !important;
+  border-radius:18px !important;
+}
+html.mobile-device .navlink,
+html.mobile-device .navlink.nav-cta{
+  min-height:50px !important;
+  font-size:1rem !important;
+  padding:12px 14px !important;
+}
+html.mobile-device .hero{
+  gap:16px !important;
+  margin-top:16px !important;
+}
+html.mobile-device .profile{
+  width:min(100%, 360px) !important;
+  padding:12px !important;
+}
+html.mobile-device .photo{
+  aspect-ratio:4 / 4.35 !important;
+  max-height:360px !important;
+  border-radius:16px !important;
+}
 html.mobile-device .intro,
-html.mobile-device .profile,
 html.mobile-device .content,
-html.mobile-device .topic-group,
-body.mobile-device .intro,
-body.mobile-device .profile,
-body.mobile-device .content,
-body.mobile-device .topic-group{
-  padding:20px !important;
+html.mobile-device .topic-group{
+  padding:22px !important;
 }
-html.mobile-device .intro h1,
-body.mobile-device .intro h1{
-  font-size:44px !important;
+html.mobile-device .intro h1{
+  font-size:2.4rem !important;
   line-height:1.02 !important;
-  margin-bottom:6px !important;
+  margin-bottom:4px !important;
 }
-html.mobile-device .subtitle,
-body.mobile-device .subtitle{
-  font-size:24px !important;
+html.mobile-device .subtitle{
+  font-size:1.2rem !important;
   line-height:1.45 !important;
 }
-html.mobile-device .section-head h2,
-html.mobile-device .topic-head h3,
-body.mobile-device .section-head h2,
-body.mobile-device .topic-head h3{
-  font-size:29px !important;
-  line-height:1.15 !important;
+html.mobile-device .intro .grid-2{
+  gap:14px !important;
 }
-html.mobile-device .section-head .hint,
-html.mobile-device .label,
-html.mobile-device #pubCount,
-html.mobile-device .topic-head .topic-meta,
-html.mobile-device .dd-note,
-body.mobile-device .section-head .hint,
-body.mobile-device .label,
-body.mobile-device #pubCount,
-body.mobile-device .topic-head .topic-meta,
-body.mobile-device .dd-note{
-  font-size:16px !important;
-  line-height:1.45 !important;
+html.mobile-device .intro .kv{
+  padding:18px !important;
 }
 html.mobile-device .intro .kv .label,
-body.mobile-device .intro .kv .label{
-  font-size:13px !important;
-  letter-spacing:.12em !important;
+html.mobile-device .label,
+html.mobile-device .hint,
+html.mobile-device #pubCount,
+html.mobile-device .topic-head .topic-meta,
+html.mobile-device .dd-note{
+  font-size:.9rem !important;
+  line-height:1.45 !important;
+}
+html.mobile-device .intro .kv .label{
+  letter-spacing:.18em !important;
 }
 html.mobile-device .intro .kv .value,
-html.mobile-device .intro .kv .value a,
-body.mobile-device .intro .kv .value,
-body.mobile-device .intro .kv .value a{
-  font-size:22px !important;
-  line-height:1.7 !important;
+html.mobile-device .intro .kv .value a{
+  font-size:1.18rem !important;
+  line-height:1.62 !important;
 }
-html.mobile-device p,
-html.mobile-device li,
-html.mobile-device .student-card,
-html.mobile-device .student-note,
-html.mobile-device .alumni-item,
-body.mobile-device p,
-body.mobile-device li,
-body.mobile-device .student-card,
-body.mobile-device .student-note,
-body.mobile-device .alumni-item{
-  font-size:21px !important;
-  line-height:1.82 !important;
+html.mobile-device .section-head{
+  gap:8px !important;
+  margin-bottom:16px !important;
 }
-html.mobile-device #publications li,
-html.mobile-device #publications p,
+html.mobile-device .section-head h2,
+html.mobile-device .topic-head h3{
+  font-size:2rem !important;
+  line-height:1.08 !important;
+}
+html.mobile-device .content p,
+html.mobile-device .content li,
 html.mobile-device #about p,
 html.mobile-device #advising p,
 html.mobile-device #service p,
 html.mobile-device #teaching p,
-body.mobile-device #publications li,
-body.mobile-device #publications p,
-body.mobile-device #about p,
-body.mobile-device #advising p,
-body.mobile-device #service p,
-body.mobile-device #teaching p{
-  font-size:21px !important;
-  line-height:1.84 !important;
+html.mobile-device #publications li,
+html.mobile-device #publications p,
+html.mobile-device #professional-service li,
+html.mobile-device #teaching li,
+html.mobile-device .student-card,
+html.mobile-device .student-note,
+html.mobile-device .alumni-item{
+  font-size:1.12rem !important;
+  line-height:1.78 !important;
 }
-html.mobile-device .controls,
-body.mobile-device .controls{
+html.mobile-device .topic-group ul,
+html.mobile-device #publications ul{
+  padding-left:1.2em !important;
+}
+html.mobile-device .controls{
   padding:16px !important;
-  gap:14px !important;
+  gap:12px !important;
 }
+html.mobile-device #pubSearch,
 html.mobile-device .dd-btn,
-html.mobile-device .controls input,
 html.mobile-device .controls select,
 html.mobile-device .dd-panel select,
 html.mobile-device .dd-actions button,
-html.mobile-device input[type="search"],
-body.mobile-device .dd-btn,
-body.mobile-device .controls input,
-body.mobile-device .controls select,
-body.mobile-device .dd-panel select,
-body.mobile-device .dd-actions button,
-body.mobile-device input[type="search"]{
-  font-size:19px !important;
-  min-height:56px !important;
-  border-radius:16px !important;
+html.mobile-device input[type="search"]{
+  min-height:54px !important;
+  font-size:1.02rem !important;
+  border-radius:15px !important;
 }
-html.mobile-device #pubSearch::placeholder,
-body.mobile-device #pubSearch::placeholder{
-  font-size:18px !important;
+html.mobile-device #pubSearch{
+  padding:0 15px !important;
 }
-html.mobile-device .dd-panel,
-body.mobile-device .dd-panel{
-  padding:18px !important;
+html.mobile-device #pubSearch::placeholder{
+  font-size:.98rem !important;
 }
-html.mobile-device .dd-actions,
-body.mobile-device .dd-actions{
-  gap:12px !important;
+html.mobile-device .dd-panel{
+  padding:16px !important;
+  border-radius:18px !important;
 }
-html.mobile-device .profile,
-body.mobile-device .profile{
-  width:min(100%, 380px) !important;
+html.mobile-device .dd-actions{
+  display:grid !important;
+  grid-template-columns:1fr 1fr !important;
+  gap:10px !important;
 }
-html.mobile-device .photo,
-body.mobile-device .photo{
-  aspect-ratio:4 / 4.9 !important;
-  max-height:380px !important;
+html.mobile-device #backToTop{
+  font-size:.92rem !important;
+  padding:10px 14px !important;
 }
-html.mobile-device #backToTop,
-body.mobile-device #backToTop{
-  font-size:16px !important;
+@media (max-width: 430px){
+  html.mobile-device body{font-size:20px !important;}
+  html.mobile-device .brand-title{font-size:1.08rem !important;}
+  html.mobile-device .intro h1{font-size:2.15rem !important;}
+  html.mobile-device .section-head h2,
+  html.mobile-device .topic-head h3{font-size:1.72rem !important;}
+  html.mobile-device .content p,
+  html.mobile-device .content li,
+  html.mobile-device #about p,
+  html.mobile-device #advising p,
+  html.mobile-device #service p,
+  html.mobile-device #teaching p,
+  html.mobile-device #publications li,
+  html.mobile-device #publications p{font-size:1.08rem !important;}
 }
 </style>
+
 </head>
 <body>
 <header class="topbar" data-open="false" id="topbar">
@@ -2603,7 +2619,7 @@ Amanda Hardy (MS)<br/>
 <footer>
 <div class="footer-row">
 <div>
-<span class="muted">©</span> <span id="yearNow"></span> Daniel M. Romero 2:16
+<span class="muted">©</span> <span id="yearNow"></span> Daniel M. Romero 2:33
 </div>
 </div>
 </footer>
