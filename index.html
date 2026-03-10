@@ -1532,6 +1532,162 @@ button {
   }
 })();
 </script>
+
+<style id="mobile-typography-upgrade">
+@media (max-width: 860px) {
+  html {
+    font-size: 18px;
+  }
+  body {
+    font-size: 18px;
+    line-height: 1.72;
+    letter-spacing: -0.003em;
+  }
+  .wrap {
+    padding: 16px 16px 64px;
+  }
+  .topbar-inner {
+    padding: 14px 16px;
+    min-height: 72px;
+  }
+  .brand-title {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+  }
+  .menu-btn {
+    font-size: 15px !important;
+    padding: 11px 14px;
+    border-radius: 12px;
+  }
+  .profile,
+  .intro,
+  .content,
+  .topic-group {
+    padding: 18px;
+  }
+  .intro h1 {
+    font-size: clamp(34px, 9vw, 44px);
+    line-height: 1.04;
+    letter-spacing: -0.03em;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .intro .kv {
+    padding: 18px !important;
+  }
+  .intro .kv .label,
+  .label,
+  .hint,
+  .topic-head .topic-meta,
+  .dd-note,
+  #pubCount,
+  .controls .control-label {
+    font-size: 14px !important;
+    line-height: 1.45;
+    letter-spacing: 0.03em;
+  }
+  .intro .kv .value,
+  .intro .kv .value a {
+    font-size: 18px !important;
+    line-height: 1.68 !important;
+  }
+  .intro .grid-2 .kv:last-child .value,
+  .intro .grid-2 .kv:last-child .value a {
+    font-size: 18px !important;
+    line-height: 1.72 !important;
+  }
+  .section-head {
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .section-head h2,
+  .topic-head h3 {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  .content p,
+  .content li,
+  .section-content p,
+  .section-content li,
+  #publications li,
+  #publications p,
+  #about p,
+  #advising p,
+  #service p,
+  #teaching p,
+  #professional-service li,
+  #teaching li,
+  .alumni-item,
+  .student-card,
+  .student-note {
+    font-size: 17.5px !important;
+    line-height: 1.78 !important;
+  }
+  .pub-groups {
+    gap: 16px;
+    margin-top: 16px;
+  }
+  .topic-group ul {
+    padding-left: 20px;
+  }
+  .controls {
+    padding: 14px;
+    gap: 12px;
+  }
+  .dd-btn,
+  .dd-panel select,
+  .controls input,
+  input[type="search"],
+  .dd-actions button {
+    font-size: 17px !important;
+  }
+  .dd-btn,
+  .controls input,
+  input[type="search"],
+  .dd-panel select,
+  .dd-actions button {
+    min-height: 52px;
+    border-radius: 14px;
+  }
+  #pubSearch::placeholder {
+    font-size: 16px;
+  }
+  .dd-panel {
+    padding: 16px;
+  }
+  .dd-row {
+    gap: 8px;
+    margin: 12px 0;
+  }
+  .dd-actions {
+    gap: 12px;
+    margin-top: 14px;
+  }
+  #backToTop {
+    font-size: 15px;
+    padding: 10px 14px;
+  }
+}
+@media (max-width: 480px) {
+  .brand-title {
+    font-size: 19px;
+  }
+  .content p,
+  .content li,
+  .section-content p,
+  .section-content li,
+  #publications li,
+  #publications p {
+    font-size: 17px !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <header class="topbar" data-open="false" id="topbar">
@@ -1954,7 +2110,7 @@ Amanda Hardy (MS)<br/>
 <footer>
 <div class="footer-row">
 <div>
-<span class="muted">©</span> <span id="yearNow"></span> Daniel M. Romero 
+<span class="muted">©</span> <span id="yearNow"></span> Daniel Romero 
 </div>
 </div>
 </footer>
