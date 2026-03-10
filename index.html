@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
 <title>Daniel M. Romero</title>
 <meta content="Daniel M. Romero — Associate Professor at the University of Michigan. Computational social science, network science, and the science of science." name="description"/>
 <meta content="light" name="color-scheme"/>
@@ -1135,6 +1135,181 @@ section{
     font-weight: 700 !important;
 }
 </style>
+
+
+<style id="mobile-friendly-fixes">
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 860px) {
+  .wrap {
+    padding: 14px 14px 56px;
+  }
+
+  .topbar-inner {
+    padding: 12px 14px;
+  }
+
+  .brand-title {
+    font-size: 18px;
+  }
+
+  .hero {
+    gap: 16px;
+  }
+
+  .profile,
+  .intro,
+  .content {
+    padding: 16px;
+  }
+
+  .intro h1 {
+    font-size: clamp(30px, 7vw, 40px);
+  }
+
+  .subtitle {
+    font-size: 19px;
+    line-height: 1.45;
+  }
+
+  .intro .grid-2 {
+    gap: 12px;
+  }
+
+  .intro .kv {
+    padding: 18px 16px;
+  }
+
+  .intro .kv .label {
+    font-size: 12px;
+  }
+
+  .intro .kv .value,
+  .intro .kv .value a {
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .section-head h2 {
+    font-size: 28px;
+  }
+
+  .hint {
+    font-size: 15px;
+  }
+
+  .controls {
+    padding: 12px;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .controls input,
+  .controls select,
+  .dd-panel select,
+  .dd-clear,
+  .dd-btn,
+  .menu-btn,
+  .navlink,
+  .chip {
+    font-size: 16px !important;
+  }
+
+  .controls input,
+  .controls select,
+  .dd-panel select,
+  .dd-clear,
+  .dd-btn {
+    min-height: 46px;
+  }
+
+  .controls input {
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .dd {
+    width: 100%;
+  }
+
+  .dd > summary {
+    width: 100%;
+  }
+
+  .dd-btn {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .pub-count {
+    line-height: 1.5;
+  }
+
+  #backToTop {
+    right: 14px;
+    bottom: calc(14px + env(safe-area-inset-bottom));
+  }
+}
+
+@media (max-width: 640px) {
+  .dd-panel {
+    position: fixed;
+    left: 12px !important;
+    right: 12px !important;
+    top: max(76px, calc(env(safe-area-inset-top) + 12px));
+    width: auto;
+    min-width: 0;
+    max-width: none;
+    max-height: min(78dvh, calc(100dvh - 96px));
+    overflow: auto;
+    border-radius: 18px;
+    z-index: 999;
+  }
+
+  .dd-panel::before {
+    display: none;
+  }
+
+  .dd-row {
+    align-items: stretch;
+  }
+
+  .year-range {
+    width: 100%;
+  }
+
+  .controls {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar[data-open="true"] nav {
+    padding-bottom: 8px;
+  }
+
+  nav {
+    gap: 6px;
+  }
+
+  .navlink,
+  .navlink.nav-cta {
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+
 </head>
 <body>
 <header class="topbar" data-open="false" id="topbar">
@@ -1946,6 +2121,60 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', updateActiveNav, { passive: true });
   window.addEventListener('resize', updateActiveNav);
 });
+</script>
+
+
+
+<script>
+(function () {
+  const viewportMeta = document.querySelector('meta[name="viewport"]');
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+  if (viewportMeta && isIOS) {
+    const defaultViewport = 'width=device-width, initial-scale=1, viewport-fit=cover';
+    const lockedViewport = 'width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover';
+
+    const lockViewport = () => { viewportMeta.setAttribute('content', lockedViewport); };
+    const unlockViewport = () => { viewportMeta.setAttribute('content', defaultViewport); };
+
+    document.addEventListener('focusin', (event) => {
+      if (event.target && event.target.matches('input, select, textarea')) {
+        lockViewport();
+      }
+    });
+
+    document.addEventListener('focusout', (event) => {
+      if (event.target && event.target.matches('input, select, textarea')) {
+        setTimeout(unlockViewport, 120);
+      }
+    });
+  }
+
+  const dropdowns = Array.from(document.querySelectorAll('details.dd'));
+  const mobileMQ = window.matchMedia('(max-width: 640px)');
+
+  function lockPageScroll(shouldLock) {
+    if (!mobileMQ.matches) return;
+    document.body.style.overflow = shouldLock ? 'hidden' : '';
+  }
+
+  dropdowns.forEach((dd) => {
+    dd.addEventListener('toggle', () => {
+      const anyOpen = dropdowns.some((item) => item.open);
+      lockPageScroll(anyOpen);
+    });
+  });
+
+  window.addEventListener('resize', () => {
+    if (!mobileMQ.matches) {
+      document.body.style.overflow = '';
+      return;
+    }
+    const anyOpen = dropdowns.some((item) => item.open);
+    lockPageScroll(anyOpen);
+  });
+})();
 </script>
 
 
