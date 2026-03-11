@@ -1124,135 +1124,6 @@ section{
   scroll-margin-top: 110px;
 }
 
-
-
-/* final mobile typography system */
-.mobile-text-controls {
-  display: none;
-}
-
-@media (max-width: 860px) {
-  html {
-    --mobile-scale: 1.18;
-  }
-  html[data-mobile-scale="1"] { --mobile-scale: 1; }
-  html[data-mobile-scale="1.18"] { --mobile-scale: 1.18; }
-  html[data-mobile-scale="1.34"] { --mobile-scale: 1.34; }
-
-  body {
-    font-size: calc(21px * var(--mobile-scale)) !important;
-    line-height: 1.72 !important;
-  }
-
-  .brand-title,
-  .menu-btn,
-  #primaryNav a,
-  button,
-  input,
-  select,
-  option,
-  label,
-  .label,
-  .value,
-  .subtitle,
-  .muted,
-  .faint,
-  .topic-tag,
-  .pub-meta,
-  .kv,
-  .footer-row,
-  footer,
-  p,
-  li {
-    font-size: calc(20px * var(--mobile-scale)) !important;
-    line-height: 1.72 !important;
-  }
-
-  h1 {
-    font-size: calc(42px * var(--mobile-scale)) !important;
-    line-height: 1.12 !important;
-  }
-
-  h2 {
-    font-size: calc(31px * var(--mobile-scale)) !important;
-    line-height: 1.18 !important;
-  }
-
-  h3 {
-    font-size: calc(25px * var(--mobile-scale)) !important;
-    line-height: 1.24 !important;
-  }
-
-  .subtitle {
-    font-size: calc(22px * var(--mobile-scale)) !important;
-  }
-
-  .brand-title,
-  .menu-btn,
-  #primaryNav a,
-  .navlink,
-  .navlink.nav-cta {
-    font-size: calc(18px * var(--mobile-scale)) !important;
-  }
-
-  .wrap {
-    padding-left: 18px !important;
-    padding-right: 18px !important;
-  }
-
-  .card,
-  .intro,
-  .profile,
-  .content,
-  .topic-group,
-  .pub-group,
-  .pub-item,
-  .pub,
-  .pub-entry,
-  .kv,
-  .grid-2 > div {
-    padding: 20px !important;
-  }
-
-  .mobile-text-controls {
-    position: fixed;
-    right: 14px;
-    bottom: 18px;
-    z-index: 60;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 6px;
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    background: rgba(255,255,255,.96);
-    box-shadow: 0 10px 24px rgba(10,20,40,.14);
-    backdrop-filter: blur(10px);
-  }
-
-  .mobile-text-btn {
-    appearance: none;
-    border: 0;
-    border-radius: 999px;
-    background: transparent;
-    color: var(--text);
-    min-width: 42px;
-    height: 42px;
-    padding: 0 12px;
-    font-weight: 700;
-    line-height: 1;
-    cursor: pointer;
-  }
-
-  .mobile-text-btn.is-active {
-    background: var(--text);
-    color: #fff;
-  }
-
-  #backToTop {
-    bottom: 74px !important;
-  }
-}
 </style>
 <style>
 
@@ -1645,6 +1516,40 @@ button {
   .topic-group {
     padding-left: 16px !important;
     padding-right: 16px !important;
+  }
+}
+
+
+/* v24 mobile dropdown containment fix */
+@media (max-width: 860px){
+  .controls{ overflow: visible; }
+  .dd{ position: static; }
+  .dd-panel{
+    position: fixed !important;
+    left: max(12px, env(safe-area-inset-left)) !important;
+    right: max(12px, env(safe-area-inset-right)) !important;
+    top: auto !important;
+    bottom: max(12px, env(safe-area-inset-bottom)) !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    max-height: min(72vh, 560px) !important;
+    overflow: auto !important;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 18px !important;
+    padding: 16px !important;
+    box-shadow: 0 24px 60px rgba(10,20,40,.22) !important;
+    z-index: 10000 !important;
+  }
+  .dd-panel::before,
+  .dd-panel::after{
+    display: none !important;
+  }
+  .dd-panel select,
+  .year-range select,
+  .dd-actions button{
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }
 </style>
@@ -2071,9 +1976,8 @@ Amanda Hardy (MS)<br/>
 <footer>
 <div class="footer-row">
 <div>
-<span class="muted">©</span> <span id="yearNow"></span> Daniel M. Romero
+<span class="muted">©</span> <span id="yearNow"></span> Daniel M. Romero 
 </div>
-<div>Last updated: <span id="lastUpdated">—</span></div>
 </div>
 </footer>
 </main>
@@ -2490,12 +2394,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 })();
 </script>
-
-<div aria-label="Mobile text size" class="mobile-text-controls" id="mobileTextControls" role="group">
-<button class="mobile-text-btn" data-scale="1" type="button">A</button>
-<button class="mobile-text-btn is-active" data-scale="1.18" type="button">A+</button>
-<button class="mobile-text-btn" data-scale="1.34" type="button">A++</button>
-</div>
 <button aria-label="Back to top" id="backToTop">↑ Top</button>
 <script>
 const backToTop = document.getElementById('backToTop');
@@ -2540,61 +2438,5 @@ backToTop.addEventListener('click', () => {
   }
   window.addEventListener('resize', handleMQChange, {passive:true});
 })();
-</script>
-<script>
-(function () {
-  const yearNow = document.getElementById('yearNow');
-  if (yearNow) yearNow.textContent = new Date().getFullYear();
-
-  const lastUpdated = document.getElementById('lastUpdated');
-  if (lastUpdated) {
-    const source = document.lastModified ? new Date(document.lastModified) : new Date();
-    const stamp = Number.isNaN(source.getTime()) ? new Date() : source;
-    lastUpdated.textContent = new Intl.DateTimeFormat(undefined, {
-      year: 'numeric', month: 'long', day: 'numeric',
-      hour: 'numeric', minute: '2-digit'
-    }).format(stamp);
-  }
-
-  const root = document.documentElement;
-  const controls = document.getElementById('mobileTextControls');
-  const buttons = controls ? Array.from(controls.querySelectorAll('.mobile-text-btn')) : [];
-  const mobileMQ = window.matchMedia('(max-width: 860px)');
-  const STORAGE_KEY = 'dmr-mobile-scale';
-
-  function setScale(scale) {
-    root.setAttribute('data-mobile-scale', scale);
-    buttons.forEach(btn => btn.classList.toggle('is-active', btn.dataset.scale === scale));
-    try { localStorage.setItem(STORAGE_KEY, scale); } catch (e) {}
-  }
-
-  function applyInitialScale() {
-    let scale = '1.18';
-    try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved && ['1','1.18','1.34'].includes(saved)) scale = saved;
-    } catch (e) {}
-    if (mobileMQ.matches) setScale(scale);
-  }
-
-  if (controls) {
-    controls.hidden = !mobileMQ.matches;
-    buttons.forEach(btn => {
-      btn.addEventListener('click', () => setScale(btn.dataset.scale));
-    });
-  }
-
-  const handleMQ = () => {
-    if (!controls) return;
-    controls.hidden = !mobileMQ.matches;
-    if (mobileMQ.matches && !root.getAttribute('data-mobile-scale')) applyInitialScale();
-  };
-
-  if (mobileMQ.addEventListener) mobileMQ.addEventListener('change', handleMQ);
-  else if (mobileMQ.addListener) mobileMQ.addListener(handleMQ);
-
-  applyInitialScale();
-})();
-</script>
-</body>
+</script></body>
 </html>
