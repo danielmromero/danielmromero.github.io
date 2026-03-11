@@ -547,6 +547,17 @@
   border-color: color-mix(in oklab, var(--accent) 35%, var(--line));
 }
 
+.dd-btn[aria-pressed="true"]{
+  background: color-mix(in oklab, var(--accent) 10%, #ffffff);
+  border-color: color-mix(in oklab, var(--accent) 34%, var(--line));
+  box-shadow: 0 14px 28px rgba(10,20,40,.10);
+}
+
+#sortYearBtn::after,
+#groupTopicBtn::after{
+  content: "";
+}
+
 
 .dd-panel{
   position:absolute;
@@ -1742,7 +1753,7 @@ button {
 </div>
 </div>
 <div class="dd-row">
-<label class="dd-label" for="pubType">Type</label>
+<label class="dd-label" for="pubType">Venue Type</label>
 <select id="pubType">
 <option value="all">All</option>
 <option value="journal">Journal</option>
@@ -1765,19 +1776,8 @@ button {
 <div class="dd-actions"><button class="dd-apply" id="pubApply" type="button">Apply filters</button><button class="dd-clear" id="pubClear" type="button">Clear filters</button></div>
 </div>
 </details>
-<details class="dd" id="sortDD">
-<summary aria-label="Order publications" class="dd-btn" role="button">Order by</summary>
-<div aria-label="Sort options" class="dd-panel" role="group">
-<div class="dd-row">
-<label class="dd-label" for="pubSort">Order</label>
-<select id="pubSort">
-<option selected="" value="year">Year</option>
-<option value="topic">Topic</option>
-</select>
-</div>
-<div class="dd-note">Tip: selecting a topic will automatically switch sorting to Year.</div>
-</div>
-</details>
+<button aria-label="Sort publications by year" aria-pressed="true" class="dd-btn" id="sortYearBtn" type="button">By Year</button>
+<button aria-label="Group publications by topic" aria-pressed="false" class="dd-btn" id="groupTopicBtn" type="button">By Topic</button>
 </div>
 <div aria-live="polite" class="pub-count" id="pubCount"></div>
 <div aria-live="polite" class="topic-selected" id="pubTopicHeading"></div>
@@ -1878,7 +1878,7 @@ button {
 <a href="https://chrisquarles.org/" target="_blank">Dr. Chris Quarles </a> (PhD, 2023)<br/>
 <a href="http://haoopeng.github.io/" target="_blank">Dr. Hao Peng</a> (PhD, 2022)<br/>
 <a href="https://elplatt.com/" target="_blank">Dr. Ed Platt</a> (PhD, 2022)<br/>
-<a href="https://www.andersgiovanni.com/" target="_blank">Anders Giovanni M&amp;oslashller </a> (Visiting PhD)<br/>
+<a href="https://www.andersgiovanni.com/" target="_blank">Anders Giovanni Møller </a> (Visiting PhD)<br/>
 <a href="https://www.avrahami-israeli.com/" target="_blank">Dr. Abraham Israeli </a> (Postdoctoral Fellow)<br/>
 <a href="https://sites.google.com/site/tiagocunha87/" target="_blank">Dr. Tiago Cunha</a> (Postdoctoral Fellow)<br/>
 <a href="https://patpark.org/" target="_blank">Dr. Patrick Park</a> (MIDAS Fellow)<br/>
@@ -2101,7 +2101,9 @@ Amanda Hardy (MS)<br/>
     const pubYearTo = document.getElementById('pubYearTo');
     const pubTopic = document.getElementById('pubTopic');
     const pubType = document.getElementById('pubType');
-    const pubSort = document.getElementById('pubSort');
+    const sortYearBtn = document.getElementById('sortYearBtn');
+    const groupTopicBtn = document.getElementById('groupTopicBtn');
+    let pubSortMode = 'year';
     const pubCount = document.getElementById('pubCount');
 
     let items = Array.from((pubRoot && pubRoot.querySelectorAll('li')) || []);
@@ -2263,7 +2265,7 @@ Amanda Hardy (MS)<br/>
         : topic);
 
       if (topicHeading) {
-        const inYearMode = !pubSort || (pubSort.value === 'year');
+        const inYearMode = pubSortMode === 'year';
         if (topic !== 'all' && inYearMode) {
           topicHeading.textContent = topicText;
           topicHeading.style.display = 'block';
@@ -2335,7 +2337,7 @@ Amanda Hardy (MS)<br/>
     }
 
     function applySort(){
-      if(pubSort && pubSort.value === 'topic'){
+      if(pubSortMode === 'topic'){
         buildTopicList();
       } else {
         buildYearList();
@@ -2346,8 +2348,9 @@ Amanda Hardy (MS)<br/>
     
     function applySelectedFilters(){
       normalizeYearRange();
-      if (pubTopic && pubTopic.value !== 'all' && pubSort) pubSort.value = 'year';
-      if (pubSort && pubSort.value === 'topic') {
+      if (pubTopic && pubTopic.value !== 'all') pubSortMode = 'year';
+      syncSortButtons();
+      if (pubSortMode === 'topic') {
         buildTopicList();
       } else {
         buildYearList();
@@ -2361,10 +2364,28 @@ Amanda Hardy (MS)<br/>
       if (pubYearTo) pubYearTo.value = 'any';
       if (pubTopic) pubTopic.value = 'all';
       if (pubType) pubType.value = 'all';
-      if (pubSort) pubSort.value = 'year';
+      pubSortMode = 'year';
+      syncSortButtons();
       buildYearList();
       applyFilters();
     }
+
+    function syncSortButtons(){
+      if (sortYearBtn) sortYearBtn.setAttribute('aria-pressed', pubSortMode === 'year' ? 'true' : 'false');
+      if (groupTopicBtn) groupTopicBtn.setAttribute('aria-pressed', pubSortMode === 'topic' ? 'true' : 'false');
+    }
+
+    sortYearBtn && sortYearBtn.addEventListener('click', () => {
+      pubSortMode = 'year';
+      syncSortButtons();
+      applySort();
+    });
+
+    groupTopicBtn && groupTopicBtn.addEventListener('click', () => {
+      pubSortMode = 'topic';
+      syncSortButtons();
+      applySort();
+    });
 
     // Wire up events
     pubSearch && pubSearch.addEventListener('input', applyFilters);
@@ -2388,7 +2409,6 @@ Amanda Hardy (MS)<br/>
 
     pubYearFrom && pubYearFrom.addEventListener('change', normalizeYearRange);
     pubYearTo && pubYearTo.addEventListener('change', normalizeYearRange);
-    pubSort && pubSort.addEventListener('change', applySort);
     const pubApply = document.getElementById('pubApply');
     const pubClear = document.getElementById('pubClear');
     pubApply && pubApply.addEventListener('click', applySelectedFilters);
@@ -2429,9 +2449,9 @@ Amanda Hardy (MS)<br/>
 
     pubApply && pubApply.addEventListener('click', () => closeDetails(document.getElementById('filterDD')));
     pubClear && pubClear.addEventListener('click', () => closeDetails(document.getElementById('filterDD')));
-    pubSort && pubSort.addEventListener('change', () => closeDetails(document.getElementById('sortDD')));
 
     // Default layout
+    syncSortButtons();
     buildYearList();
     applyFilters();
 
