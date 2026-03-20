@@ -920,16 +920,19 @@
   font-size: 0.98rem;
   white-space: nowrap;
 }
-.service-venue{
+.service-venue,
+.service-title{
   margin-top: 3px;
   font-weight: 400;
   font-size: 1.05rem;
   line-height: 1.35;
 }
-.service-venue a{
+.service-venue a,
+.service-title a{
   text-decoration: none;
 }
-.service-venue a:hover{
+.service-venue a:hover,
+.service-title a:hover{
   text-decoration: underline;
 }
 
@@ -1480,6 +1483,12 @@ button {
   .student-note {
     font-size: 24px;
     line-height: 1.72;
+  }
+
+  #professional_service .service-venue,
+  #professional_service .service-title {
+    font-size: 24px;
+    line-height: 1.35;
   }
 
   .controls {
