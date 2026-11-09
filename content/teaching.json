@@ -1,0 +1,86 @@
+[
+  {
+    "heading": "University of Michigan — School of Information",
+    "courses": [
+      {
+        "title": "SI 301 — Models of Social Information Processing",
+        "url": "https://www.si.umich.edu/programs/courses/301",
+        "offering": "Fall 2015–2026"
+      },
+      {
+        "title": "SIADS 652 — Network Analysis",
+        "url": "https://www.si.umich.edu/sites/default/files/SIADS_652.pdf",
+        "offering": "Winter/Spring/Fall 2021–2025"
+      },
+      {
+        "title": "SI 710 — Doctoral Seminar on Information Diffusion in Social Networks",
+        "offering": "Winter 2017, Winter 2019"
+      },
+      {
+        "title": "SI 370 — Data Exploration",
+        "url": "https://www.si.umich.edu/programs/courses/370",
+        "offering": "Winter 2018"
+      }
+    ]
+  },
+  {
+    "heading": "University of Michigan — Center for the Study of Complex Systems",
+    "courses": [
+      {
+        "title": "CMPLXSYS/SOC 251 — Computational Social Science",
+        "url": "https://um-css.github.io/pages/about.html#about",
+        "offering": "Winter 2022–2023"
+      },
+      {
+        "title": "QMSS 251 — Computational Social Science",
+        "url": "https://um-css.github.io/pages/about.html#about",
+        "offering": "Winter 2021 · Co-taught with Elizabeth Bruch and Jeff Lockhart"
+      }
+    ]
+  },
+  {
+    "heading": "Coursera",
+    "courses": [
+      {
+        "title": "Applied Social Network Analysis in Python",
+        "url": "http://bit.ly/2xRAZRc",
+        "offering": "Online course"
+      },
+      {
+        "title": "Network Modeling and Analysis in Python",
+        "url": "https://www.coursera.org/learn/network-modeling-and-analysis-in-python?specialization=more-applied-data-science-with-python",
+        "offering": "Online course"
+      }
+    ]
+  },
+  {
+    "heading": "[Ithaca College — Mathematics Department](http://www.ithaca.edu/hs/depts/math/)",
+    "courses": [
+      {
+        "title": "Business Statistics",
+        "offering": "Spring 2012"
+      },
+      {
+        "title": "Applied Calculus I",
+        "offering": "Fall 2011"
+      },
+      {
+        "title": "Calculus II",
+        "offering": "Spring 2011"
+      }
+    ]
+  },
+  {
+    "heading": "[Auburn Correctional Facility](https://en.wikipedia.org/wiki/Auburn_Correctional_Facility) — [CPEP](http://cpep.cornell.edu/_Home)",
+    "courses": [
+      {
+        "title": "High School Algebra I",
+        "offering": "Fall 2009, Fall 2010"
+      },
+      {
+        "title": "High School Algebra II",
+        "offering": "Spring 2010"
+      }
+    ]
+  }
+]

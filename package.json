@@ -1,0 +1,10 @@
+{
+  "name": "romero-academic-website",
+  "private": true,
+  "engines": {"node": ">=22"},
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:publish": "node scripts/build.mjs --stamp",
+    "test": "node scripts/test.mjs"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "editorial": [
+    {
+      "venue": "The International AAAI Conference on Web and Social Media (ICWSM)",
+      "url": "https://icwsm.org/",
+      "years": "2025–present",
+      "role": "Editor-in-Chief"
+    },
+    {
+      "venue": "ACM Transactions on Social Computing",
+      "url": "https://dl.acm.org/journal/tsc",
+      "years": "2025–present",
+      "role": "Senior Associate Editor"
+    },
+    {
+      "venue": "EPJ Data Science",
+      "url": "https://epjdatascience.springeropen.com/",
+      "years": "2018–present",
+      "role": "Associate Editor"
+    },
+    {
+      "venue": "Applied Network Science",
+      "url": "http://www.appliednetsci.com/",
+      "years": "2015–present",
+      "role": "Associate Editor"
+    }
+  ],
+  "committees": {
+    "note": "Most years",
+    "items": [
+      "The ACM Web Conference (WWW)",
+      "The International AAAI Conference on Web and Social Media (ICWSM)",
+      "The ACM Conference on Web Search and Data Mining (WSDM)",
+      "The ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW)"
+    ]
+  }
+}
