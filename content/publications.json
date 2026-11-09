@@ -1,0 +1,1097 @@
+[
+  {
+    "title": "A Test of Time: Modeling the Long-Term Success of Crowd Collaborations",
+    "url": "https://bit.ly/46S9QvD",
+    "authors": "A. Israeli, D. Jurgens, and D.M. Romero.",
+    "venue": "PNAS Nexus , 5, 8, 2026.",
+    "year": 2026,
+    "type": "journal",
+    "topic": "online_platforms",
+    "resources": [
+      {
+        "label": "Supplemental Material",
+        "url": "https://bit.ly/4iqH0JV"
+      },
+      {
+        "label": "Data and Code",
+        "url": "https://github.com/abrahami/sustainable-high-quality-wikis"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "The Impact of Generative AI on Social Media: An Experimental Study",
+    "url": "https://bit.ly/3N3SK7M",
+    "authors": "A.G. Møller, D.M. Romero, D. Jurgens, and L.M. Aiello.",
+    "venue": "Sci Rep , 16, 9376, 2026.",
+    "year": 2026,
+    "type": "journal",
+    "topic": "online_platforms",
+    "resources": [
+      {
+        "label": "Supplemental Material",
+        "url": "https://bit.ly/3P02794"
+      },
+      {
+        "label": "Data and Code",
+        "url": "https://zenodo.org/records/18537773"
+      },
+      {
+        "label": "Blog",
+        "url": "https://ai-research.andersgiovanni.com/"
+      }
+    ],
+    "pressCoverage": [
+      {
+        "label": "BBC",
+        "url": "https://www.bbc.com/news/articles/c77g6dm5pr8o"
+      },
+      {
+        "label": "The Guardian",
+        "url": "https://www.theguardian.com/media/2026/oct/07/mumsnet-denies-using-ai-for-content-message-board-prompt"
+      },
+      {
+        "label": "Brookings",
+        "url": "https://www.brookings.edu/articles/whats-at-stake-at-unga-2026/"
+      }
+    ]
+  },
+  {
+    "title": "The Persistence of Retracted Papers on Wikipedia",
+    "url": "https://bit.ly/4k3CnGC",
+    "authors": "H. Shi, Y. Yu, D., D.M. Romero, and E-Á. Horvát.",
+    "venue": "Proc. 29th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), 2026.",
+    "year": 2026,
+    "type": "conference",
+    "topic": "science_of_science",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Agentic AI: User Empowerment or Foreclosure?",
+    "url": "https://bit.ly/4BLcoKt",
+    "authors": "D. Gamba, D., D.M. Romero, and G. Schoenebeck.",
+    "venue": "Proc. of the AAAI ACM Conference on AI, Ethics, and Society (AIES), 2026.",
+    "year": 2026,
+    "type": "conference",
+    "topic": "online_platforms",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "The Gender Gap in Scholarly Self-Promotion on Social Media.",
+    "url": "https://bit.ly/4oi8mCm",
+    "authors": "H. Peng, M. Teplitskiy, D.M. Romero, and E-Á. Horvát.",
+    "venue": "Nature Communications , 16, 5552, 2025.",
+    "year": 2025,
+    "type": "journal",
+    "topic": "science_of_science",
+    "resources": [
+      {
+        "label": "Supplemental Material",
+        "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-60590-y/MediaObjects/41467_2025_60590_MOESM1_ESM.pdf"
+      },
+      {
+        "label": "Data and Code",
+        "url": "https://github.com/haoopeng/gender_promotion"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "Evaluating Interdisciplinary Research: Disparate Outcomes for Topic and Knowledge Base.",
+    "url": "https://bit.ly/4jxz9Ib",
+    "authors": "S. Xiang, D.M. Romero, and M. Teplitskiy.",
+    "venue": "Proc. National Academy of Sciences (PNAS) , 122 (16) e2409752122, 2025.",
+    "year": 2025,
+    "type": "journal",
+    "topic": "science_of_science",
+    "resources": [
+      {
+        "label": "Supplemental Material",
+        "url": "https://bit.ly/4iwiIe0"
+      },
+      {
+        "label": "Data and Code",
+        "url": "https://bit.ly/3Eom6ts"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "Timing and Cross-Platform Presence Shape the Online Dissemination of Science.",
+    "url": "https://bit.ly/4m1x5bT",
+    "authors": "J. Córdova, E-Á. Horvát, and D.M. Romero.",
+    "venue": "EPJ Data Sci , 14, 63, 2025.",
+    "year": 2025,
+    "type": "journal",
+    "topic": "science_of_science",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Roles of Network and Identity in Hashtag Diffusion.",
+    "url": "https://bit.ly/3GlLO2h",
+    "authors": "A. Ananthasubramaniam, D. Jurgens, and D.M. Romero.",
+    "venue": "Proc. of The ACM Web Conference (WWW), 2025.",
+    "year": 2025,
+    "type": "conference",
+    "topic": "information_diffusion",
+    "resources": [
+      {
+        "label": "Data and Code",
+        "url": "https://bit.ly/42r5lHb"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "Multiplatform Early Predictors of Academic Articles' Visibility and Citations.",
+    "url": "https://bit.ly/4moCs5k",
+    "authors": "J. Córdova, T. Hirose, H. Shi, E-Á. Horvát, and D.M. Romero.",
+    "venue": "Proc. of The ACM Collective Intelligence Conference (CI), 2025.",
+    "year": 2025,
+    "type": "conference",
+    "topic": "science_of_science",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Scholarly Disengagement as an Epistemic Crisis: Clickbait, Credibility, and the Decline of Public-Facing Science.",
+    "url": "https://bit.ly/4ldlEh0",
+    "authors": "M. Bhat, D.M. Romero, and and E-Á. Horvát.",
+    "venue": "Proc. of The ACM Collective Intelligence Conference (CI), 2025.",
+    "year": 2025,
+    "type": "conference",
+    "topic": "science_of_science",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Signals in the Noise: Decoding Unexpected Engagement Patterns on Twitter.",
+    "url": "https://bit.ly/3LNzj2m",
+    "authors": "Y. Yu, H. Chen, D.M. Romero, and P. Dhillon.",
+    "venue": "Proc. 28th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), 2025.",
+    "year": 2025,
+    "type": "conference",
+    "topic": "online_platforms",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Research Topic Choice: Motivations, Strategies, and Consequences.",
+    "url": "https://bit.ly/3FQns0p",
+    "authors": "S. Xiang, D.M. Romero, and M. Teplitskiy.",
+    "venue": "Quantitative Science Studies , 1-66, 2025.",
+    "year": 2025,
+    "type": "journal",
+    "topic": "science_of_science",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Demographic Disparity in Wikipedia Coverage: A Global Perspective.",
+    "url": "https://bit.ly/41oCXF8",
+    "authors": "Y. Yu, X. Li, T. Li, P. Dhillon, and D.M. Romero.",
+    "venue": "EPJ Data Sci , 14, 15, 2025.",
+    "year": 2025,
+    "type": "journal",
+    "topic": "online_platforms",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Does the Use of Unusual Combinations of Datasets Contribute to Greater Scientific Impact?",
+    "url": "https://bit.ly/47QHfqp",
+    "authors": "Y. Yu and D.M. Romero.",
+    "venue": "Proc. National Academy of Sciences (PNAS) , 121 (41) e2402802121, 2024.",
+    "year": 2024,
+    "type": "journal",
+    "topic": "science_of_science",
+    "resources": [
+      {
+        "label": "Supplemental Material",
+        "url": "https://bit.ly/4eQvnXz"
+      },
+      {
+        "label": "Data and Code",
+        "url": "https://bit.ly/3XRgM7w"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "Networks and Identity Drive the Spatial Diffusion of Linguistic Innovation in Urban and Rural Areas.",
+    "url": "https://bit.ly/3Xw6x9w",
+    "authors": "A. Ananthasubramaniam, D. Jurgens, and D.M. Romero.",
+    "venue": "npj Complex , 1, 14, 2024.",
+    "year": 2024,
+    "type": "journal",
+    "topic": "information_diffusion",
+    "resources": [
+      {
+        "label": "Supplemental Material",
+        "url": "https://bit.ly/4ey6EI2"
+      },
+      {
+        "label": "Data and Code",
+        "url": "https://bit.ly/4gNBde5"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "Exit Ripple Effects: Understanding the Disruption of Socialization Networks Following Employee Departures.",
+    "url": "https://bit.ly/4bn8I35",
+    "authors": "D. Gamba, Y. Yu, Y. Yuan, G. Schoenebeck, and D.M. Romero.",
+    "venue": "Proc. of The ACM Web Conference (WWW), 2024.",
+    "year": 2024,
+    "type": "conference",
+    "topic": "organizational",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Profile Update: The Effects of Identity Disclosure on Network Connections and Language.",
+    "url": "https://bit.ly/45IDja8",
+    "authors": "M. Choi, D.M. Romero, and D. Jurgens.",
+    "venue": "EPJ Data Sci , 45, 2024.",
+    "year": 2024,
+    "type": "journal",
+    "topic": "identity_language",
+    "resources": [
+      {
+        "label": "Supplemental Material",
+        "url": "https://bit.ly/47UkzFG"
+      },
+      {
+        "label": "Data and Code",
+        "url": "https://bit.ly/3ZTuucy"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "Emergent Influence Networks in Good-Faith Online Discussions.",
+    "url": "https://bit.ly/3xGepvd",
+    "authors": "H.K. Dambanemuya, D.M. Romero, and E-Á. Horvát.",
+    "venue": "Proc. 18th International AAAI Conference on Web and Social Media (ICWSM), 2024.",
+    "year": 2024,
+    "type": "conference",
+    "topic": "online_platforms",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Social Acceptability of Health Behavior Posts on Social Media: An Experiment.",
+    "url": "https://bit.ly/3YigDeG",
+    "authors": "A.N. Bhogal, V.J. Berrocal, D.M. Romero, M.A. Willis, V.G.V. Vydiswaran, and T.C. Veinot.",
+    "venue": "American Journal of Preventive Medicine , 66(5), 870-876, 2024",
+    "year": 2024,
+    "type": "journal",
+    "topic": "online_platforms",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Pulling Through Together: Social Media Response Trajectories in Disaster-Stricken Communities.",
+    "url": "https://bit.ly/3F9uTMz",
+    "authors": "D. Maldeniya, M. De Choudhury, D. Garcia, and D.M. Romero.",
+    "venue": "Journal of Computational Social Science , 1-52, 2023.",
+    "year": 2023,
+    "type": "journal",
+    "topic": "online_platforms",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Analyzing the Engagement of Social Relationships During Life Event Shocks in Social Media.",
+    "url": "https://bit.ly/3SpYuH6",
+    "authors": "M. Choi, D. Jurgens, and D.M. Romero.",
+    "venue": "Proc. 17th International AAAI Conference on Web and Social Media (ICWSM), 2023.",
+    "year": 2023,
+    "type": "conference",
+    "topic": "identity_language",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Information Retention in the Multi-Platform Sharing of Science.",
+    "url": "https://bit.ly/3Qf1DaO",
+    "authors": "S. Hwang, E-Á. Horvát, and D.M. Romero.",
+    "venue": "Proc. 17th International AAAI Conference on Web and Social Media (ICWSM), 2023.",
+    "year": 2023,
+    "type": "conference",
+    "topic": "science_of_science",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Dynamics of Cross-Platform Attention to Retracted Papers.",
+    "url": "https://bit.ly/3HnEZtj",
+    "authors": "H. Peng, D.M. Romero, and E-Á. Horvát.",
+    "venue": "Proc. National Academy of Sciences (PNAS) , 119 (25) e2119086119, 2022.",
+    "year": 2022,
+    "type": "journal",
+    "topic": "science_of_science",
+    "resources": [
+      {
+        "label": "Supplemental Material",
+        "url": "https://bit.ly/3MRVQFN"
+      },
+      {
+        "label": "Data and Code",
+        "url": "https://bit.ly/3aYwdG6"
+      }
+    ],
+    "pressCoverage": [
+      {
+        "label": "The Washington Post",
+        "url": "https://wapo.st/3Jkscci"
+      },
+      {
+        "label": "Inside Higher Ed",
+        "url": "https://bit.ly/3bIc0Vk"
+      },
+      {
+        "label": "Le Monde (In French)",
+        "url": "https://bit.ly/3IjT9wj"
+      },
+      {
+        "label": "Deutschlandfunk (German Radio)",
+        "url": "https://bit.ly/3Qe1GDo"
+      }
+    ]
+  },
+  {
+    "title": "Equitable Research PRAXIS: A Framework for Health Informatics Methods.",
+    "url": "https://bit.ly/3ExCJQh",
+    "authors": "T.C. Veinot, P.J., Clarke, D.M. Romero, L.R. Buis, T.R. Dillahunt, V.G.V. Vydiswaran, A. Beals, L. Brown, O.Richards, A. Williamson, and M.G. Antonio.",
+    "venue": "IMIA Yearbook of Medical Informatics , 31(01), 307-316, 2022.",
+    "year": 2022,
+    "type": "journal",
+    "topic": "methods",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Caste Capital on Twitter: A Formal Network Analysis of Caste Relations among Indian Politicians.",
+    "url": "https://bit.ly/3rjHsyh",
+    "authors": "P. Vaghela, R.K. Mothilal, D.M. Romero, and J. Pal.",
+    "venue": "Proc. 25th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), 2022.",
+    "year": 2022,
+    "type": "conference",
+    "topic": "identity_language",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Neural Embeddings of Scholarly Periodicals Reveal Complex Disciplinary Organizations.",
+    "url": "https://bit.ly/3aA9cXc",
+    "authors": "H. Peng, Q. Ke, C. Budak, D.M. Romero, and YY Ahn.",
+    "venue": "Science Advances, 7, eabb9004, 2021.",
+    "year": 2021,
+    "type": "journal",
+    "topic": "science_of_science",
+    "resources": [
+      {
+        "label": "Supplementary Material",
+        "url": "https://advances.sciencemag.org/content/suppl/2021/04/19/7.17.eabb9004.DC1/abb9004_SM.pdf"
+      },
+      {
+        "label": "Data",
+        "url": "https://figshare.com/articles/dataset/periodicals/13007650"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/haoopeng/periodicals"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "More than Meets the Tie: Examining the Role of Interpersonal Relationships in Social Networks.",
+    "url": "https://bit.ly/2S0Syth",
+    "authors": "M. Choi, C. Budak, D.M. Romero, and D. Jurgens.",
+    "venue": "Proc. 15th International AAAI Conference on Web and Social Media (ICWSM), 2021.",
+    "year": 2021,
+    "type": "conference",
+    "topic": "identity_language",
+    "resources": [
+      {
+        "label": "Supplemental Material",
+        "url": "https://dx.doi.org/10.7302/811"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/minjechoi/relationships"
+      },
+      {
+        "label": "Video and Poster",
+        "url": "https://icwsm.org/virtual/2021/poster_E1121.html"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "Network Modularity Controls the Speed of Information Diffusion.",
+    "url": "https://bit.ly/3o3x5dM",
+    "authors": "H. Peng, A. Nematzadeh, D.M. Romero, and E. Ferrara.",
+    "venue": "Phys. Rev. E, 102, 052316, 2020.",
+    "year": 2020,
+    "type": "journal",
+    "topic": "information_diffusion",
+    "resources": [
+      {
+        "label": "Supplemental Material",
+        "url": "https://bit.ly/36n80oh"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "Herding a Deluge of Good Samaritans: How GitHub Projects Respond to Increased Attention.",
+    "url": "https://go.aws/30WbdH7",
+    "authors": "D. Maldeniya, C. Budak, L. Robert, and D.M. Romero.",
+    "venue": "Proc. of The ACM Web Conference (WWW), 2020.",
+    "year": 2020,
+    "type": "conference",
+    "topic": "online_platforms",
+    "resources": [
+      {
+        "label": "Slides",
+        "url": "https://bit.ly/3o80DXM"
+      },
+      {
+        "label": "Video",
+        "url": "https://bit.ly/33MlecD"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "Uncovering the relationship between food-related discussion on Twitter and neighborhood characteristics.",
+    "url": "http://bit.ly/2PsU3gq",
+    "authors": "V.G.V. Vydiswaran, D.M. Romero, X. Zhao, D. Yu, I. Gomez-Lopez, J.X. Lu, B.E. Iott, A. Baylin, E.C. Jansen, P. Clarke, V.J. Berrocal, R. Goodspeed, and T.C. Veinot.",
+    "venue": "Journal of the American Medical Informatics Association (JAMIA) , 27(2), 254-264, 2020.",
+    "year": 2020,
+    "type": "journal",
+    "topic": "online_platforms",
+    "resources": [],
+    "pressCoverage": [
+      {
+        "label": "The Counter",
+        "url": "https://bit.ly/3gZTxkl"
+      },
+      {
+        "label": "PatientEngagementHIT",
+        "url": "https://bit.ly/32OobYK"
+      }
+    ]
+  },
+  {
+    "title": "How Self-declared Throwaway Accounts Enable Parenting Disclosure and Support on Reddit.",
+    "url": "http://bit.ly/2kKHS1I",
+    "authors": "T. Ammari, S. Schoenebeck, and D.M. Romero.",
+    "venue": "Proc. 22nd ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), 2019.",
+    "year": 2019,
+    "type": "conference",
+    "topic": "identity_language",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Participation of New Editors After Times of Shock on Wikipedia.",
+    "url": "http://bit.ly/2IqsT6n",
+    "authors": "F. Zhang, R. Wang, E. Blohm, C. Budak, L. Robert, and D.M. Romero.",
+    "venue": "Proc. 13th International AAAI Conference on Web and Social Media (ICWSM), 2019.",
+    "year": 2019,
+    "type": "conference",
+    "topic": "online_platforms",
+    "resources": [
+      {
+        "label": "Slides",
+        "url": "http://bit.ly/2kpLXYM"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "Towards Attack Tolerant Networks: Concurrent Multipath Routing and the Butterfly Network.",
+    "url": "http://bit.ly/2KmKPBq",
+    "authors": "E.L. Platt and D.M. Romero.",
+    "venue": "PLoS ONE , 14(4), 2019.",
+    "year": 2019,
+    "type": "journal",
+    "topic": "network_structure",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Are All Successful Communities Alike? Characterizing and Predicting the Success of Online Communities.",
+    "url": "http://bit.ly/2Xne8X6",
+    "authors": "T. Cunha, D. Jurgens, C. Tan, and D.M. Romero.",
+    "venue": "Proc. of The ACM Web Conference (WWW), 2019.",
+    "year": 2019,
+    "type": "conference",
+    "topic": "online_platforms",
+    "resources": [
+      {
+        "label": "Slides",
+        "url": "http://bit.ly/2QM8fQg"
+      },
+      {
+        "label": "Poster",
+        "url": "http://bit.ly/2ZcnapX"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "Event-Driven Analysis of Crowd Dynamics in the Black Lives Matter Online Social Movement.",
+    "url": "http://bit.ly/2H2pEkM",
+    "authors": "H. Peng, C. Budak, and D.M. Romero.",
+    "venue": "Proc. of The ACM Web Conference (WWW), 2019.",
+    "year": 2019,
+    "type": "conference",
+    "topic": "online_platforms",
+    "resources": [
+      {
+        "label": "Slides",
+        "url": "http://bit.ly/2Xryj5G"
+      },
+      {
+        "label": "Poster",
+        "url": "http://bit.ly/2Whv9Qu"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "Social Networks under stress: Specialized Team Roles and their Communication Structure.",
+    "url": "http://bit.ly/2UUbExh",
+    "authors": "D.M. Romero, B. Uzzi, and J. Kleinberg.",
+    "venue": "ACM Transactions on the Web (TWEB) , Volume 13, Issue 1, Article 6, 2019.",
+    "year": 2019,
+    "type": "journal",
+    "topic": "organizational",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Network Structure, Efficiency, and Performance in WikiProjects.",
+    "url": "http://bit.ly/2JzgN96",
+    "authors": "E.L. Platt and D.M. Romero.",
+    "venue": "Proc. 12th International AAAI Conference on Web and Social Media (ICWSM), 2018.",
+    "year": 2018,
+    "type": "conference",
+    "topic": "online_platforms",
+    "resources": [
+      {
+        "label": "Data and Code",
+        "url": "http://bit.ly/2N8qld2"
+      },
+      {
+        "label": "Slides",
+        "url": "http://bit.ly/2OpBqH4"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "'Bacon Bacon Bacon': Food-related Tweets and Sentiment in Metro Detroit",
+    "url": "http://bit.ly/2EBa4rG",
+    "authors": "V.G.V. Vydiswaran, D.M. Romero, X. Zhao, D.Yu, I. Gomez-Lopez, J.X. Lu, B. Iott, A. Baylin, P. Clarke, V. Berrocal, R. Goodspeed, and T. Veinot.",
+    "venue": "Proc. 12th International AAAI Conference on Web and Social Media (ICWSM), 2018.",
+    "year": 2018,
+    "type": "conference",
+    "topic": "online_platforms",
+    "resources": [],
+    "pressCoverage": [
+      {
+        "label": "Detour Detroit",
+        "url": "https://bit.ly/2YXB1CR"
+      }
+    ]
+  },
+  {
+    "title": "Using Social Media to Assess the Community Food Store Environment: Comparing Yelp Reviews with a Direct Observation Audit Instrument for Grocery Stores.",
+    "url": "http://bit.ly/2RGYqXx",
+    "authors": "Y. Shen, P. Clarke, I. Gomez-Lopez, A.B. Hill, D.M. Romero, R. Goodspeed, V. J. Berrocal, V.G.V. Vydiswaran, and T. Veinot.",
+    "venue": "Public Health Nutrition , 2018.",
+    "year": 2018,
+    "type": "journal",
+    "topic": "methods",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Comparing the Data Quality of Global Positioning System Devices and Mobile Phones for Assessing Relationships Between Place, Mobility, and Health: Field Study.",
+    "url": "http://bit.ly/2M7TbZm",
+    "authors": "R. Goodspeed, X. Yan, J Hardy, V.G.V. Vydiswaran, V. Berrocal, P. Clarke, D.M. Romero, I. Gomez-Lopez, and T. Veinot.",
+    "venue": "JMIR Mhealth and Uhealth , 6(8):e168, 2018.",
+    "year": 2018,
+    "type": "journal",
+    "topic": "methods",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Political Tweets and Mainstream News Impact in India: A Mixed Methods Investigation into Political Outreach.",
+    "url": "http://bit.ly/2Ip7p77",
+    "authors": "S. Chakraborty, J. Pal, P. Chandra, and D.M. Romero.",
+    "venue": "Proc. ACM Conference on Computing and Sustainable Societies (COMPASS), 2018.",
+    "year": 2018,
+    "type": "conference",
+    "topic": "identity_language",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Pseudonymous Parents: Comparing Parenting Roles and Identities on the Mommit and Daddit Subreddits.",
+    "url": "http://bit.ly/2DYMzgQ",
+    "authors": "T. Ammari, S. Schoenebeck, and D.M. Romero.",
+    "venue": "Proc. ACM Conference on Human Factors in Computing (CHI), 2018.",
+    "year": 2018,
+    "type": "conference",
+    "topic": "identity_language",
+    "resources": [
+      {
+        "label": "Code",
+        "url": "http://bit.ly/2rY1suc"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "User Acceptance of Location-Tracking Technologies in Health Research: Implications for Study Design and Data Quality.",
+    "url": "http://bit.ly/2GFKTpY",
+    "authors": "J. Hardy, T.C. Veinot, X. Yan, V.J. Berrocal, P. Clarke, R. Goodspeed, I.N. Gomez, D.M. Romero, and V.G.V. Vydiswaran.",
+    "venue": "Journal of Biomedical Informatics , 2018.",
+    "year": 2018,
+    "type": "journal",
+    "topic": "methods",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Crowd Development: The Interplay Between Crowd Evaluation and Collaborative Dynamics in Wikipedia.",
+    "url": "http://bit.ly/2xeCqZ0",
+    "authors": "F. Zhang, D. Livneh, C. Budak, L. Robert, and D.M. Romero.",
+    "venue": "Proc. 21st ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), 2018.",
+    "year": 2018,
+    "type": "conference",
+    "topic": "online_platforms",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "The Nearly Universal Link Between the Age of Past Knowledge and Tomorrow's Breakthroughs in Science and Technology: The Hotspot.",
+    "url": "http://bit.ly/2pSchI8",
+    "authors": "S. Mukherjee, D.M. Romero, B. Jones and B. Uzzi.",
+    "venue": "Science Advances , 3, e1601315, 2017.",
+    "year": 2017,
+    "type": "journal",
+    "topic": "science_of_science",
+    "resources": [],
+    "pressCoverage": [
+      {
+        "label": "CS Monitor",
+        "url": "http://bit.ly/2p10yLe"
+      }
+    ]
+  },
+  {
+    "title": "Shocking the Crowd: The Effect of Censorship Shocks on Chinese Wikipedia.",
+    "url": "http://bit.ly/2lUSL06",
+    "authors": "F. Zhang, D. Livneh, C. Budak, L. Robert, and D.M. Romero.",
+    "venue": "Proc. 11th International AAAI Conference on Web and Social Media (ICWSM), 2017.",
+    "year": 2017,
+    "type": "conference",
+    "topic": "online_platforms",
+    "resources": [
+      {
+        "label": "Slides",
+        "url": "http://bit.ly/2s9ZA18"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "The Role of Optimal Distinctiveness and Homophily in Online Dating.",
+    "url": "http://bit.ly/2n3p2BX",
+    "authors": "D. Maldeniya, A. Varghese, T. Stuart, and D.M. Romero.",
+    "venue": "Proc. 11th International AAAI Conference on Web and Social Media (ICWSM), 2017.",
+    "year": 2017,
+    "type": "conference",
+    "topic": "identity_language",
+    "resources": [
+      {
+        "label": "Slides",
+        "url": "http://bit.ly/2qzDmQ9"
+      },
+      {
+        "label": "Poster",
+        "url": "http://bit.ly/2qsLOFV"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "Using Social Media to Identify Sources of Healthy Food in Urban Neighborhoods.",
+    "url": "http://bit.ly/2qIHz4z",
+    "authors": "I.N. Gomez-Lopez, P. Clarke, A.B. Hill, D.M. Romero, R. Goodspeed, V.J. Berrocal, V.G.V. Vydiswaran, and T.C. Veinot.",
+    "venue": "Journal of Urban Health , 2017.",
+    "year": 2017,
+    "type": "journal",
+    "topic": "online_platforms",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "The Influence of Early Respondents: Information Cascade Effects in Online Event Scheduling.",
+    "url": "http://bit.ly/2h7dYAy",
+    "authors": "D.M. Romero, K. Reinecke, and L. Robert.",
+    "venue": "Proc. 10th ACM Conference on Web Search and Data Mining (WSDM), 2017.",
+    "year": 2017,
+    "type": "conference",
+    "topic": "information_diffusion",
+    "resources": [
+      {
+        "label": "Slides",
+        "url": "http://bit.ly/2mUyEOW"
+      },
+      {
+        "label": "Poster",
+        "url": "http://bit.ly/2mlUwQ9"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "Social Networks Under Stress.",
+    "url": "http://bit.ly/1SqlFgl",
+    "authors": "D.M. Romero, B. Uzzi, and J. Kleinberg.",
+    "venue": "Proc. 25th ACM International World Wide Web Conference (WWW), 2016. ( Best Paper Award )",
+    "year": 2016,
+    "type": "conference",
+    "topic": "organizational",
+    "resources": [
+      {
+        "label": "Best Paper Award",
+        "url": "http://bit.ly/1szTAdq"
+      },
+      {
+        "label": "Slides",
+        "url": "http://bit.ly/1QgLvy7"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "The Influence of Diversity and Experience on the Effects of Crowd Size.",
+    "url": "http://bit.ly/1nlhwOF",
+    "authors": "L. Robert and D.M. Romero.",
+    "venue": "Journal of the Association for Information Science and Technology (JASIST), 2016.",
+    "year": 2016,
+    "type": "journal",
+    "topic": "online_platforms",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Mimicry Is Presidential: Linguistic Style Matching in Presidential Debates and Improved Polling Numbers.",
+    "url": "http://bit.ly/1gtHVXm",
+    "authors": "D.M. Romero, R. Swaab, B. Uzzi, and A. Galinsky.",
+    "venue": "Personality and Social Psychology Bulletin , Vol. 41(10) 1311-1319, 2015.",
+    "year": 2015,
+    "type": "conference",
+    "topic": "identity_language",
+    "resources": [
+      {
+        "label": "Video",
+        "url": "http://bit.ly/2e3AyFF"
+      }
+    ],
+    "pressCoverage": [
+      {
+        "label": "Fortune",
+        "url": "http://for.tn/1Z2N4GU"
+      },
+      {
+        "label": "Pacific Standard",
+        "url": "http://bit.ly/1Dqe90c"
+      },
+      {
+        "label": "The Boston Globe",
+        "url": "http://bit.ly/1T5iHuP"
+      },
+      {
+        "label": "New York Magazine",
+        "url": "http://sciof.us/1DApOJQ"
+      }
+    ]
+  },
+  {
+    "title": "Coordination and Efficiency in Decentralized Collaboration.",
+    "url": "http://bit.ly/1ECA7HM",
+    "authors": "D.M. Romero, D. Huttenlocher, and J. Kleinberg.",
+    "venue": "Proc. 9th International AAAI Conference on Web and Social Media (ICWSM), 2015.",
+    "year": 2015,
+    "type": "conference",
+    "topic": "online_platforms",
+    "resources": [
+      {
+        "label": "Slides",
+        "url": "http://bit.ly/1ctzdWV"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "Crowd Size, Diversity and Performance.",
+    "url": "http://bit.ly/15fZh4k",
+    "authors": "L. Robert and D.M. Romero",
+    "venue": "Proc. ACM Conference on Human Factors in Computing (CHI), 2015.",
+    "year": 2015,
+    "type": "conference",
+    "topic": "online_platforms",
+    "resources": [
+      {
+        "label": "Slides",
+        "url": "http://bit.ly/1DPPJqB"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "Critical Transitions in Social Network Activity.",
+    "url": "http://bit.ly/1b6jUg2",
+    "authors": "C. Kuehn, E.A. Martens, and D.M. Romero.",
+    "venue": "Journal of Complex Networks , 2(2), 141-152, 2014.",
+    "year": 2014,
+    "type": "journal",
+    "topic": "online_platforms",
+    "resources": [
+      {
+        "label": "Summary in Oxford University Press's Blog",
+        "url": "https://bitly.com/1pLs4jJ"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "Estimating the Relative Utility of Networks for Predicting User Activities.",
+    "url": "http://bit.ly/148oEOt",
+    "authors": "N. Mishra, D.M. Romero, and P. Tsaparas.",
+    "venue": "Proc. 22th ACM International Conference on Information and Knowledge Management (CIKM), 2013.",
+    "year": 2013,
+    "type": "conference",
+    "topic": "network_structure",
+    "resources": [
+      {
+        "label": "Slides",
+        "url": "http://bit.ly/1fPJdtc"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "On the Interplay between Social and Topical Structure.",
+    "url": "http://bit.ly/14z1TaZ",
+    "authors": "D.M. Romero, C. Tan, and J. Ugander.",
+    "venue": "Proc. 7th International AAAI Conference on Web and Social Media (ICWSM), 2013.",
+    "year": 2013,
+    "type": "conference",
+    "topic": "network_structure",
+    "resources": [
+      {
+        "label": "Slides",
+        "url": "http://bit.ly/19tuwZL"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "Differences in the Mechanics of Information Diffusion Across Topics: Idioms, Political Hashtags, and Complex Contagion on Twitter.",
+    "url": "http://bit.ly/KNjl19",
+    "authors": "D.M. Romero, B. Meeder, and J. Kleinberg.",
+    "venue": "Proc. 20th ACM International World Wide Web Conference (WWW), 2011.",
+    "year": 2011,
+    "type": "conference",
+    "topic": "information_diffusion",
+    "resources": [
+      {
+        "label": "Slides",
+        "url": "http://bit.ly/JUhNmd"
+      },
+      {
+        "label": "List of hashtags with categories",
+        "url": "http://bit.ly/1bCYbRL"
+      }
+    ],
+    "pressCoverage": [
+      {
+        "label": "New York Times",
+        "url": "https://bitly.com/gojKdb"
+      },
+      {
+        "label": "CBS News",
+        "url": "https://bitly.com/JtiQZ8"
+      }
+    ]
+  },
+  {
+    "title": "Influence and Passivity in Social Media.",
+    "url": "http://bit.ly/LxAR73",
+    "authors": "D.M. Romero, W. Galuba, S. Asur, and B.A. Huberman",
+    "venue": "Proc. European Conference on Machine Learning and Knowledge Discovery in Databases (ECML PKDD), 2011. ( Test of Time Award )",
+    "year": 2011,
+    "type": "conference",
+    "topic": "information_diffusion",
+    "resources": [
+      {
+        "label": "Test of Time Award",
+        "url": "https://2021.ecmlpkdd.org/?page_id=2148"
+      },
+      {
+        "label": "Slides",
+        "url": "http://bit.ly/MAVCDz"
+      }
+    ],
+    "pressCoverage": [
+      {
+        "label": "New Scientist",
+        "url": "https://bitly.com/aEYK7M"
+      },
+      {
+        "label": "The Economist",
+        "url": "https://bitly.com/rPKKsf"
+      },
+      {
+        "label": "BBC",
+        "url": "https://bitly.com/rUVtGZ"
+      },
+      {
+        "label": "MIT Tech Review",
+        "url": "https://bitly.com/soB0kg"
+      },
+      {
+        "label": "CNet",
+        "url": "https://bitly.com/uZg4Eu"
+      },
+      {
+        "label": "Mashable",
+        "url": "https://bitly.com/sntS9A"
+      }
+    ]
+  },
+  {
+    "title": "Predicting Reciprocity in Social Networks.",
+    "url": "http://bit.ly/KNixZY",
+    "authors": "J. Cheng, D.M. Romero, B. Meeder, and J. Kleinberg.",
+    "venue": "Proc. 3rd IEEE Conference on Social Computing (SocialCom), 2011.",
+    "year": 2011,
+    "type": "conference",
+    "topic": "network_structure",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Maintaining Ties on Social Media Sites: The Competing Effects of Balance, Exchange, and Betweenness.",
+    "url": "http://bit.ly/JUgF2e",
+    "authors": "D.M. Romero, B. Meeder, V. Barash, and J. Kleinberg",
+    "venue": "Proc. 5th International AAAI Conference on Web and Social Media (ICWSM), 2011.",
+    "year": 2011,
+    "type": "conference",
+    "topic": "network_structure",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Who Should I Follow? Recommending People in Directed Social Networks.",
+    "url": "https://bitly.com/t5Vax9",
+    "authors": "M.J. Brzozowski and D.M. Romero",
+    "venue": "Proc. 5th International AAAI Conference on Web and Social Media (ICWSM), 2011.",
+    "year": 2011,
+    "type": "conference",
+    "topic": "network_structure",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "An Epidemiological Approach to the Spread of Political Third Parties.",
+    "url": "http://bit.ly/MaHONM",
+    "authors": "D.M. Romero, C. Kribs-Zaleta, A. Mubayi, and C. Orbe",
+    "venue": "Discrete and Continuous Dynamical Systems - B , 15, 707-738, 2011.",
+    "year": 2011,
+    "type": "journal",
+    "topic": "information_diffusion",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "The Directed Closure Process in Hybrid Social-Information Networks, with an Analysis of Link Formation on Twitter.",
+    "url": "http://bit.ly/L8SZ6i",
+    "authors": "D.M. Romero and J. Kleinberg,",
+    "venue": "Proc. 4th International AAAI Conference on Web and Social Media (ICWSM), 2010.",
+    "year": 2010,
+    "type": "conference",
+    "topic": "network_structure",
+    "resources": [
+      {
+        "label": "Slides",
+        "url": "http://bit.ly/KvbXJs"
+      }
+    ],
+    "pressCoverage": []
+  },
+  {
+    "title": "Detecting spam in a Twitter network.",
+    "url": "https://bitly.com/u3zM3F",
+    "authors": "S. Yardi, D.M. Romero, G. Schoenebeck, and d. boyd,",
+    "venue": "First Monday , Volume 15, Number 1, 2010.",
+    "year": 2010,
+    "type": "journal",
+    "topic": "online_platforms",
+    "resources": [],
+    "pressCoverage": []
+  },
+  {
+    "title": "Social Networks that Matter: Twitter Under the Microscope.",
+    "url": "https://bitly.com/vp2Juq",
+    "authors": "B.A. Huberman, D.M. Romero, and F. Wu,",
+    "venue": "First Monday , Volume 14, Number 1, 2009.",
+    "year": 2009,
+    "type": "journal",
+    "topic": "network_structure",
+    "resources": [],
+    "pressCoverage": [
+      {
+        "label": "Wall Street Journal",
+        "url": "http://on.wsj.com/NP8dmD"
+      }
+    ]
+  },
+  {
+    "title": "Crowdsourcing, Attention and Productivity.",
+    "url": "https://bitly.com/soj9Hf",
+    "authors": "B.A. Huberman, D.M. Romero, and F. Wu,",
+    "venue": "Journal of Information Sciences , Volume 35, Number 6, pp. 758-765, 2009.",
+    "year": 2009,
+    "type": "journal",
+    "topic": "online_platforms",
+    "resources": [
+      {
+        "label": "Slides",
+        "url": "http://bit.ly/LokvLL"
+      }
+    ],
+    "pressCoverage": [
+      {
+        "label": "New Scientist",
+        "url": "http://bit.ly/v1hQzD"
+      }
+    ]
+  }
+]

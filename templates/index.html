@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta name="color-scheme" content="light">
+  <title>{{NAME}} — {{INSTITUTION}}</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body class="collegiate">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header" id="top" tabindex="-1">
+    <div class="header-inner">
+      <a class="wordmark" href="#top">{{NAME}}</a>
+      <nav class="desktop-navigation" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#students">Advising</a>
+        <a href="#professional_service">Service</a>
+        <a href="#teaching">Teaching</a>
+        <a href="{{CV_URL}}" target="_blank" rel="noopener">CV <span aria-hidden="true">↗</span></a>
+      </nav>
+      <details class="mobile-navigation">
+        <summary>Menu</summary>
+        <nav class="mobile-nav-links" aria-label="Mobile navigation">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#students">Advising</a>
+        <a href="#professional_service">Service</a>
+        <a href="#teaching">Teaching</a>
+        <a href="{{CV_URL}}" target="_blank" rel="noopener">CV <span aria-hidden="true">↗</span></a>
+      </nav>
+      </details>
+    </div>
+  </header>
+  <div class="page-layout">
+    <main id="main-content" tabindex="-1">
+      <section id="about" class="introduction" aria-labelledby="name-heading">
+        <p class="eyebrow">{{INSTITUTION}}</p>
+        <h1 id="name-heading" tabindex="-1">{{NAME}}</h1>
+      </section>
+    {{PROFILE}}
+      <section class="biography bio" aria-label="Academic background">
+        {{ABOUT}}
+      </section>
+      <section id="publications" class="main-section" aria-labelledby="pub-heading">
+        <div class="section-heading"><h2 id="pub-heading" tabindex="-1">Publications</h2><a class="section-link" href="{{SCHOLAR_URL}}" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a></div>
+        <a class="section-skip" href="#student-heading">Skip publications and go to advising</a>
+        <div data-content="publications" data-pre-rendered="true">{{PUBLICATIONS}}</div>
+      </section>
+      <section id="students" class="main-section" aria-labelledby="student-heading">
+        <div class="section-heading"><h2 id="student-heading" tabindex="-1">Students &amp; postdocs</h2></div>
+        <div class="source-content" data-content="students" data-pre-rendered="true">{{STUDENTS}}</div>
+      </section>
+      <section id="professional_service" class="main-section" aria-labelledby="service-heading">
+        <div class="section-heading"><h2 id="service-heading" tabindex="-1">Professional service</h2></div>
+        <div class="source-content" data-content="professional_service" data-pre-rendered="true">{{PROFESSIONAL_SERVICE}}</div>
+      </section>
+      <section id="teaching" class="main-section" aria-labelledby="teaching-heading">
+        <div class="section-heading"><h2 id="teaching-heading" tabindex="-1">Teaching</h2></div>
+        <div class="source-content" data-content="teaching" data-pre-rendered="true">{{TEACHING}}</div>
+      </section>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <p>{{NAME}} <span>{{INSTITUTION}}</span></p>
+    <a href="#top">Back to top ↑</a>
+    <p class="site-updated">Last updated: <time datetime="{{LAST_UPDATED_ISO}}">{{LAST_UPDATED_LABEL}}</time></p>
+  </footer>
+  <a class="back-to-top" href="#top" aria-label="Back to top"><span aria-hidden="true">↑</span> Top</a>
+</body>
+</html>

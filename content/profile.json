@@ -1,0 +1,47 @@
+{
+  "name": "Daniel M. Romero",
+  "role": "Professor",
+  "institution": "University of Michigan",
+  "description": "Daniel M. Romero, Professor at the University of Michigan. Research in computational social science, network science, and the science of science.",
+  "photo": {
+    "src": "images/daniel.jpg",
+    "alt": "Daniel M. Romero",
+    "width": 232,
+    "height": 290
+  },
+  "affiliations": [
+    {
+      "label": "School of Information",
+      "url": "https://www.si.umich.edu/"
+    },
+    {
+      "label": "Center for the Study of Complex Systems",
+      "url": "https://www.lsa.umich.edu/cscs/"
+    },
+    {
+      "label": "Computer Science and Engineering",
+      "url": "https://www.cse.umich.edu/",
+      "note": "(by courtesy)"
+    }
+  ],
+  "email": "drom@umich.edu",
+  "address": [
+    "5136 Leinweber",
+    "2200 Hayward Street",
+    "Ann Arbor, MI 48109"
+  ],
+  "links": {
+    "scholar": {
+      "label": "Google Scholar",
+      "url": "https://bitly.com/u8cN1F"
+    },
+    "cv": {
+      "label": "Curriculum vitae",
+      "url": "https://bit.ly/4z27XrV"
+    },
+    "social": {
+      "label": "@DanielMRomero",
+      "url": "http://bit.ly/KfGC8X"
+    }
+  }
+}

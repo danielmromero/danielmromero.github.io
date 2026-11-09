@@ -1,0 +1,174 @@
+{
+  "current": [
+    {
+      "name": "Abeer Alessa",
+      "status": "PhD Student"
+    },
+    {
+      "name": "Aparna Ananthasubramaniam",
+      "url": "https://aparna-ananth.github.io/",
+      "status": "PhD Candidate"
+    },
+    {
+      "name": "David Gamba",
+      "url": "https://davidgamba.org/",
+      "status": "PhD Candidate"
+    }
+  ],
+  "alumni": [
+    {
+      "heading": "PhD & Postdoctoral",
+      "people": [
+        {
+          "name": "Dr. Yulin Yu",
+          "url": "https://yulin-yu.github.io/",
+          "status": "PhD, 2025"
+        },
+        {
+          "name": "Dr. Minje Choi",
+          "url": "https://minjechoi.github.io/",
+          "status": "PhD, 2023"
+        },
+        {
+          "name": "Dr. Danaja Maldeniya",
+          "url": "http://www.dmaldeniya.com/",
+          "status": "PhD, 2023"
+        },
+        {
+          "name": "Dr. Chris Quarles",
+          "url": "https://chrisquarles.org/",
+          "status": "PhD, 2023"
+        },
+        {
+          "name": "Dr. Hao Peng",
+          "url": "http://haoopeng.github.io/",
+          "status": "PhD, 2022"
+        },
+        {
+          "name": "Dr. Ed Platt",
+          "url": "https://elplatt.com/",
+          "status": "PhD, 2022"
+        },
+        {
+          "name": "Anders Giovanni Møller",
+          "url": "https://www.andersgiovanni.com/",
+          "status": "Visiting PhD"
+        },
+        {
+          "name": "Dr. Abraham Israeli",
+          "url": "https://www.avrahami-israeli.com/",
+          "status": "Postdoctoral Fellow"
+        },
+        {
+          "name": "Dr. Tiago Cunha",
+          "url": "https://sites.google.com/site/tiagocunha87/",
+          "status": "Postdoctoral Fellow"
+        },
+        {
+          "name": "Dr. Patrick Park",
+          "url": "https://patpark.org/",
+          "status": "MIDAS Fellow"
+        },
+        {
+          "name": "Dr. Iris Gomez-Lopez",
+          "url": "http://miamioh.edu/cec/academics/departments/cse/about/faculty-and-staff/gomez-lopez/index.html",
+          "status": "Postdoctoral Fellow"
+        }
+      ]
+    },
+    {
+      "heading": "MS",
+      "people": [
+        {
+          "name": "Sidney Xiang",
+          "url": "https://www.linkedin.com/in/sidney-xiang-610526174/",
+          "status": "MS"
+        },
+        {
+          "name": "Louise Zhu",
+          "url": "https://www.linkedin.com/in/yufei-louise-zhu-umich/",
+          "status": "MS"
+        },
+        {
+          "name": "Amanda Hardy",
+          "status": "MS"
+        },
+        {
+          "name": "Yulin Yu",
+          "url": "https://www.linkedin.com/in/yulinyudata/",
+          "status": "MS"
+        },
+        {
+          "name": "Yin Yin",
+          "url": "https://yinyinumsi.github.io/PersonalWebsite/",
+          "status": "MS"
+        },
+        {
+          "name": "Arushi Jain",
+          "url": "https://www.linkedin.com/in/arushijain1711/",
+          "status": "MS"
+        },
+        {
+          "name": "Stella Seonghwa Choi",
+          "url": "https://www.linkedin.com/in/stellachoi88/",
+          "status": "MS"
+        },
+        {
+          "name": "Karthik Ramanathan",
+          "url": "https://www.linkedin.com/in/dr-karthik-ramanathan/",
+          "status": "MS"
+        },
+        {
+          "name": "Arun Varghese",
+          "url": "https://www.linkedin.com/in/arun-varghese-a810a721",
+          "status": "MS"
+        },
+        {
+          "name": "Ruihan Wang",
+          "url": "https://www.linkedin.com/in/ruihan-wang-b880ba10b/",
+          "status": "MS"
+        },
+        {
+          "name": "Muhan Yuan",
+          "url": "https://www.linkedin.com/in/muhan-yuan-22005491/",
+          "status": "MS"
+        }
+      ]
+    },
+    {
+      "heading": "Undergraduate",
+      "people": [
+        {
+          "name": "Xingyao Wang",
+          "url": "https://xingyaoww.github.io/",
+          "status": "Undergraduate"
+        },
+        {
+          "name": "Xingyu Lu",
+          "url": "https://www.linkedin.com/in/xingyu-liu-5275471b9/",
+          "status": "Undergraduate"
+        },
+        {
+          "name": "Ziyang Ji",
+          "url": "https://www.linkedin.com/in/ziyangji/",
+          "status": "Undergraduate"
+        },
+        {
+          "name": "Jiaxin Ye",
+          "url": "https://www.linkedin.com/in/jiaxin-ye-3b8a9218a/",
+          "status": "Undergraduate"
+        },
+        {
+          "name": "Eric Blohm",
+          "url": "https://www.linkedin.com/in/eric-blohm-973aa3b5/",
+          "status": "Undergraduate"
+        },
+        {
+          "name": "Danielle Livneh",
+          "url": "https://www.linkedin.com/in/daniellelivneh/",
+          "status": "Undergraduate"
+        }
+      ]
+    }
+  ]
+}
