@@ -1,6 +1,17 @@
 # Maintaining the website
 
-Edit the files in `content/` to update the website. The build turns them into the finished page, including the publication search and year/topic views. You do not need to edit `index.html`, CSS, or JavaScript for routine content changes.
+The website is live at [danielmromero.github.io](https://danielmromero.github.io/), with automatic publishing enabled from the repository's `master` branch.
+
+For routine updates:
+
+1. Open the appropriate file in [the repository's `content/` folder](https://github.com/danielmromero/danielmromero.github.io/tree/master/content).
+2. Click the edit pencil and change the JSON content.
+3. Commit the change to `master`.
+4. Check [Actions](https://github.com/danielmromero/danielmromero.github.io/actions) for a successful **Build and publish website** run. The website updates after that run completes.
+
+GitHub builds and checks the website before publishing it. The footer's **Last updated** date and time refresh automatically in Michigan's time zone; you do not need to edit the timestamp. A failed check leaves the previously published site in place.
+
+The files in `content/` are the editable source. The build turns them into the finished page, including publication search and year/topic views. You do not need to edit HTML, CSS, or JavaScript for routine content changes.
 
 | What you want to change | File to edit |
 | --- | --- |
@@ -75,7 +86,7 @@ npm test
 
 The first command creates `dist/`. The checks validate the content and the generated website. If a check fails, its message identifies the file or field to fix; correct it and run the commands again.
 
-To set the footer's “Last updated” timestamp when preparing a publication, use:
+GitHub handles the publication build and timestamp automatically. For a manually prepared release to another host, use:
 
 ```sh
 npm run build:publish
@@ -84,7 +95,9 @@ npm test
 
 The timestamp is fixed when the site is built for publication and displayed in Michigan's time zone. Ordinary builds preserve it, so opening the site does not change the date.
 
-For a manual upload, upload the **contents** of `dist/` to the website repository's publishing location. The generated site consists of `index.html`, `styles.css`, `app.js`, and `images/daniel.jpg`, plus any files you have placed in `public/`. These generated files are also what belongs in the clean `current-website` export folder; make your future edits in this source project.
+Use `dist/` for a local preview or for a manual upload to another host. It contains `index.html`, `styles.css`, `app.js`, and `images/daniel.jpg`, plus files copied from `public/`. Do not upload generated files to GitHub's `master` branch: the active workflow builds and publishes them from the source files.
+
+The clean `current-website` folder is also a generated export for local preview or manual use elsewhere. Make content changes in this source project or directly in GitHub's `content/` files, then rebuild the export when you need it.
 
 An optional output location can be used to refresh that export directly:
 
@@ -94,22 +107,18 @@ node scripts/build.mjs --out ../current-website
 
 Use `--stamp` as well when preparing a newly dated release. The build replaces the generated output folder, removing obsolete files. Keep your editable files in this source project and any downloads in `public/`, rather than adding them directly to an output folder.
 
-## Set up automatic publishing on GitHub once
+## Automatic publishing and downloadable files
 
-The workflow in `.github/workflows/pages.yml` is prepared locally for [danielmromero/danielmromero.github.io](https://github.com/danielmromero/danielmromero.github.io). Its current default branch is `master`. It becomes active after this source project is added to that repository and GitHub Pages is set to use it.
+GitHub Pages is configured to use **GitHub Actions**. The active workflow is `.github/workflows/pages.yml` in [danielmromero/danielmromero.github.io](https://github.com/danielmromero/danielmromero.github.io). Pull requests and other branches are checked, while only `master` is published. No one-time setup is needed for routine updates.
 
-1. The existing PDF and both `robots.txt` files have already been preserved in `public/`. Keep them there. If you add other downloadable files or a `CNAME` later, put them in `public/`, keeping their names and subfolders. The build copies these into the finished site's root, preserving their URLs. Keep any existing custom-domain setting when changing the publishing method.
-2. Add the **contents of this source project** to the root of the website repository. Include `content/`, `templates/`, `assets/`, `scripts/`, `public/` when it contains files, `package.json`, and the hidden `.github/` folder containing the workflow. Include `.gitignore` too. Do not upload a surrounding `website-source/` folder or copy local `.git/` metadata into GitHub.
-3. In the repository, open **Settings → Pages** and select **GitHub Actions** as the source. Keep the existing custom-domain setting if you have one.
-4. Save the source files to the repository's default branch. In **Actions**, check that “Build and publish website” succeeds. If needed, select that workflow and use **Run workflow** on the default branch for the first publication.
+Automatic publishing uses GitHub's built-in workflow credentials; it does not require a personal access token. Each publication build sets the footer timestamp. That generated timestamp change stays in the workflow run and does not create an extra commit. Opening the website does not change the date.
 
-After setup, routine updates can be made directly on GitHub: open the appropriate JSON file, click the edit pencil, make the change, and commit it. GitHub builds and checks the site before publishing it. A failed check leaves the previously published site in place. Pull requests and other branches are checked, but only the default branch is published.
+Keep downloads and crawler settings in `public/`. The build copies that folder into the finished site's root, preserving public URLs. The existing paper and crawler files are already preserved here:
 
-Automatic publishing uses GitHub's built-in workflow credentials; it does not require a personal access token. The workflow sets the footer timestamp for each publication. The build's timestamp change stays in that workflow run; it does not create an extra commit.
+- `public/links/Participation_After_Shocks_on_Wikipedia.pdf` is published at `/links/Participation_After_Shocks_on_Wikipedia.pdf`.
+- `public/robots.txt` and `public/links/robots.txt` retain their corresponding website paths.
 
-The existing repository contains `links/Participation_After_Shocks_on_Wikipedia.pdf` (407,418 bytes), `links/robots.txt`, and the root `robots.txt`; preserve these files at the same website paths. Its `images/daniel.jpg` is the same portrait already included in this source project. No root `CNAME` file was present when the repository was inspected.
-
-GitHub documents the setup in [Using custom workflows with GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+Put any new downloadable files in `public/` too, keeping the subfolders you want in their URLs. The portrait's source is `assets/images/daniel.jpg`; the build publishes it at `/images/daniel.jpg`.
 
 ## Project structure
 
