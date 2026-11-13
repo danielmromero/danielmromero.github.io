@@ -40,6 +40,7 @@ export async function build({output = path.join(projectDirectory, 'dist'), stamp
   const replacements = {
     NAME: escapeHTML(data.profile.name), INSTITUTION: escapeHTML(data.profile.institution),
     DESCRIPTION: escapeHTML(data.profile.description), CV_URL: escapeHTML(data.profile.links.cv.url), SCHOLAR_URL: escapeHTML(data.profile.links.scholar.url),
+    PROFILE_IMAGE_URL: escapeHTML(new URL(data.profile.photo.src, 'https://dromero.org/').href), PROFILE_IMAGE_ALT: escapeHTML(data.profile.photo.alt),
     PROFILE: renderProfile(data.profile), ABOUT: data.about.map(para => `<p>${renderInline(para)}</p>`).join('\n'),
     PUBLICATIONS: `<p class="pub-count">Newest first</p><div class="pub-results" id="${resultsId}" data-view="year">${renderResults(runtime.publications, {view: 'year', topics: runtime.topics, resultsId})}</div>`,
     STUDENTS: renderPeople(data.people), PROFESSIONAL_SERVICE: renderService(data.service), TEACHING: renderTeaching(data.teaching),
