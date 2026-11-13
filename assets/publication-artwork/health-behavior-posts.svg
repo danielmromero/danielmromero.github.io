@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+<rect width="1200" height="650" rx="24" fill="#f5f7f9"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#163047">
+<text x="60" y="70" font-size="34" font-weight="700">Health behaviors in social posts</text>
+<text x="60" y="110" font-size="24" fill="#4d6375">Original study-design illustration</text>
+<g fill="#fff" stroke="#ccd6df" stroke-width="2">
+<rect x="60" y="160" width="470" height="82" rx="13"/><rect x="60" y="258" width="470" height="82" rx="13"/>
+<rect x="60" y="356" width="470" height="82" rx="13"/><rect x="60" y="454" width="470" height="82" rx="13"/>
+</g>
+<g font-size="29" font-weight="700">
+<text x="90" y="212">Tobacco smoking</text><text x="90" y="310">Alcohol drinking</text>
+<text x="90" y="408">Physical activity</text><text x="90" y="506">Eating food</text>
+</g>
+<path d="M565 343 H635" stroke="#567488" stroke-width="6"/>
+<path d="M623 330 L640 343 L623 356" fill="none" stroke="#567488" stroke-width="6"/>
+<rect x="675" y="170" width="460" height="365" rx="18" fill="#e2edf3"/>
+<text x="705" y="226" font-size="29" font-weight="700">Randomized experiment</text>
+<text x="705" y="286" font-size="27">24 posts per participant</text>
+<text x="705" y="336" font-size="27">559 participants</text>
+<path d="M705 365 H1105" stroke="#bbccd7" stroke-width="2"/>
+<text x="705" y="416" font-size="27" font-weight="700">Social acceptability</text>
+<text x="705" y="454" font-size="27" font-weight="700">ratings</text>
+
+</g></svg>

@@ -10,6 +10,22 @@ import {renderPeople, renderService, renderTeaching} from './render-sections.mjs
 export const projectDirectory = fileURLToPath(new URL('../', import.meta.url));
 const {renderResults} = createRequire(import.meta.url)('../assets/scripts/publication-renderer.js');
 
+/** Check image references before replacing a working build with a new release. */
+export async function validateImageAssets(data, publicDirectory) {
+  for (const [index, paper] of data.publications.entries()) {
+    if (!paper.image) continue;
+    for (const key of ['src', 'thumbnail']) {
+      const filename = paper.image[key];
+      try {
+        const info = await stat(path.join(publicDirectory, filename));
+        if (!info.isFile() || info.size === 0) throw new Error('not a nonempty file');
+      } catch (error) {
+        throw new Error(`publications.json[${index}].image.${key}: image is missing or empty: public/${filename}`);
+      }
+    }
+  }
+}
+
 export async function build({output = path.join(projectDirectory, 'dist'), stamp = false} = {}) {
   const out = path.resolve(output);
   const protectedDirectories = ['content', 'templates', 'scripts', 'assets', 'public', '.git', '.openai'].map(name => path.join(projectDirectory, name));
@@ -52,7 +68,7 @@ export async function build({output = path.join(projectDirectory, 'dist'), stamp
     return replacements[token];
   });
   for (const token of Object.keys(replacements)) if (!template.includes(`{{${token}}}`)) throw new Error(`Missing template token: ${token}`);
-  const scripts = await Promise.all(['publication-renderer.js', 'publications-enhance.js', 'collegiate.js'].map(name => readFile(path.join(projectDirectory, 'assets/scripts', name), 'utf8')));
+  const scripts = await Promise.all(['publication-renderer.js', 'publications-enhance.js', 'publication-images.js', 'collegiate.js'].map(name => readFile(path.join(projectDirectory, 'assets/scripts', name), 'utf8')));
   // Escape '<' in serialized data, so a title containing '</script>' is safe even if bundled inline later.
   const app = [`window.ACADEMIC_CONTENT = ${JSON.stringify(runtime).replace(/</g, '\\u003c')};`, ...scripts].join('\n;\n');
   const publicDirectory = path.join(projectDirectory, 'public');
@@ -67,6 +83,7 @@ export async function build({output = path.join(projectDirectory, 'dist'), stamp
     }
   }
   await inspectPublic(publicDirectory);
+  await validateImageAssets(data, publicDirectory);
   const photoSource = path.join(projectDirectory, 'assets', data.profile.photo.src);
   if (!(await stat(photoSource)).isFile()) throw new Error(`Photo is missing: assets/${data.profile.photo.src}`);
   // Prepare a fresh output first. Removed source assets cannot linger in a later release.

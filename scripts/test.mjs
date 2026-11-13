@@ -5,7 +5,7 @@ import {fileURLToPath} from 'node:url';
 import path from 'node:path';
 import os from 'node:os';
 import {loadContent, validateContent, publicationData} from './content.mjs';
-import {build} from './build.mjs';
+import {build, validateImageAssets} from './build.mjs';
 import {escapeHTML, renderInline, isSafeURL} from './content-utils.mjs';
 
 const project = fileURLToPath(new URL('../', import.meta.url));
@@ -98,6 +98,24 @@ assert.equal(renderInline('Text [brackets] then [Profile](https://example.test)'
 assert.throws(() => renderInline('[Unsafe](javascript:alert(1))'), /Invalid link/);
 assert.throws(() => renderInline('[Incomplete](https://example.test'), /Unclosed link/);
 
+const imageFixture = {
+  src: 'images/papers/fixture.webp', thumbnail: 'images/papers/fixture-thumb.webp',
+  alt: 'A network linking three groups', caption: 'The paper’s three-group network diagram.',
+  credit: 'Author et al., Figure 1.', source: 'https://example.test/paper', width: 640, height: 480
+};
+for (const view of ['year', 'topic']) {
+  const html = render([{...seed, image: {...imageFixture, alt: payload}}], view, {example: 'Example'});
+  assert.equal(countClass(html, 'paper-thumbnail'), 1, `${view}: the initial and filtered renderer includes the image`);
+  assert.equal(countClass(html, 'has-paper-image'), 1);
+  assert.ok(html.includes('href="images/papers/fixture.webp"'), 'The image link works without JavaScript');
+  assert.ok(html.includes('src="images/papers/fixture-thumb.webp"'), 'The full image is not loaded for a thumbnail');
+  assert.ok(html.includes('loading="lazy"') && html.includes('decoding="async"'));
+  assert.ok(html.includes(`alt="${escapeHTML(payload)}"`), 'Alt text is escaped');
+  assert.ok(!html.includes('<script>'));
+  if (view === 'topic') assert.ok(html.indexOf('class="pub-detail"') < html.indexOf('class="pub-year-label"'), 'The year stays with the paper text beside the image');
+}
+assert.equal(countClass(render([seed]), 'paper-thumbnail'), 0, 'A future paper can be published before an image is ready');
+
 const rejects = (mutate, pattern) => {
   const invalid = structuredClone(data);
   // Avoid relying on whether the author's live publication list happens to be empty.
@@ -116,6 +134,19 @@ rejects(value => value.publications.push(structuredClone(value.publications[0]))
 rejects(value => value.profile.email = 'not an address', /profile\.json\.email/);
 rejects(value => value.profile.photo.src = 'images/../private.jpg', /photo\.src/);
 rejects(value => value['site-meta'].lastUpdatedISO = 'tomorrow', /lastUpdatedISO/);
+const rejectsImage = (mutate, pattern) => rejects(value => {value.publications[0].image = structuredClone(imageFixture); mutate(value.publications[0].image);}, pattern);
+rejectsImage(image => image.src = '../private.jpg', /image\.src/);
+rejectsImage(image => image.thumbnail = 'https://example.test/tracking.jpg', /image\.thumbnail/);
+rejectsImage(image => image.src = 'images/papers/../private.jpg', /image\.src/);
+rejectsImage(image => image.src = 'images/papers/file.svg', /image\.src/);
+rejectsImage(image => delete image.caption, /image\.caption/);
+rejectsImage(image => image.width = 0, /image\.width/);
+rejectsImage(image => image.height = '480', /image\.height/);
+rejectsImage(image => image.source = 'javascript:alert(1)', /image\.source/);
+rejectsImage(image => image.source = 'links/source.pdf', /image\.source/);
+rejectsImage(image => image.credit = 'Created for this review', /draft review wording/);
+rejectsImage(image => image.caption = 'Local preview only', /draft review wording/);
+rejectsImage(image => image.notes = 'Internal curator notes', /unknown field/);
 for (const unsafe of ['javascript:alert(1)', 'data:text/html,hello', '//evil.test/', '../secret.pdf', 'https://example.test/a b', 'https://example.test/"quote"', 'links\\paper.pdf']) {
   assert.equal(isSafeURL(unsafe), false, `${unsafe} must not be accepted as a link`);
   rejects(value => value.publications[0].url = unsafe, /\.url/);
@@ -125,6 +156,19 @@ assert.deepEqual(data, before, 'Validation and normalization do not mutate conte
 
 const temporary = await mkdtemp(path.join(os.tmpdir(), 'romero-website-test-'));
 try {
+  const fixtureDirectory = path.join(temporary, 'image-fixtures');
+  await assert.rejects(validateImageAssets({publications: [{image: imageFixture}]}, fixtureDirectory), /image\.src.*missing or empty/, 'A missing full image is caught before build replacement');
+  // Existing files are copied byte-for-byte by the normal build; this isolated
+  // fixture checks the references without touching a maintained image.
+  const {mkdir} = await import('node:fs/promises');
+  await mkdir(path.join(fixtureDirectory, 'images/papers'), {recursive: true});
+  await writeFile(path.join(fixtureDirectory, imageFixture.src), 'source-image-fixture');
+  await assert.rejects(validateImageAssets({publications: [{image: imageFixture}]}, fixtureDirectory), /image\.thumbnail.*missing or empty/, 'A missing thumbnail is caught');
+  await writeFile(path.join(fixtureDirectory, imageFixture.thumbnail), '');
+  await assert.rejects(validateImageAssets({publications: [{image: imageFixture}]}, fixtureDirectory), /image\.thumbnail.*missing or empty/, 'An empty image file is caught');
+  await writeFile(path.join(fixtureDirectory, imageFixture.thumbnail), 'thumbnail-fixture');
+  await validateImageAssets({publications: [{image: imageFixture}, {}]}, fixtureDirectory);
+  await rm(fixtureDirectory, {recursive: true});
   const metadataBefore = await readFile(path.join(contentDirectory, 'site-meta.json'), 'utf8');
   const result = await build({output: temporary});
   const html = await readFile(path.join(temporary, 'index.html'), 'utf8');
@@ -133,6 +177,7 @@ try {
   assert.equal(result.publications, papers.length);
   assert.ok(!/\{\{[A-Z_]+\}\}/.test(html), 'Every template placeholder is resolved');
   assert.equal(countClass(withoutScripts, 'pub-entry'), papers.length, 'All papers are present without running JavaScript');
+  assert.equal(countClass(withoutScripts, 'paper-thumbnail'), papers.filter(paper => paper.image).length, 'Every configured image appears without JavaScript');
   assert.equal(countResourceLinks(withoutScripts, 'pub-press'), expectedPress);
   for (const paper of papers) {
     assert.ok(withoutScripts.includes(escapeHTML(paper.title)), `Static HTML includes ${paper.title}`);

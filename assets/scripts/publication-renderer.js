@@ -21,7 +21,9 @@
     const yearLabel = view === 'topic' ? `<span class="pub-year-label">${escapeHTML(paper.year)}</span>` : '';
     const resourceLinks = resources.length ? `<div class="pub-links">${resources.map(renderLink).join('')}</div>` : '';
     const pressLinks = press.length ? `<div class="pub-press"><span class="pub-press-label">Press coverage:</span><span class="pub-press-links"> ${press.map(renderLink).join(' ')}</span></div>` : '';
-    return `<li class="pub-entry">${yearLabel}<div class="pub-detail"><${titleTag} class="pub-title"><a href="${escapeHTML(paper.url)}" target="_blank" rel="noopener">${escapeHTML(paper.title)}</a></${titleTag}><p class="pub-authors">${escapeHTML(paper.authors)}</p><p class="pub-venue">${escapeHTML(paper.venue)}</p>${resourceLinks}${pressLinks}</div></li>`;
+    const image = paper.image;
+    const thumbnail = image ? `<a class="paper-thumbnail" href="${escapeHTML(image.src)}" target="_blank" rel="noopener" data-publication-image="${escapeHTML(paper.url)}" aria-label="${escapeHTML(`Enlarge image for ${paper.title}`)}"><img src="${escapeHTML(image.thumbnail)}" alt="${escapeHTML(image.alt)}" width="${escapeHTML(image.width)}" height="${escapeHTML(image.height)}" loading="lazy" decoding="async"></a>` : '';
+    return `<li class="pub-entry${image ? ' has-paper-image' : ''}">${thumbnail}<div class="pub-detail">${yearLabel}<${titleTag} class="pub-title"><a href="${escapeHTML(paper.url)}" target="_blank" rel="noopener">${escapeHTML(paper.title)}</a></${titleTag}><p class="pub-authors">${escapeHTML(paper.authors)}</p><p class="pub-venue">${escapeHTML(paper.venue)}</p>${resourceLinks}${pressLinks}</div></li>`;
   }
 
   function yearValue(paper) {

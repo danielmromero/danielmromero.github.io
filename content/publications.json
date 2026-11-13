@@ -17,7 +17,17 @@
         "url": "https://github.com/abrahami/sustainable-high-quality-wikis"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p001.webp",
+      "thumbnail": "images/papers/p001-thumb.webp",
+      "alt": "The life cycle of Wikipedia’s Durian article, including quality promotions and demotion.",
+      "caption": "The life cycle of Wikipedia’s Durian article, including quality promotions and demotion.",
+      "credit": "Israeli, Jurgens & Romero (2026), PNAS Nexus, Figure 1. Article: CC BY-NC 4.0; Wikipedia material: CC BY-SA 4.0.",
+      "source": "https://doi.org/10.1093/pnasnexus/pgag251",
+      "width": 3000,
+      "height": 2330
+    }
   },
   {
     "title": "The Impact of Generative AI on Social Media: An Experimental Study",
@@ -54,29 +64,59 @@
         "label": "Brookings",
         "url": "https://www.brookings.edu/articles/whats-at-stake-at-unga-2026/"
       }
-    ]
+    ],
+    "image": {
+      "src": "images/papers/p002.webp",
+      "thumbnail": "images/papers/p002-thumb.webp",
+      "alt": "Participation and perceived discussion quality across five experimental conditions.",
+      "caption": "Participation and perceived discussion quality across five experimental conditions.",
+      "credit": "Møller, Romero, Jurgens & Aiello (2026), Scientific Reports, Figure 2. CC BY-NC-ND 4.0.",
+      "source": "https://doi.org/10.1038/s41598-026-40110-8",
+      "width": 1156,
+      "height": 1669
+    }
   },
   {
     "title": "The Persistence of Retracted Papers on Wikipedia",
     "url": "https://bit.ly/4k3CnGC",
-    "authors": "H. Shi, Y. Yu, D., D.M. Romero, and E-Á. Horvát.",
+    "authors": "H. Shi, Y. Yu, D.M. Romero, and E-Á. Horvát.",
     "venue": "Proc. 29th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), 2026.",
     "year": 2026,
     "type": "conference",
     "topic": "science_of_science",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p003.webp",
+      "thumbnail": "images/papers/p003-thumb.webp",
+      "alt": "How retracted-paper citations and subsequent corrections were identified on Wikipedia.",
+      "caption": "How retracted-paper citations and subsequent corrections were identified on Wikipedia.",
+      "credit": "Shi, Yu, Romero & Horvát (2026), ACM, Figure 2, left-panel crop. CC BY 4.0.",
+      "source": "https://doi.org/10.1145/3817014",
+      "width": 248,
+      "height": 296
+    }
   },
   {
     "title": "Agentic AI: User Empowerment or Foreclosure?",
     "url": "https://bit.ly/4BLcoKt",
-    "authors": "D. Gamba, D., D.M. Romero, and G. Schoenebeck.",
+    "authors": "D. Gamba, D.M. Romero, and G. Schoenebeck.",
     "venue": "Proc. of the AAAI ACM Conference on AI, Ethics, and Society (AIES), 2026.",
     "year": 2026,
     "type": "conference",
     "topic": "online_platforms",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p004.webp",
+      "thumbnail": "images/papers/p004-thumb.webp",
+      "alt": "A conceptual framework for infrastructure, knowledge production, and embedded priorities in agentic AI.",
+      "caption": "A conceptual framework for infrastructure, knowledge production, and embedded priorities in agentic AI.",
+      "credit": "Gamba, Romero & Schoenebeck (2026), extended author preprint, arXiv:2608.06510v2, Figure 1. CC BY 4.0.",
+      "source": "https://arxiv.org/abs/2608.06510v2",
+      "width": 830,
+      "height": 592
+    }
   },
   {
     "title": "The Gender Gap in Scholarly Self-Promotion on Social Media.",
@@ -96,7 +136,17 @@
         "url": "https://github.com/haoopeng/gender_promotion"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p005.webp",
+      "thumbnail": "images/papers/p005-thumb.webp",
+      "alt": "Model-predicted self-promotion, Twitter presence, and promotion among active users, compared by gender and publication year.",
+      "caption": "Model-predicted self-promotion, Twitter presence, and promotion among active users, compared by gender and publication year.",
+      "credit": "Peng, Teplitskiy, Romero & Horvát (2025), Nature Communications, Figure 2. CC BY-NC-ND 4.0.",
+      "source": "https://doi.org/10.1038/s41467-025-60590-y",
+      "width": 685,
+      "height": 177
+    }
   },
   {
     "title": "Evaluating Interdisciplinary Research: Disparate Outcomes for Topic and Knowledge Base.",
@@ -116,7 +166,17 @@
         "url": "https://bit.ly/3Eom6ts"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p006.webp",
+      "thumbnail": "images/papers/p006-thumb.webp",
+      "alt": "Associations of topic and knowledge-base interdisciplinarity with acceptance and review positivity.",
+      "caption": "Associations of topic and knowledge-base interdisciplinarity with acceptance and review positivity.",
+      "credit": "Xiang, Romero & Teplitskiy (2025), PNAS, Figure 1A, panel crop. CC BY 4.0.",
+      "source": "https://doi.org/10.1073/pnas.2409752122",
+      "width": 640,
+      "height": 701
+    }
   },
   {
     "title": "Timing and Cross-Platform Presence Shape the Online Dissemination of Science.",
@@ -127,12 +187,22 @@
     "type": "journal",
     "topic": "science_of_science",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p007.webp",
+      "thumbnail": "images/papers/p007-thumb.webp",
+      "alt": "Four patterns of scientific articles’ dissemination across online platforms.",
+      "caption": "Four patterns of scientific articles’ dissemination across online platforms.",
+      "credit": "Córdova, Horvát & Romero (2025), EPJ Data Science, Figure 1. CC BY-NC-ND 4.0.",
+      "source": "https://doi.org/10.1140/epjds/s13688-025-00580-8",
+      "width": 1156,
+      "height": 1158
+    }
   },
   {
     "title": "Roles of Network and Identity in Hashtag Diffusion.",
     "url": "https://bit.ly/3GlLO2h",
-    "authors": "A. Ananthasubramaniam, D. Jurgens, and D.M. Romero.",
+    "authors": "A. Ananthasubramaniam, Y. L. Zhu, D. Jurgens, and D.M. Romero.",
     "venue": "Proc. of The ACM Web Conference (WWW), 2025.",
     "year": 2025,
     "type": "conference",
@@ -143,7 +213,17 @@
         "url": "https://bit.ly/42r5lHb"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p008.webp",
+      "thumbnail": "images/papers/p008-thumb.webp",
+      "alt": "Network, identity, and combined diffusion models compared across overall, popularity, growth, and adopter Cascade Match Index scores.",
+      "caption": "Network, identity, and combined diffusion models compared across overall, popularity, growth, and adopter Cascade Match Index scores.",
+      "credit": "Ananthasubramaniam, Zhu, Jurgens & Romero (2025), The ACM Web Conference, Figure 1. CC BY-NC-ND 4.0.",
+      "source": "https://doi.org/10.1145/3696410.3714716",
+      "width": 829,
+      "height": 404
+    }
   },
   {
     "title": "Multiplatform Early Predictors of Academic Articles' Visibility and Citations.",
@@ -154,18 +234,38 @@
     "type": "conference",
     "topic": "science_of_science",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p009.webp",
+      "thumbnail": "images/papers/p009-thumb.webp",
+      "alt": "Predicting online visibility and news coverage from the first 2–10 online mentions.",
+      "caption": "Predicting online visibility and news coverage from the first 2–10 online mentions.",
+      "credit": "Córdova Sánchez, Hirose, Shi, Horvát & Romero (2025), ACM CI, Figure 1. CC BY 4.0.",
+      "source": "https://doi.org/10.1145/3715928.3737492",
+      "width": 500,
+      "height": 276
+    }
   },
   {
     "title": "Scholarly Disengagement as an Epistemic Crisis: Clickbait, Credibility, and the Decline of Public-Facing Science.",
     "url": "https://bit.ly/4ldlEh0",
-    "authors": "M. Bhat, D.M. Romero, and and E-Á. Horvát.",
+    "authors": "M. Bhat, D.M. Romero, and E-Á. Horvát.",
     "venue": "Proc. of The ACM Collective Intelligence Conference (CI), 2025.",
     "year": 2025,
     "type": "conference",
     "topic": "science_of_science",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p010.webp",
+      "thumbnail": "images/papers/p010-thumb.webp",
+      "alt": "Within-discipline percentages of surveyed researchers coded as disengaged from media engagement.",
+      "caption": "Within-discipline percentages of surveyed researchers coded as disengaged from media engagement.",
+      "credit": "Bhat, Romero & Horvát (2025), ACM CI, Figure 2. CC BY 4.0.",
+      "source": "https://doi.org/10.1145/3715928.3737484",
+      "width": 500,
+      "height": 321
+    }
   },
   {
     "title": "Signals in the Noise: Decoding Unexpected Engagement Patterns on Twitter.",
@@ -176,18 +276,38 @@
     "type": "conference",
     "topic": "online_platforms",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p011.webp",
+      "thumbnail": "images/papers/p011-thumb.webp",
+      "alt": "Regression estimates compare how topics, sentiment, and textual complexity relate to unexpectedly high likes, retweets, and replies across two tweet samples.",
+      "caption": "Regression estimates compare how topics, sentiment, and textual complexity relate to unexpectedly high likes, retweets, and replies across two tweet samples.",
+      "credit": "Yu et al. (2025), PACM HCI, Fig. 6; author manuscript, arXiv:2509.08128v1. CC BY 4.0.",
+      "source": "https://arxiv.org/pdf/2509.08128v1",
+      "width": 1041,
+      "height": 508
+    }
   },
   {
     "title": "Research Topic Choice: Motivations, Strategies, and Consequences.",
     "url": "https://bit.ly/3FQns0p",
     "authors": "S. Xiang, D.M. Romero, and M. Teplitskiy.",
-    "venue": "Quantitative Science Studies , 1-66, 2025.",
+    "venue": "Quantitative Science Studies, 6, 623–651, 2025.",
     "year": 2025,
     "type": "journal",
     "topic": "science_of_science",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p012.webp",
+      "thumbnail": "images/papers/p012-thumb.webp",
+      "alt": "The theoretical framework places individual assessments of rewards, costs, and success within the wider social context of research topic choice.",
+      "caption": "The theoretical framework places individual assessments of rewards, costs, and success within the wider social context of research topic choice.",
+      "credit": "Xiang, Romero & Teplitskiy (2025), Quantitative Science Studies, Fig. 1. CC BY 4.0.",
+      "source": "https://direct.mit.edu/qss/article/doi/10.1162/qss_a_00365/128601",
+      "width": 520,
+      "height": 509
+    }
   },
   {
     "title": "Demographic Disparity in Wikipedia Coverage: A Global Perspective.",
@@ -198,7 +318,17 @@
     "type": "journal",
     "topic": "online_platforms",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p013.webp",
+      "thumbnail": "images/papers/p013-thumb.webp",
+      "alt": "Regression coefficients trace differences in Wikipedia language coverage, article length, and cross-language consensus across demographic groups from 2010 to 2020.",
+      "caption": "Regression coefficients trace differences in Wikipedia language coverage, article length, and cross-language consensus across demographic groups from 2010 to 2020.",
+      "credit": "Yu et al. (2025), EPJ Data Science, Fig. 6. CC BY 4.0.",
+      "source": "https://link.springer.com/content/pdf/10.1140/epjds/s13688-025-00530-4.pdf",
+      "width": 997,
+      "height": 452
+    }
   },
   {
     "title": "Does the Use of Unusual Combinations of Datasets Contribute to Greater Scientific Impact?",
@@ -218,7 +348,17 @@
         "url": "https://bit.ly/3XRgM7w"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p014.webp",
+      "thumbnail": "images/papers/p014-thumb.webp",
+      "alt": "Model estimates compare associations between unusual dataset combinations, citation impact, and online attention, alongside the method used to measure dataset atypicality.",
+      "caption": "Model estimates compare associations between unusual dataset combinations, citation impact, and online attention, alongside the method used to measure dataset atypicality.",
+      "credit": "Yu & Romero (2024), PNAS, Fig. 2; author manuscript, arXiv:2402.05024v4.",
+      "source": "https://arxiv.org/pdf/2402.05024v4",
+      "width": 1227,
+      "height": 544
+    }
   },
   {
     "title": "Networks and Identity Drive the Spatial Diffusion of Linguistic Innovation in Urban and Rural Areas.",
@@ -238,7 +378,17 @@
         "url": "https://bit.ly/4gNBde5"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p015.webp",
+      "thumbnail": "images/papers/p015-thumb.webp",
+      "alt": "Three maps compare simulated county-to-county language diffusion pathways under models combining network and identity effects or considering each mechanism separately.",
+      "caption": "Three maps compare simulated county-to-county language diffusion pathways under models combining network and identity effects or considering each mechanism separately.",
+      "credit": "Ananthasubramaniam, Jurgens & Romero (2024), npj Complexity, Fig. 2. CC BY-NC-ND 4.0.",
+      "source": "https://www.nature.com/articles/s44260-024-00009-9.pdf",
+      "width": 1439,
+      "height": 272
+    }
   },
   {
     "title": "Exit Ripple Effects: Understanding the Disruption of Socialization Networks Following Employee Departures.",
@@ -249,13 +399,23 @@
     "type": "conference",
     "topic": "organizational",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p016.webp",
+      "thumbnail": "images/papers/p016-thumb.webp",
+      "alt": "An illustrative network follows interactions among remaining coworkers as a central employee departs and previously connected groups become more fragmented.",
+      "caption": "An illustrative network follows interactions among remaining coworkers as a central employee departs and previously connected groups become more fragmented.",
+      "credit": "Gamba et al. (2024), WWW, Fig. 1; NSF-hosted author manuscript, arXiv:2402.15683v1.",
+      "source": "https://par.nsf.gov/servlets/purl/10568929",
+      "width": 622,
+      "height": 180
+    }
   },
   {
     "title": "Profile Update: The Effects of Identity Disclosure on Network Connections and Language.",
     "url": "https://bit.ly/45IDja8",
     "authors": "M. Choi, D.M. Romero, and D. Jurgens.",
-    "venue": "EPJ Data Sci , 45, 2024.",
+    "venue": "EPJ Data Science, 13, 45, 2024.",
     "year": 2024,
     "type": "journal",
     "topic": "identity_language",
@@ -269,7 +429,17 @@
         "url": "https://bit.ly/3ZTuucy"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p017.webp",
+      "thumbnail": "images/papers/p017-thumb.webp",
+      "alt": "The study workflow follows profile updates through identity classification and matched comparisons to analyses of language, social connections, and offensive replies.",
+      "caption": "The study workflow follows profile updates through identity classification and matched comparisons to analyses of language, social connections, and offensive replies.",
+      "credit": "Choi, Romero & Jurgens (2024), EPJ Data Science, Fig. 2. CC BY 4.0.",
+      "source": "https://link.springer.com/content/pdf/10.1140/epjds/s13688-024-00483-0.pdf",
+      "width": 994,
+      "height": 319
+    }
   },
   {
     "title": "Emergent Influence Networks in Good-Faith Online Discussions.",
@@ -280,7 +450,17 @@
     "type": "conference",
     "topic": "online_platforms",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p018.webp",
+      "thumbnail": "images/papers/p018-thumb.webp",
+      "alt": "An example discussion network shows participants and reply connections immediately before a persuasion award and again when the conversation ends.",
+      "caption": "An example discussion network shows participants and reply connections immediately before a persuasion award and again when the conversation ends.",
+      "credit": "Dambanemuya, Romero & Horvát (2024), ICWSM, Fig. 2.",
+      "source": "https://ojs.aaai.org/index.php/ICWSM/article/download/31317/33477/35373",
+      "width": 666,
+      "height": 263
+    }
   },
   {
     "title": "Social Acceptability of Health Behavior Posts on Social Media: An Experiment.",
@@ -291,18 +471,38 @@
     "type": "journal",
     "topic": "online_platforms",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p019.webp",
+      "thumbnail": "images/papers/p019-thumb.webp",
+      "alt": "Original study-design illustration showing the experiment’s health-behavior topics, participant sample and social-acceptability ratings.",
+      "caption": "Original study-design illustration showing the experiment’s health-behavior topics, participant sample and social-acceptability ratings.",
+      "credit": "Original study-design illustration based on Bhogal et al. (2024), American Journal of Preventive Medicine; not a figure from the paper.",
+      "source": "https://www.ajpmonline.org/article/S0749379724000011/fulltext",
+      "width": 1200,
+      "height": 650
+    }
   },
   {
     "title": "Pulling Through Together: Social Media Response Trajectories in Disaster-Stricken Communities.",
     "url": "https://bit.ly/3F9uTMz",
     "authors": "D. Maldeniya, M. De Choudhury, D. Garcia, and D.M. Romero.",
-    "venue": "Journal of Computational Social Science , 1-52, 2023.",
+    "venue": "Journal of Computational Social Science, 6, 655–706, 2023.",
     "year": 2023,
     "type": "journal",
     "topic": "online_platforms",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p020.webp",
+      "thumbnail": "images/papers/p020-thumb.webp",
+      "alt": "Linguistic response trajectories compare two groups of disaster-affected communities across ten dimensions, including anger, sadness, fear, and causal language.",
+      "caption": "Linguistic response trajectories compare two groups of disaster-affected communities across ten dimensions, including anger, sadness, fear, and causal language.",
+      "credit": "Maldeniya et al. (2023), Journal of Computational Social Science, Fig. 6. CC BY 4.0.",
+      "source": "https://link.springer.com/content/pdf/10.1007/s42001-023-00209-8.pdf",
+      "width": 944,
+      "height": 1178
+    }
   },
   {
     "title": "Analyzing the Engagement of Social Relationships During Life Event Shocks in Social Media.",
@@ -313,7 +513,17 @@
     "type": "conference",
     "topic": "identity_language",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p021.webp",
+      "thumbnail": "images/papers/p021-thumb.webp",
+      "alt": "Reply patterns before and after life-event shocks are compared across social, romantic, family, organizational, and parasocial relationships in public Twitter conversations.",
+      "caption": "Reply patterns before and after life-event shocks are compared across social, romantic, family, organizational, and parasocial relationships in public Twitter conversations.",
+      "credit": "Choi, Jurgens & Romero (2023), ICWSM, Fig. 4.",
+      "source": "https://ojs.aaai.org/index.php/ICWSM/article/download/22134/21913",
+      "width": 1322,
+      "height": 622
+    }
   },
   {
     "title": "Information Retention in the Multi-Platform Sharing of Science.",
@@ -324,7 +534,17 @@
     "type": "conference",
     "topic": "science_of_science",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p022.webp",
+      "thumbnail": "images/papers/p022-thumb.webp",
+      "alt": "The framework combines separate platform-level bursts of attention into one chronological sequence for tracing online discussion of a scientific article.",
+      "caption": "The framework combines separate platform-level bursts of attention into one chronological sequence for tracing online discussion of a scientific article.",
+      "credit": "Hwang, Horvát & Romero (2023), ICWSM, Fig. 1.",
+      "source": "https://ojs.aaai.org/index.php/ICWSM/article/download/22153/21932/26216",
+      "width": 652,
+      "height": 369
+    }
   },
   {
     "title": "Dynamics of Cross-Platform Attention to Retracted Papers.",
@@ -361,18 +581,38 @@
         "label": "Deutschlandfunk (German Radio)",
         "url": "https://bit.ly/3Qe1GDo"
       }
-    ]
+    ],
+    "image": {
+      "src": "images/papers/p023.webp",
+      "thumbnail": "images/papers/p023-thumb.webp",
+      "alt": "Cumulative online mentions of retracted papers and matched controls are compared across platforms during the first six months after publication, before retraction.",
+      "caption": "Cumulative online mentions of retracted papers and matched controls are compared across platforms during the first six months after publication, before retraction.",
+      "credit": "Peng, Romero & Horvát (2022), PNAS, Fig. 2. CC BY-NC-ND 4.0.",
+      "source": "https://haoopeng.github.io/paper/pnas.2119086119.pdf",
+      "width": 1430,
+      "height": 883
+    }
   },
   {
     "title": "Equitable Research PRAXIS: A Framework for Health Informatics Methods.",
     "url": "https://bit.ly/3ExCJQh",
-    "authors": "T.C. Veinot, P.J., Clarke, D.M. Romero, L.R. Buis, T.R. Dillahunt, V.G.V. Vydiswaran, A. Beals, L. Brown, O.Richards, A. Williamson, and M.G. Antonio.",
+    "authors": "T.C. Veinot, P. J. Clarke, D.M. Romero, L.R. Buis, T.R. Dillahunt, V.G.V. Vydiswaran, A. Beals, L. Brown, O.Richards, A. Williamson, and M.G. Antonio.",
     "venue": "IMIA Yearbook of Medical Informatics , 31(01), 307-316, 2022.",
     "year": 2022,
     "type": "journal",
     "topic": "methods",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p024.webp",
+      "thumbnail": "images/papers/p024-thumb.webp",
+      "alt": "The PRAXIS framework connects four equity considerations with project initiation, sampling and recruitment, data collection, and data analysis.",
+      "caption": "The PRAXIS framework connects four equity considerations with project initiation, sampling and recruitment, data collection, and data analysis.",
+      "credit": "Veinot et al. (2022), Yearbook of Medical Informatics, Fig. 1. CC BY-NC-ND 4.0.",
+      "source": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/21b1/9719773/b7a66b9b2f82/10-1055-s-0042-1742542-iveinot-1.jpg",
+      "width": 800,
+      "height": 605
+    }
   },
   {
     "title": "Caste Capital on Twitter: A Formal Network Analysis of Caste Relations among Indian Politicians.",
@@ -383,7 +623,17 @@
     "type": "conference",
     "topic": "identity_language",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p025.webp",
+      "thumbnail": "images/papers/p025-thumb.webp",
+      "alt": "Caste-group PageRank distributions compare BJP and non-BJP politician networks, with logarithmic axes showing variation within each party grouping.",
+      "caption": "Caste-group PageRank distributions compare BJP and non-BJP politician networks, with logarithmic axes showing variation within each party grouping.",
+      "credit": "Vaghela et al. (2022), PACM HCI, Fig. 2; author-hosted manuscript.",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/Caste_Capital_on_Twitter.pdf",
+      "width": 1086,
+      "height": 347
+    }
   },
   {
     "title": "Neural Embeddings of Scholarly Periodicals Reveal Complex Disciplinary Organizations.",
@@ -407,7 +657,17 @@
         "url": "https://github.com/haoopeng/periodicals"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p026.webp",
+      "thumbnail": "images/papers/p026-thumb.webp",
+      "alt": "A journal-embedding map shows disciplinary groupings and cross-disciplinary clusters, with accompanying panels comparing the embedding structure against an established classification.",
+      "caption": "A journal-embedding map shows disciplinary groupings and cross-disciplinary clusters, with accompanying panels comparing the embedding structure against an established classification.",
+      "credit": "Peng et al. (2021), Science Advances, Fig. 2. CC BY-NC 4.0.",
+      "source": "https://assets.yyahn.com/papers/peng2021neural.pdf",
+      "width": 1455,
+      "height": 750
+    }
   },
   {
     "title": "More than Meets the Tie: Examining the Role of Interpersonal Relationships in Social Networks.",
@@ -431,7 +691,17 @@
         "url": "https://icwsm.org/virtual/2021/poster_E1121.html"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p027.webp",
+      "thumbnail": "images/papers/p027-thumb.webp",
+      "alt": "Daily Twitter mention patterns compare relationship categories and selected romance and family subcategories, showing raw frequencies alongside centered comparisons.",
+      "caption": "Daily Twitter mention patterns compare relationship categories and selected romance and family subcategories, showing raw frequencies alongside centered comparisons.",
+      "credit": "Choi et al. (2021), ICWSM, Fig. 4; author-hosted proceedings copy.",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/Relationships.pdf",
+      "width": 1366,
+      "height": 547
+    }
   },
   {
     "title": "Network Modularity Controls the Speed of Information Diffusion.",
@@ -447,7 +717,17 @@
         "url": "https://bit.ly/36n80oh"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p028.webp",
+      "thumbnail": "images/papers/p028-thumb.webp",
+      "alt": "Model simulations and analytic predictions relate network mixing to diffusion speed and final cascade size, highlighting an intermediate setting with faster spreading.",
+      "caption": "Model simulations and analytic predictions relate network mixing to diffusion speed and final cascade size, highlighting an intermediate setting with faster spreading.",
+      "credit": "Peng et al. (2020), Physical Review E, Fig. 1.",
+      "source": "https://journals.aps.org/pre/pdf/10.1103/PhysRevE.102.052316",
+      "width": 683,
+      "height": 472
+    }
   },
   {
     "title": "Herding a Deluge of Good Samaritans: How GitHub Projects Respond to Increased Attention.",
@@ -467,7 +747,17 @@
         "url": "https://bit.ly/33MlecD"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p029.webp",
+      "thumbnail": "images/papers/p029-thumb.webp",
+      "alt": "Stars and forks are tracked around attention shocks for GitHub projects and matched controls, showing changes in both indicators over time.",
+      "caption": "Stars and forks are tracked around attention shocks for GitHub projects and matched controls, showing changes in both indicators over time.",
+      "credit": "Maldeniya et al. (2020), WWW, Fig. 2; author-hosted proceedings copy.",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/How_GitHub_Projects_Respond_to_Increased_Attention.pdf",
+      "width": 630,
+      "height": 355
+    }
   },
   {
     "title": "Uncovering the relationship between food-related discussion on Twitter and neighborhood characteristics.",
@@ -487,7 +777,17 @@
         "label": "PatientEngagementHIT",
         "url": "https://bit.ly/32OobYK"
       }
-    ]
+    ],
+    "image": {
+      "src": "images/papers/p030.webp",
+      "thumbnail": "images/papers/p030-thumb.webp",
+      "alt": "The correlation matrix compares Twitter-based food-healthiness measures with neighborhood characteristics, displaying the associations observed across the study's geographic areas.",
+      "caption": "The correlation matrix compares Twitter-based food-healthiness measures with neighborhood characteristics, displaying the associations observed across the study's geographic areas.",
+      "credit": "Vydiswaran et al. (2019 advance article; 2020 issue), JAMIA, Figure 2. Author-hosted publisher PDF. CC BY-NC 4.0.",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/uncovering.pdf",
+      "width": 1249,
+      "height": 726
+    }
   },
   {
     "title": "How Self-declared Throwaway Accounts Enable Parenting Disclosure and Support on Reddit.",
@@ -498,7 +798,17 @@
     "type": "conference",
     "topic": "identity_language",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p031.webp",
+      "thumbnail": "images/papers/p031-thumb.webp",
+      "alt": "Topic-classifier results summarize how language and discussion themes differ between self-declared throwaway and pseudonymous accounts in parenting discussions on Reddit.",
+      "caption": "Topic-classifier results summarize how language and discussion themes differ between self-declared throwaway and pseudonymous accounts in parenting discussions on Reddit.",
+      "credit": "Ammari, Schoenebeck and Romero (2019), PACM Human-Computer Interaction / CSCW, Table 3. Author manuscript.",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/Self_declared_Throwaway_Accounts.pdf",
+      "width": 1390,
+      "height": 880
+    }
   },
   {
     "title": "Participation of New Editors After Times of Shock on Wikipedia.",
@@ -514,7 +824,17 @@
         "url": "http://bit.ly/2kpLXYM"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p032.webp",
+      "thumbnail": "images/papers/p032-thumb.webp",
+      "alt": "Revision counts and active-editor totals show how Wikipedia participation changed around attention shocks for academic, politician and comparison articles.",
+      "caption": "Revision counts and active-editor totals show how Wikipedia participation changed around attention shocks for academic, politician and comparison articles.",
+      "credit": "Zhang et al. (2019), ICWSM, Figure 2. Author-hosted proceedings PDF.",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/Participation_After_Shocks_on_Wikipedia.pdf",
+      "width": 736,
+      "height": 391
+    }
   },
   {
     "title": "Towards Attack Tolerant Networks: Concurrent Multipath Routing and the Butterfly Network.",
@@ -525,7 +845,17 @@
     "type": "journal",
     "topic": "network_structure",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p033.webp",
+      "thumbnail": "images/papers/p033-thumb.webp",
+      "alt": "Highlighted nodes and edges trace one route through a wrap-around butterfly network, illustrating the topology used for concurrent multipath routing.",
+      "caption": "Highlighted nodes and edges trace one route through a wrap-around butterfly network, illustrating the topology used for concurrent multipath routing.",
+      "credit": "Platt and Romero (2019), PLOS ONE, Figure 3. Publisher PDF. CC BY 4.0.",
+      "source": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0214292&type=printable",
+      "width": 766,
+      "height": 736
+    }
   },
   {
     "title": "Are All Successful Communities Alike? Characterizing and Predicting the Success of Online Communities.",
@@ -545,7 +875,17 @@
         "url": "http://bit.ly/2ZcnapX"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p034.webp",
+      "thumbnail": "images/papers/p034-thumb.webp",
+      "alt": "Correlations among growth, activity, retention and survival measures show how different definitions of success relate across the studied online communities.",
+      "caption": "Correlations among growth, activity, retention and survival measures show how different definitions of success relate across the studied online communities.",
+      "credit": "Cunha et al. (2019), The Web Conference, Figure 2b. Author-hosted publisher PDF. CC BY 4.0.",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/Predicting_the_Success_of_Online_Communities.pdf",
+      "width": 669,
+      "height": 605
+    }
   },
   {
     "title": "Event-Driven Analysis of Crowd Dynamics in the Black Lives Matter Online Social Movement.",
@@ -565,7 +905,17 @@
         "url": "http://bit.ly/2Whv9Qu"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p035.webp",
+      "thumbnail": "images/papers/p035-thumb.webp",
+      "alt": "Three panels compare subsequent participation frequency, persistence and return timing among people joining Black Lives Matter discussions around different event types.",
+      "caption": "Three panels compare subsequent participation frequency, persistence and return timing among people joining Black Lives Matter discussions around different event types.",
+      "credit": "Peng, Budak and Romero (2019), The Web Conference, Figure 2. Author-hosted publisher PDF. CC BY 4.0.",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/Crowd_Dynamics_Black_Lives_Matter.pdf",
+      "width": 614,
+      "height": 974
+    }
   },
   {
     "title": "Social Networks under stress: Specialized Team Roles and their Communication Structure.",
@@ -576,7 +926,17 @@
     "type": "journal",
     "topic": "organizational",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p036.webp",
+      "thumbnail": "images/papers/p036-thumb.webp",
+      "alt": "The authors' schematic contrasts an open communication network with a clustered network containing stronger internal ties and fewer external connections.",
+      "caption": "The authors' schematic contrasts an open communication network with a clustered network containing stronger internal ties and fewer external connections.",
+      "credit": "Romero, Uzzi and Kleinberg (2019), ACM Transactions on the Web, Figure 1. Author-hosted publisher PDF.",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/Social_Networks_under_Stress_Specialized_Team_Roles.pdf",
+      "width": 684,
+      "height": 461
+    }
   },
   {
     "title": "Network Structure, Efficiency, and Performance in WikiProjects.",
@@ -596,7 +956,17 @@
         "url": "http://bit.ly/2OpBqH4"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p037.webp",
+      "thumbnail": "images/papers/p037-thumb.webp",
+      "alt": "WikiProject performance is plotted against the study's B-level efficiency measure, with individual projects and the fitted trend shown together.",
+      "caption": "WikiProject performance is plotted against the study's B-level efficiency measure, with individual projects and the fitted trend shown together.",
+      "credit": "Platt and Romero (2018), ICWSM, Figure 3. Author-hosted proceedings PDF.",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/Network_Structure_Efficiency_Performance.pdf",
+      "width": 553,
+      "height": 372
+    }
   },
   {
     "title": "'Bacon Bacon Bacon': Food-related Tweets and Sentiment in Metro Detroit",
@@ -612,7 +982,17 @@
         "label": "Detour Detroit",
         "url": "https://bit.ly/2YXB1CR"
       }
-    ]
+    ],
+    "image": {
+      "src": "images/papers/p038.webp",
+      "thumbnail": "images/papers/p038-thumb.webp",
+      "alt": "Frequently mentioned foods from Metro Detroit tweets are grouped into the study's healthiness categories in the original keyword table.",
+      "caption": "Frequently mentioned foods from Metro Detroit tweets are grouped into the study's healthiness categories in the original keyword table.",
+      "credit": "Vydiswaran et al. (2018), ICWSM, Table 3. Author-hosted proceedings PDF.",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/Bacon_Bacon_Bacon.pdf",
+      "width": 656,
+      "height": 345
+    }
   },
   {
     "title": "Using Social Media to Assess the Community Food Store Environment: Comparing Yelp Reviews with a Direct Observation Audit Instrument for Grocery Stores.",
@@ -623,7 +1003,17 @@
     "type": "journal",
     "topic": "methods",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p039.webp",
+      "thumbnail": "images/papers/p039-thumb.webp",
+      "alt": "Yelp ratings, review counts and sentiment measures are compared with direct grocery-store audit scores in the study's complete correlation table.",
+      "caption": "Yelp ratings, review counts and sentiment measures are compared with direct grocery-store audit scores in the study's complete correlation table.",
+      "credit": "Shen et al. (2018 advance article), Using social media to assess the consumer nutrition environment, Public Health Nutrition, Table 3. © The Authors 2018. Reprinted with permission. doi:10.1017/S1368980018002872.",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/using_social_media_to_assess_the_consumer_nutrition.pdf",
+      "width": 1488,
+      "height": 785
+    }
   },
   {
     "title": "Comparing the Data Quality of Global Positioning System Devices and Mobile Phones for Assessing Relationships Between Place, Mobility, and Health: Field Study.",
@@ -634,7 +1024,17 @@
     "type": "journal",
     "topic": "methods",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p040.webp",
+      "thumbnail": "images/papers/p040-thumb.webp",
+      "alt": "Maps show phone and GPS-watch location traces, alongside their density differences, for four participants in the field study.",
+      "caption": "Maps show phone and GPS-watch location traces, alongside their density differences, for four participants in the field study.",
+      "credit": "Goodspeed et al. (2018), JMIR mHealth and uHealth, Figure 1. Author-hosted publisher PDF; article CC BY 4.0. Base maps © Esri and its licensors; reproduced from the study’s Figure 1.",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/Comparing_the_Data_Quality.pdf",
+      "width": 1472,
+      "height": 1914
+    }
   },
   {
     "title": "Political Tweets and Mainstream News Impact in India: A Mixed Methods Investigation into Political Outreach.",
@@ -645,7 +1045,17 @@
     "type": "conference",
     "topic": "identity_language",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p041.webp",
+      "thumbnail": "images/papers/p041-thumb.webp",
+      "alt": "Retweet rates for Narendra Modi's tweets are compared between posts mentioned in mainstream news coverage and posts not mentioned.",
+      "caption": "Retweet rates for Narendra Modi's tweets are compared between posts mentioned in mainstream news coverage and posts not mentioned.",
+      "credit": "Chakraborty, Pal, Chandra and Romero (2018), COMPASS, Table 5. Author manuscript.",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/political-tweets.pdf",
+      "width": 742,
+      "height": 305
+    }
   },
   {
     "title": "Pseudonymous Parents: Comparing Parenting Roles and Identities on the Mommit and Daddit Subreddits.",
@@ -661,7 +1071,17 @@
         "url": "http://bit.ly/2rY1suc"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p042.webp",
+      "thumbnail": "images/papers/p042-thumb.webp",
+      "alt": "Topic-model scores compare the prominence of selected early-parenting themes across discussions in the Mommit, Parenting and Daddit Reddit communities.",
+      "caption": "Topic-model scores compare the prominence of selected early-parenting themes across discussions in the Mommit, Parenting and Daddit Reddit communities.",
+      "credit": "Ammari, Schoenebeck and Romero (2018), CHI, Figure 2. Author-hosted publisher PDF.",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/Pseudonymous_Parents.pdf",
+      "width": 736,
+      "height": 491
+    }
   },
   {
     "title": "User Acceptance of Location-Tracking Technologies in Health Research: Implications for Study Design and Data Quality.",
@@ -672,7 +1092,17 @@
     "type": "journal",
     "topic": "methods",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p043.webp",
+      "thumbnail": "images/papers/p043-thumb.webp",
+      "alt": "The paper’s graphical abstract compares the GPS watch and smartphone used in the study and summarizes implications for participation and data completeness.",
+      "caption": "The paper’s graphical abstract compares the GPS watch and smartphone used in the study and summarizes implications for participation and data completeness.",
+      "credit": "Hardy et al. (2018), Journal of Biomedical Informatics 79, 7–19, graphical abstract. Published version. © 2018 Elsevier Inc. doi:10.1016/j.jbi.2018.01.003.",
+      "source": "https://doi.org/10.1016/j.jbi.2018.01.003",
+      "width": 936,
+      "height": 1085
+    }
   },
   {
     "title": "Crowd Development: The Interplay Between Crowd Evaluation and Collaborative Dynamics in Wikipedia.",
@@ -683,7 +1113,17 @@
     "type": "conference",
     "topic": "online_platforms",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p044.webp",
+      "thumbnail": "images/papers/p044-thumb.webp",
+      "alt": "Centralization curves compare Wikipedia Good Article groups with matched controls across the periods surrounding article nomination, evaluation and promotion.",
+      "caption": "Centralization curves compare Wikipedia Good Article groups with matched controls across the periods surrounding article nomination, evaluation and promotion.",
+      "credit": "Zhang et al. (2017), PACM Human-Computer Interaction / CSCW, Figure 3. Author-hosted publisher PDF.",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/The_Interplay_between_Crowd_Evaluation_and_Collaborative%20Dynamics%20in%20Wikipedia.pdf",
+      "width": 580,
+      "height": 385
+    }
   },
   {
     "title": "The Nearly Universal Link Between the Age of Past Knowledge and Tomorrow's Breakthroughs in Science and Technology: The Hotspot.",
@@ -699,7 +1139,17 @@
         "label": "CS Monitor",
         "url": "http://bit.ly/2p10yLe"
       }
-    ]
+    ],
+    "image": {
+      "src": "images/papers/p045.webp",
+      "thumbnail": "images/papers/p045-thumb.webp",
+      "alt": "Reference-age averages and variation locate a citation-impact hotspot among the 1995 papers shown in the study.",
+      "caption": "Reference-age averages and variation locate a citation-impact hotspot among the 1995 papers shown in the study.",
+      "credit": "Mukherjee, Romero, Jones and Uzzi (2017), Science Advances, Figure 1. Author-hosted publisher PDF. CC BY-NC 4.0.",
+      "source": "https://www.kellogg.northwestern.edu/faculty/jones-ben/htm/The_Hotspot_%20Science_Advances_2017.pdf",
+      "width": 794,
+      "height": 608
+    }
   },
   {
     "title": "Shocking the Crowd: The Effect of Censorship Shocks on Chinese Wikipedia.",
@@ -715,7 +1165,17 @@
         "url": "http://bit.ly/2s9ZA18"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p046.webp",
+      "thumbnail": "images/papers/p046-thumb.webp",
+      "alt": "Editing-volume changes are plotted against the weighted share of contributors affected by censorship, using the paper's all-article activity panel.",
+      "caption": "Editing-volume changes are plotted against the weighted share of contributors affected by censorship, using the paper's all-article activity panel.",
+      "credit": "Zhang et al. (2017), ICWSM, Figure 5a. Author-hosted proceedings PDF.",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/Shocking%20the%20Crowd.pdf",
+      "width": 501,
+      "height": 400
+    }
   },
   {
     "title": "The Role of Optimal Distinctiveness and Homophily in Online Dating.",
@@ -735,7 +1195,17 @@
         "url": "http://bit.ly/2qsLOFV"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p047.webp",
+      "thumbnail": "images/papers/p047-thumb.webp",
+      "alt": "Two panels compare reply probabilities with recipient similarity and similarity to market-level competitors among male-initiated messages in the studied dating site.",
+      "caption": "Two panels compare reply probabilities with recipient similarity and similarity to market-level competitors among male-initiated messages in the studied dating site.",
+      "credit": "Maldeniya, Varghese, Stuart and Romero (2017), ICWSM, Figure 2a–b. Author-hosted proceedings PDF.",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/Optimal%20Distinctiveness.pdf",
+      "width": 699,
+      "height": 314
+    }
   },
   {
     "title": "Using Social Media to Identify Sources of Healthy Food in Urban Neighborhoods.",
@@ -746,7 +1216,17 @@
     "type": "journal",
     "topic": "online_platforms",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p048.webp",
+      "thumbnail": "images/papers/p048-thumb.webp",
+      "alt": "Validation results compare Yelp and a commercial listing with the Detroit Food Map using precision, sensitivity and related store-identification measures.",
+      "caption": "Validation results compare Yelp and a commercial listing with the Detroit Food Map using precision, sensitivity and related store-identification measures.",
+      "credit": "Gomez-Lopez et al. (2017), Journal of Urban Health, Table 3. Author-hosted publisher PDF.",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/Using%20Social%20Media%20Healthy%20Food.pdf",
+      "width": 684,
+      "height": 409
+    }
   },
   {
     "title": "The Influence of Early Respondents: Information Cascade Effects in Online Event Scheduling.",
@@ -766,7 +1246,17 @@
         "url": "http://bit.ly/2mlUwQ9"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p049.webp",
+      "thumbnail": "images/papers/p049-thumb.webp",
+      "alt": "Availability-matching probabilities in open and hidden scheduling polls are compared across the distance between respondents in the response sequence.",
+      "caption": "Availability-matching probabilities in open and hidden scheduling polls are compared across the distance between respondents in the response sequence.",
+      "credit": "Romero, Reinecke & Robert Jr. (2017), WSDM, Figure 6 (author-hosted proceedings copy).",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/The_Influence_of_Early_Respondents.pdf",
+      "width": 1020,
+      "height": 397
+    }
   },
   {
     "title": "Social Networks Under Stress.",
@@ -786,7 +1276,17 @@
         "url": "http://bit.ly/1QgLvy7"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p050.webp",
+      "thumbnail": "images/papers/p050-thumb.webp",
+      "alt": "An illustrative diagram contrasts open social networks with clustered networks of strong ties, distinguishing employees from their outside contacts.",
+      "caption": "An illustrative diagram contrasts open social networks with clustered networks of strong ties, distinguishing employees from their outside contacts.",
+      "credit": "Romero, Uzzi & Kleinberg (2016), WWW, Figure 1 (author-hosted proceedings copy).",
+      "source": "https://www.kellogg.northwestern.edu/faculty/uzzi/htm/papers/Social%20Networks%20Under%20Stress%20-%20Jan2016.pdf",
+      "width": 788,
+      "height": 559
+    }
   },
   {
     "title": "The Influence of Diversity and Experience on the Effects of Crowd Size.",
@@ -797,7 +1297,17 @@
     "type": "journal",
     "topic": "online_platforms",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p051.webp",
+      "thumbnail": "images/papers/p051-thumb.webp",
+      "alt": "The research model links crowd size, diversity, and experience with participant retention and performance in collaborative Wikipedia article production.",
+      "caption": "The research model links crowd size, diversity, and experience with participant retention and performance in collaborative Wikipedia article production.",
+      "credit": "Robert Jr. & Romero (2016), JASIST, Figure 1 (author-hosted early-view manuscript).",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/The_Influence_of_Diversit_%20and_Experience_on_the_Effects_of_Crowd_Size.pdf",
+      "width": 742,
+      "height": 342
+    }
   },
   {
     "title": "Mimicry Is Presidential: Linguistic Style Matching in Presidential Debates and Improved Polling Numbers.",
@@ -830,7 +1340,17 @@
         "label": "New York Magazine",
         "url": "http://sciof.us/1DApOJQ"
       }
-    ]
+    ],
+    "image": {
+      "src": "images/papers/p052.webp",
+      "thumbnail": "images/papers/p052-thumb.webp",
+      "alt": "Presidential candidates’ linguistic style matching is plotted against subsequent polling changes, with a regression interval and an inset comparing matching groups.",
+      "caption": "Presidential candidates’ linguistic style matching is plotted against subsequent polling changes, with a regression interval and an inset comparing matching groups.",
+      "credit": "Romero, Swaab, Uzzi & Galinsky (2015), Figure 1, author manuscript. Personality and Social Psychology Bulletin 41(10), 1311–1319. © 2015 Society for Personality and Social Psychology, Inc. doi:10.1177/0146167215591168.",
+      "source": "https://business.columbia.edu/sites/default/files-efs/pubfiles/16128/Galinsky_mimicry.pdf",
+      "width": 1087,
+      "height": 847
+    }
   },
   {
     "title": "Coordination and Efficiency in Decentralized Collaboration.",
@@ -846,7 +1366,17 @@
         "url": "http://bit.ly/1ctzdWV"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p053.webp",
+      "thumbnail": "images/papers/p053-thumb.webp",
+      "alt": "Two panels compare coordination across Wikipedia articles of different sizes and editor counts, using a heat map and grouped comparisons.",
+      "caption": "Two panels compare coordination across Wikipedia articles of different sizes and editor counts, using a heat map and grouped comparisons.",
+      "credit": "Romero, Huttenlocher & Kleinberg (2015), ICWSM, Figure 4 (arXiv:1503.07431v1 preprint).",
+      "source": "https://arxiv.org/pdf/1503.07431v1",
+      "width": 736,
+      "height": 592
+    }
   },
   {
     "title": "Crowd Size, Diversity and Performance.",
@@ -862,7 +1392,17 @@
         "url": "http://bit.ly/1DPPJqB"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p054.webp",
+      "thumbnail": "images/papers/p054-thumb.webp",
+      "alt": "Predicted Wikipedia article quality varies with crowd size and topical diversity in this labeled panel from the paper’s interaction model.",
+      "caption": "Predicted Wikipedia article quality varies with crowd size and topical diversity in this labeled panel from the paper’s interaction model.",
+      "credit": "Robert & Romero (2015), CHI, Figure 1(a), panel crop (author-hosted proceedings copy).",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/Size_Diversity_Performance_Robert_Romero.pdf",
+      "width": 369,
+      "height": 357
+    }
   },
   {
     "title": "Critical Transitions in Social Network Activity.",
@@ -878,7 +1418,17 @@
         "url": "https://bitly.com/1pLs4jJ"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p055.webp",
+      "thumbnail": "images/papers/p055-thumb.webp",
+      "alt": "Nine panels track hashtag frequency, variance, and lag-one autocorrelation around three known holidays, with red lines marking event dates.",
+      "caption": "Nine panels track hashtag frequency, variance, and lag-one autocorrelation around three known holidays, with red lines marking event dates.",
+      "credit": "Kuehn, Martens & Romero (2014), Journal of Complex Networks 2(2), Figure 1 (published version via DTU Orbit).",
+      "source": "https://backend.orbit.dtu.dk/ws/portalfiles/portal/140632956/2014_Kuehn_Martens_Romero_Journ_Complex_Networks_Critical_transitions_in_social_network_activity.pdf",
+      "width": 1250,
+      "height": 770
+    }
   },
   {
     "title": "Estimating the Relative Utility of Networks for Predicting User Activities.",
@@ -894,7 +1444,17 @@
         "url": "http://bit.ly/1fPJdtc"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p056.webp",
+      "thumbnail": "images/papers/p056-thumb.webp",
+      "alt": "Learned network weights compare Facebook and Wikipedia co-visitation across advertisement categories, showing how their relative predictive contribution varies by category.",
+      "caption": "Learned network weights compare Facebook and Wikipedia co-visitation across advertisement categories, showing how their relative predictive contribution varies by category.",
+      "credit": "Mishra, Romero & Tsaparas (2013), CIKM, Figure 4 (author-hosted proceedings copy).",
+      "source": "https://theory.stanford.edu/~nmishra/Papers/estimatingRelativeUtilityNetworksPredictingUserActivities.pdf",
+      "width": 611,
+      "height": 495
+    }
   },
   {
     "title": "On the Interplay between Social and Topical Structure.",
@@ -910,7 +1470,17 @@
         "url": "http://bit.ly/19tuwZL"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p057.webp",
+      "thumbnail": "images/papers/p057-thumb.webp",
+      "alt": "Follower and messaging link probabilities are plotted against the size of users’ smallest shared hashtag, with both comparisons on logarithmic axes.",
+      "caption": "Follower and messaging link probabilities are plotted against the size of users’ smallest shared hashtag, with both comparisons on logarithmic axes.",
+      "credit": "Romero, Tan & Ugander (2013), ICWSM, Figure 1 (author-hosted proceedings copy).",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/twitter_hashtag_romero_tan_ugander.pdf",
+      "width": 733,
+      "height": 360
+    }
   },
   {
     "title": "Differences in the Mechanics of Information Diffusion Across Topics: Idioms, Political Hashtags, and Complex Contagion on Twitter.",
@@ -939,7 +1509,17 @@
         "label": "CBS News",
         "url": "https://bitly.com/JtiQZ8"
       }
-    ]
+    ],
+    "image": {
+      "src": "images/papers/p058.webp",
+      "thumbnail": "images/papers/p058-thumb.webp",
+      "alt": "Two exposure curves compare adoption probabilities for an idiomatic hashtag and a political hashtag after repeated exposures on Twitter.",
+      "caption": "Two exposure curves compare adoption probabilities for an idiomatic hashtag and a political hashtag after repeated exposures on Twitter.",
+      "credit": "Romero, Meeder & Kleinberg (2011), WWW, Figure 3 (author-hosted proceedings copy).",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/info_diffusion_topics.pdf",
+      "width": 721,
+      "height": 605
+    }
   },
   {
     "title": "Influence and Passivity in Social Media.",
@@ -984,7 +1564,17 @@
         "label": "Mashable",
         "url": "https://bitly.com/sntS9A"
       }
-    ]
+    ],
+    "image": {
+      "src": "images/papers/p059.webp",
+      "thumbnail": "images/papers/p059-thumb.webp",
+      "alt": "The density plot compares follower counts with influence–passivity scores, displaying how modeled influence relates to popularity in the Twitter data.",
+      "caption": "The density plot compares follower counts with influence–passivity scores, displaying how modeled influence relates to popularity in the Twitter data.",
+      "credit": "Romero, Galuba, Asur & Huberman (2011), ECML PKDD, Figure 4 (author manuscript).",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/influence_passivity.pdf",
+      "width": 501,
+      "height": 305
+    }
   },
   {
     "title": "Predicting Reciprocity in Social Networks.",
@@ -995,7 +1585,17 @@
     "type": "conference",
     "topic": "network_structure",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p060.webp",
+      "thumbnail": "images/papers/p060-thumb.webp",
+      "alt": "Four two-step network patterns define structural features used to predict whether a relationship is reciprocated in a directed social network.",
+      "caption": "Four two-step network patterns define structural features used to predict whether a relationship is reciprocated in a directed social network.",
+      "credit": "Cheng, Romero, Meeder & Kleinberg (2011), SocialCom, Figure 1, author-hosted conference manuscript. © 2011 IEEE. doi:10.1109/PASSAT/SocialCom.2011.110.",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/predicting_reciprocity.pdf",
+      "width": 525,
+      "height": 235
+    }
   },
   {
     "title": "Maintaining Ties on Social Media Sites: The Competing Effects of Balance, Exchange, and Betweenness.",
@@ -1006,7 +1606,17 @@
     "type": "conference",
     "topic": "network_structure",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p061.webp",
+      "thumbnail": "images/papers/p061-thumb.webp",
+      "alt": "Triangular network diagrams contrast predictions from balance and exchange theories when a third relationship joins an existing pair.",
+      "caption": "Triangular network diagrams contrast predictions from balance and exchange theories when a third relationship joins an existing pair.",
+      "credit": "Romero, Meeder, Barash & Kleinberg (2011), ICWSM, Figure 1 (author-hosted proceedings copy).",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/balance_exchange.pdf",
+      "width": 476,
+      "height": 320
+    }
   },
   {
     "title": "Who Should I Follow? Recommending People in Directed Social Networks.",
@@ -1017,7 +1627,17 @@
     "type": "conference",
     "topic": "network_structure",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p062.webp",
+      "thumbnail": "images/papers/p062-thumb.webp",
+      "alt": "The source table ranks directed triad patterns by observed closure rates, preserving network arrows, sample counts, and comparison groups.",
+      "caption": "The source table ranks directed triad patterns by observed closure rates, preserving network arrows, sample counts, and comparison groups.",
+      "credit": "Brzozowski & Romero (2011), ICWSM, Table 1 (publisher PDF).",
+      "source": "https://ojs.aaai.org/index.php/ICWSM/article/download/14194/14043",
+      "width": 678,
+      "height": 608
+    }
   },
   {
     "title": "An Epidemiological Approach to the Spread of Political Third Parties.",
@@ -1028,7 +1648,17 @@
     "type": "journal",
     "topic": "information_diffusion",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p063.webp",
+      "thumbnail": "images/papers/p063-thumb.webp",
+      "alt": "A compartment diagram models movement among susceptible voters, third-party voters, and active members through recruitment and departure processes.",
+      "caption": "A compartment diagram models movement among susceptible voters, third-party voters, and active members through recruitment and departure processes.",
+      "credit": "Romero, Kribs-Zaleta, Mubayi & Orbe (2011), Discrete and Continuous Dynamical Systems B, Figure 2 (author prepublication manuscript).",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/third_parties.pdf",
+      "width": 901,
+      "height": 226
+    }
   },
   {
     "title": "The Directed Closure Process in Hybrid Social-Information Networks, with an Analysis of Link Formation on Twitter.",
@@ -1044,7 +1674,17 @@
         "url": "http://bit.ly/KvbXJs"
       }
     ],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p064.webp",
+      "thumbnail": "images/papers/p064-thumb.webp",
+      "alt": "The paper’s network diagram illustrates directed closure, where a new link completes existing two-step paths through intermediary users.",
+      "caption": "The paper’s network diagram illustrates directed closure, where a new link completes existing two-step paths through intermediary users.",
+      "credit": "Romero & Kleinberg (2010), ICWSM, Figure 2 (author-hosted proceedings copy).",
+      "source": "http://dromero.org.s3-website-us-east-1.amazonaws.com/DirectedClosure.pdf",
+      "width": 366,
+      "height": 363
+    }
   },
   {
     "title": "Detecting spam in a Twitter network.",
@@ -1055,7 +1695,17 @@
     "type": "journal",
     "topic": "online_platforms",
     "resources": [],
-    "pressCoverage": []
+    "pressCoverage": [],
+    "image": {
+      "src": "images/papers/p065.webp",
+      "thumbnail": "images/papers/p065-thumb.webp",
+      "alt": "The paper’s schematic distinguishes spammers, regular users, and celebrities through hypothesized patterns of following relationships in a Twitter network.",
+      "caption": "The paper’s schematic distinguishes spammers, regular users, and celebrities through hypothesized patterns of following relationships in a Twitter network.",
+      "credit": "Yardi, Romero, Schoenebeck & boyd (2010), First Monday 15(1), Figure 6. CC BY-NC-SA 3.0 US.",
+      "source": "https://firstmonday.org/ojs/index.php/fm/article/download/2793/version/1366/2431/25849/syfigure6.jpg",
+      "width": 505,
+      "height": 284
+    }
   },
   {
     "title": "Social Networks that Matter: Twitter Under the Microscope.",
@@ -1071,13 +1721,23 @@
         "label": "Wall Street Journal",
         "url": "http://on.wsj.com/NP8dmD"
       }
-    ]
+    ],
+    "image": {
+      "src": "images/papers/p066.webp",
+      "thumbnail": "images/papers/p066-thumb.webp",
+      "alt": "Interaction-defined friends are plotted against declared followees, contrasting active communication relationships with the larger stated Twitter network.",
+      "caption": "Interaction-defined friends are plotted against declared followees, contrasting active communication relationships with the larger stated Twitter network.",
+      "credit": "Huberman, Romero & Wu (2008), arXiv:0812.1045v1 preprint, Figure 4; associated First Monday article (2009).",
+      "source": "https://arxiv.org/pdf/0812.1045v1",
+      "width": 1148,
+      "height": 571
+    }
   },
   {
     "title": "Crowdsourcing, Attention and Productivity.",
     "url": "https://bitly.com/soj9Hf",
     "authors": "B.A. Huberman, D.M. Romero, and F. Wu,",
-    "venue": "Journal of Information Sciences , Volume 35, Number 6, pp. 758-765, 2009.",
+    "venue": "Journal of Information Science , Volume 35, Number 6, pp. 758-765, 2009.",
     "year": 2009,
     "type": "journal",
     "topic": "online_platforms",
@@ -1092,6 +1752,16 @@
         "label": "New Scientist",
         "url": "http://bit.ly/v1hQzD"
       }
-    ]
+    ],
+    "image": {
+      "src": "images/papers/p067.webp",
+      "thumbnail": "images/papers/p067-thumb.webp",
+      "alt": "Average video views are plotted relative to a contributor’s final upload, showing attention patterns before the observed endpoint.",
+      "caption": "Average video views are plotted relative to a contributor’s final upload, showing attention patterns before the observed endpoint.",
+      "credit": "Huberman, Romero & Wu (2008), arXiv:0809.3030v1 preprint, Figure 2; associated Journal of Information Science article (2009).",
+      "source": "https://arxiv.org/pdf/0809.3030v1",
+      "width": 1155,
+      "height": 690
+    }
   }
 ]

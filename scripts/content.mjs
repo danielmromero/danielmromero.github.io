@@ -51,7 +51,7 @@ export function validateContent(data) {
   const seen = new Set();
   data.publications.forEach((paper, i) => {
     const field = `publications.json[${i}]`;
-    object(paper, field, ['title', 'url', 'authors', 'venue', 'year', 'type', 'topic', 'resources', 'pressCoverage', 'keywords']);
+    object(paper, field, ['title', 'url', 'authors', 'venue', 'year', 'type', 'topic', 'resources', 'pressCoverage', 'keywords', 'image']);
     for (const key of ['title', 'authors', 'venue']) text(paper[key], `${field}.${key}`);
     url(paper.url, `${field}.url`);
     if (!Number.isInteger(paper.year) || paper.year < 1800 || paper.year > 2200) fail(`${field}.year`, 'must be a four-digit year entered as a number');
@@ -62,6 +62,25 @@ export function validateContent(data) {
     }
     if (paper.keywords !== undefined) {
       array(paper.keywords, `${field}.keywords`); paper.keywords.forEach((word, j) => text(word, `${field}.keywords[${j}]`));
+    }
+    if (paper.image !== undefined) {
+      const imageField = `${field}.image`;
+      object(paper.image, imageField, ['src', 'thumbnail', 'alt', 'caption', 'credit', 'source', 'width', 'height']);
+      for (const key of ['src', 'thumbnail']) {
+        const value = paper.image[key];
+        if (typeof value !== 'string' || !/^images\/papers\/(?:[a-z\d_-]+\/)*[a-z\d][a-z\d._-]*\.(?:webp|avif|png|jpe?g)$/i.test(value)) {
+          fail(`${imageField}.${key}`, 'must be a local image path inside public/images/papers');
+        }
+      }
+      for (const key of ['alt', 'caption', 'credit']) {
+        text(paper.image[key], `${imageField}.${key}`);
+        if (/\b(?:created|prepared|generated|drawn) for (?:this|the) (?:local )?review\b|\breview[- ]only\b|\blocal (?:preview|review)\b|\bnot for publication\b/i.test(paper.image[key])) {
+          fail(`${imageField}.${key}`, 'contains draft review wording; use visitor-facing text');
+        }
+      }
+      url(paper.image.source, `${imageField}.source`);
+      if (!/^https?:\/\//i.test(paper.image.source)) fail(`${imageField}.source`, 'must link to the original paper or image source using http(s)');
+      for (const key of ['width', 'height']) if (!Number.isInteger(paper.image[key]) || paper.image[key] < 1) fail(`${imageField}.${key}`, 'must be a positive integer');
     }
     const identity = `${paper.year}:${paper.title.trim().toLocaleLowerCase()}`;
     if (seen.has(identity)) fail(field, 'duplicate paper title and year');
@@ -119,6 +138,7 @@ export function publicationData(data) {
       return {
         title: paper.title, url: paper.url, authors: paper.authors, venue: paper.venue,
         year: String(paper.year), type: paper.type, topic: paper.topic, links,
+        ...(paper.image ? {image: {...paper.image}} : {}),
         search: [paper.title, paper.authors, paper.venue, paper.year, data.topics[paper.topic], ...links.map(item => item.label), ...(paper.keywords || [])].join(' ')
       };
     }),
